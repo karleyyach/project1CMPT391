@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\dayna\\OneDrive\\Documents\\Schoolwork\\CMPT\\391\\391project1\\391project1\\391project1.csproj",
+      "projectUniqueName": "C:\\Users\\dayna\\Source\\Repos\\scratch-passive\\project1CMPT391\\391project1\\391project1\\391project1.csproj",
       "projectName": "391project1",
-      "projectPath": "C:\\Users\\dayna\\OneDrive\\Documents\\Schoolwork\\CMPT\\391\\391project1\\391project1\\391project1.csproj",
+      "projectPath": "C:\\Users\\dayna\\Source\\Repos\\scratch-passive\\project1CMPT391\\391project1\\391project1\\391project1.csproj",
       "packagesPath": "C:\\Users\\dayna\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\dayna\\OneDrive\\Documents\\Schoolwork\\CMPT\\391\\391project1\\391project1\\obj\\",
+      "outputPath": "C:\\Users\\dayna\\Source\\Repos\\scratch-passive\\project1CMPT391\\391project1\\391project1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\dayna\\AppData\\Roaming\\NuGet\\NuGet.Config",

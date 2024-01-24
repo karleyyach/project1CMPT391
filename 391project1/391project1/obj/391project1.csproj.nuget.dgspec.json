@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\dayna\\OneDrive\\Documents\\Schoolwork\\CMPT\\391\\391project1\\391project1\\391project1.csproj": {}
+    "C:\\Users\\dayna\\source\\repos\\scratch-passive\\project1CMPT391\\391project1\\391project1\\391project1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\dayna\\OneDrive\\Documents\\Schoolwork\\CMPT\\391\\391project1\\391project1\\391project1.csproj": {
+    "C:\\Users\\dayna\\source\\repos\\scratch-passive\\project1CMPT391\\391project1\\391project1\\391project1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dayna\\OneDrive\\Documents\\Schoolwork\\CMPT\\391\\391project1\\391project1\\391project1.csproj",
+        "projectUniqueName": "C:\\Users\\dayna\\source\\repos\\scratch-passive\\project1CMPT391\\391project1\\391project1\\391project1.csproj",
         "projectName": "391project1",
-        "projectPath": "C:\\Users\\dayna\\OneDrive\\Documents\\Schoolwork\\CMPT\\391\\391project1\\391project1\\391project1.csproj",
+        "projectPath": "C:\\Users\\dayna\\source\\repos\\scratch-passive\\project1CMPT391\\391project1\\391project1\\391project1.csproj",
         "packagesPath": "C:\\Users\\dayna\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dayna\\OneDrive\\Documents\\Schoolwork\\CMPT\\391\\391project1\\391project1\\obj\\",
+        "outputPath": "C:\\Users\\dayna\\source\\repos\\scratch-passive\\project1CMPT391\\391project1\\391project1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\dayna\\AppData\\Roaming\\NuGet\\NuGet.Config",
