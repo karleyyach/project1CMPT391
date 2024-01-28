@@ -1,8 +1,5 @@
-USE [master]
-GO
-/****** Object:  Database [391project1]    Script Date: 2024-01-24 2:29:32 PM ******/
-
 /** Database Creation **/	
+
 CREATE DATABASE [391project1]
  CONTAINMENT = NONE
  ON  PRIMARY 
@@ -83,7 +80,7 @@ GO
 ALTER DATABASE [391project1] SET QUERY_STORE = ON
 GO
 ALTER DATABASE [391project1] SET QUERY_STORE (OPERATION_MODE = READ_WRITE, CLEANUP_POLICY = (STALE_QUERY_THRESHOLD_DAYS = 30), DATA_FLUSH_INTERVAL_SECONDS = 900, INTERVAL_LENGTH_MINUTES = 60, MAX_STORAGE_SIZE_MB = 1000, QUERY_CAPTURE_MODE = AUTO, SIZE_BASED_CLEANUP_MODE = AUTO, MAX_PLANS_PER_QUERY = 200, WAIT_STATS_CAPTURE_MODE = ON)
-GO**/
+GO
 
 
 
@@ -119,7 +116,7 @@ GO
 CREATE TABLE [dbo].[course](
 	[courseID] [nchar](10) NOT NULL,
 	[courseName] [nvarchar](50) NULL,
-	[deptName] [nvarchar](50) NULL,
+	[deptName] [nvarchar](80) NULL,
  CONSTRAINT [PK_course] PRIMARY KEY CLUSTERED 
 (
 	[courseID] ASC
@@ -132,7 +129,8 @@ GO
 SET QUOTED_IDENTIFIER ON
 GO
 CREATE TABLE [dbo].[department](
-	[deptName] [nvarchar](50) NOT NULL,
+	/** Updated from 50 to 80 cahrs **/ 
+	[deptName] [nvarchar](80) NOT NULL,
  CONSTRAINT [PK_department] PRIMARY KEY CLUSTERED 
 (
 	[deptName] ASC
@@ -148,8 +146,8 @@ CREATE TABLE [dbo].[instructor](
 	[instructorID] [nchar](10) NOT NULL,
 	[firstName] [nvarchar](50) NOT NULL,
 	[lastName] [nvarchar](50) NOT NULL,
-	[deptName] [nvarchar](50) NOT NULL,
-	[departmentHead] [nchar](10) NOT NULL,
+	[deptName] [nvarchar](80) NOT NULL,
+	[departmentHead] [nchar](80) NOT NULL,
  CONSTRAINT [PK_instructor] PRIMARY KEY CLUSTERED 
 (
 	[instructorID] ASC
