@@ -147,7 +147,7 @@ CREATE TABLE [dbo].[instructor](
 	[firstName] [nvarchar](50) NOT NULL,
 	[lastName] [nvarchar](50) NOT NULL,
 	[deptName] [nvarchar](80) NOT NULL,
-	[departmentHead] [nchar](80) NOT NULL,
+	[departmentHead] [nchar](10) NOT NULL,
  CONSTRAINT [PK_instructor] PRIMARY KEY CLUSTERED 
 (
 	[instructorID] ASC
