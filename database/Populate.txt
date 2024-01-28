@@ -1,0 +1,223 @@
+USE [391project1]
+
+/* Insert order: student, department, instructor, course, prereq, timeSlot, section, takes, cart */
+
+/*Adding data to student table works*/
+GO
+INSERT INTO [dbo].[student] ([studentID], [firstName], [lastName], [buildingNo], [street], [city], [province], [country], [postalCode]) VALUES (1, 'Alice', 'Johnson', 5, 'Maple Avenue', 'Edmonton', 'AB', 'Canada', 'M1A 2B3');
+INSERT INTO [dbo].[student] ([studentID], [firstName], [lastName], [buildingNo], [street], [city], [province], [country], [postalCode]) VALUES (2, 'Benjamin', 'Smith', 5, 'Elm Street', 'Edmonton', 'AB', 'Canada', 'V8X 5R9');
+INSERT INTO [dbo].[student] ([studentID], [firstName], [lastName], [buildingNo], [street], [city], [province], [country], [postalCode]) VALUES (3, 'Chloe', 'Davis', 5, 'Oak Lane', 'Edmonton', 'AB', 'Canada', 'K4T 7J6');
+INSERT INTO [dbo].[student] ([studentID], [firstName], [lastName], [buildingNo], [street], [city], [province], [country], [postalCode]) VALUES (4, 'Daniel', 'Martinez', 6, 'Cedar Drive', 'Edmonton', 'AB', 'Canada', 'H2Y 3M1');
+INSERT INTO [dbo].[student] ([studentID], [firstName], [lastName], [buildingNo], [street], [city], [province], [country], [postalCode]) VALUES (5, 'Emily', 'Wilson', 6, 'Pine Road', 'Edmonton', 'AB', 'Canada', 'N6G 1Z2');
+INSERT INTO [dbo].[student] ([studentID], [firstName], [lastName], [buildingNo], [street], [city], [province], [country], [postalCode]) VALUES (6, 'Frank', 'Taylor', 7, 'Willow Lane', 'Edmonton', 'AB', 'Canada', 'L3P 8K7');
+INSERT INTO [dbo].[student] ([studentID], [firstName], [lastName], [buildingNo], [street], [city], [province], [country], [postalCode]) VALUES (7, 'Grace', 'Brown', 7, 'Birch Boulevard', 'Edmonton', 'AB', 'Canada','R2H 4W5');
+INSERT INTO [dbo].[student] ([studentID], [firstName], [lastName], [buildingNo], [street], [city], [province], [country], [postalCode]) VALUES (8, 'Henry', 'Miller', 7, 'Rosewood Avenue', 'Edmonton', 'AB', 'Canada', 'T5N 0V2');
+INSERT INTO [dbo].[student] ([studentID], [firstName], [lastName], [buildingNo], [street], [city], [province], [country], [postalCode]) VALUES (9, 'Isabella', 'Garcia', 9, 'Magnolia Terrace', 'Edmonton', 'AB', 'Canada', 'G1R 6L9');
+INSERT INTO [dbo].[student] ([studentID], [firstName], [lastName], [buildingNo], [street], [city], [province], [country], [postalCode]) VALUES (10, 'Jack', 'Anderson', 9, 'Juniper Street', 'Edmonton', 'AB', 'Canada', 'S7K 2V8');
+INSERT INTO [dbo].[student] ([studentID], [firstName], [lastName], [buildingNo], [street], [city], [province], [country], [postalCode]) VALUES (11, 'Katherine', 'Thomas', 9, 'Cypress Lane', 'Edmonton', 'AB', 'Canada', 'B3H 9P4');
+INSERT INTO [dbo].[student] ([studentID], [firstName], [lastName], [buildingNo], [street], [city], [province], [country], [postalCode]) VALUES (12, 'Liam', 'Harris', 11, 'Sycamore Drive', 'Edmonton', 'AB', 'Canada', 'E6E 3X5');
+INSERT INTO [dbo].[student] ([studentID], [firstName], [lastName], [buildingNo], [street], [city], [province], [country], [postalCode]) VALUES (13, 'Mia', 'Robinson', 11, 'Aspen Court', 'Edmonton', 'AB', 'Canada', 'J0R 1E7');
+INSERT INTO [dbo].[student] ([studentID], [firstName], [lastName], [buildingNo], [street], [city], [province], [country], [postalCode]) VALUES (14, 'Nathan', 'Davis', 11, 'Chestnut Circle', 'Edmonton', 'AB', 'Canada', 'C2N 5A3');
+INSERT INTO [dbo].[student] ([studentID], [firstName], [lastName], [buildingNo], [street], [city], [province], [country], [postalCode]) VALUES (15, 'Olivia', 'White', 5, 'Laurel Lane', 'Edmonton', 'AB', 'Canada', 'W9S 6P1');
+INSERT INTO [dbo].[student] ([studentID], [firstName], [lastName], [buildingNo], [street], [city], [province], [country], [postalCode]) VALUES (16, 'Patrick', 'Hall', 7, 'Hawthorn Avenue', 'Edmonton', 'AB', 'Canada', 'Q4R 8T2');
+INSERT INTO [dbo].[student] ([studentID], [firstName], [lastName], [buildingNo], [street], [city], [province], [country], [postalCode]) VALUES (17, 'Quinn', 'Turner', 7, 'Redwood Road', 'Edmonton', 'AB', 'Canada', 'L7M 2J4');
+INSERT INTO [dbo].[student] ([studentID], [firstName], [lastName], [buildingNo], [street], [city], [province], [country], [postalCode]) VALUES (18, 'Rachel', 'Lee', 5, 'Poplar Street', 'Edmonton', 'AB', 'Canada', 'X1A 9K6');
+INSERT INTO [dbo].[student] ([studentID], [firstName], [lastName], [buildingNo], [street], [city], [province], [country], [postalCode]) VALUES (19, 'Samuel', 'Samuel', 5, 'Acacia Lane', 'Edmonton', 'AB', 'Canada', 'M3C 0K1');
+INSERT INTO [dbo].[student] ([studentID], [firstName], [lastName], [buildingNo], [street], [city], [province], [country], [postalCode]) VALUES (20, 'Taylor', 'Moore', 5, 'Cedar Crest', 'Edmonton', 'AB', 'Canada', 'P8T 4Z7');
+GO
+
+
+/*Adding data to department table works*/
+GO
+INSERT INTO [dbo].[department] ([deptName]) VALUES ('Department of Accounting and Finance');
+INSERT INTO [dbo].[department] ([deptName]) VALUES ('Department of Allied Health and Human Performance');
+INSERT INTO [dbo].[department] ([deptName]) VALUES ('Department of Anthropology, Economics and Political Science');
+INSERT INTO [dbo].[department] ([deptName]) VALUES ('Department of Arts and Cultural Management');
+INSERT INTO [dbo].[department] ([deptName]) VALUES ('Department of Biological Sciences');
+INSERT INTO [dbo].[department] ([deptName]) VALUES ('Department of Child and Youth Care');
+INSERT INTO [dbo].[department] ([deptName]) VALUES ('Department of Communication');
+INSERT INTO [dbo].[department] ([deptName]) VALUES ('Department of Computer Science');
+INSERT INTO [dbo].[department] ([deptName]) VALUES ('Department of Decision Sciences');
+INSERT INTO [dbo].[department] ([deptName]) VALUES ('Department of Design');
+INSERT INTO [dbo].[department] ([deptName]) VALUES ('Department of English');
+INSERT INTO [dbo].[department] ([deptName]) VALUES ('Department of Health Systems and Sustainability');
+INSERT INTO [dbo].[department] ([deptName]) VALUES ('Department of Human Health and Science');
+INSERT INTO [dbo].[department] ([deptName]) VALUES ('Department of Human Services and Early Learning');
+INSERT INTO [dbo].[department] ([deptName]) VALUES ('Department of Humanities');
+INSERT INTO [dbo].[department] ([deptName]) VALUES ('Department of International Business, Marketing, Strategy and Law');
+INSERT INTO [dbo].[department] ([deptName]) VALUES ('Department of Management and Organizations');
+INSERT INTO [dbo].[department] ([deptName]) VALUES ('Department of Mathematics and Statistics');
+INSERT INTO [dbo].[department] ([deptName]) VALUES ('Department of Music');
+INSERT INTO [dbo].[department] ([deptName]) VALUES ('Department of Nursing Foundations');
+INSERT INTO [dbo].[department] ([deptName]) VALUES ('Department of Nursing Practice');
+INSERT INTO [dbo].[department] ([deptName]) VALUES ('Department of Physical Sciences');
+INSERT INTO [dbo].[department] ([deptName]) VALUES ('Department of Professional Nursing and Allied Health');
+INSERT INTO [dbo].[department] ([deptName]) VALUES ('Department of Psychology');
+INSERT INTO [dbo].[department] ([deptName]) VALUES ('Department of Public Safety and Justice Studies');
+INSERT INTO [dbo].[department] ([deptName]) VALUES ('Department of Sociology');
+INSERT INTO [dbo].[department] ([deptName]) VALUES ('Department of Studio Arts');
+INSERT INTO [dbo].[department] ([deptName]) VALUES ('Department of Theatre');
+INSERT INTO [dbo].[department] ([deptName]) VALUES ('School of Social Work');
+GO
+
+
+/*Adding data to instructor table add department heads*/
+GO
+INSERT INTO [dbo].[instructor] ([instructorID], [firstName], [lastName], [deptName], [departmentHead]) VALUES (1001, 'Gregory', 'Springate', 'Department of Accounting and Finance', 'Yes');
+INSERT INTO [dbo].[instructor] ([instructorID], [firstName], [lastName], [deptName], [departmentHead]) VALUES (1002, 'Darren', 'Tellier', 'Department of Allied Health and Human Performance', 'Yes');
+INSERT INTO [dbo].[instructor] ([instructorID], [firstName], [lastName], [deptName], [departmentHead]) VALUES (1003, 'Dr. Gaelan', 'Murphy', 'Department of Anthropology, Economics and Political Science', 'Yes');
+INSERT INTO [dbo].[instructor] ([instructorID], [firstName], [lastName], [deptName], [departmentHead]) VALUES (1004, 'Heather', 'Fitzsimmons-Frey', 'Department of Arts and Cultural Management', 'Yes');
+INSERT INTO [dbo].[instructor] ([instructorID], [firstName], [lastName], [deptName], [departmentHead]) VALUES (1005, 'Dr. Kimberley', 'Harcombe', 'Department of Biological Sciences', 'Yes');
+INSERT INTO [dbo].[instructor] ([instructorID], [firstName], [lastName], [deptName], [departmentHead]) VALUES (1006, 'Jenny', 'McGrath', 'Department of Child and Youth Care', 'Yes');
+INSERT INTO [dbo].[instructor] ([instructorID], [firstName], [lastName], [deptName], [departmentHead]) VALUES (1007, 'Rey', 'Rosales', 'Department of Communication', 'Yes');
+INSERT INTO [dbo].[instructor] ([instructorID], [firstName], [lastName], [deptName], [departmentHead]) VALUES (1008, 'Dr. Indratmo', 'Indratmo', 'Department of Computer Science', 'Yes');
+INSERT INTO [dbo].[instructor] ([instructorID], [firstName], [lastName], [deptName], [departmentHead]) VALUES (1009, 'Dr. Rohit', 'Jindal', 'Department of Decision Sciences', 'Yes');
+INSERT INTO [dbo].[instructor] ([instructorID], [firstName], [lastName], [deptName], [departmentHead]) VALUES (1010, 'Robert', 'Andruchow', 'Department of Design', 'Yes');
+INSERT INTO [dbo].[instructor] ([instructorID], [firstName], [lastName], [deptName], [departmentHead]) VALUES (1011, 'Dr. Pam', 'Farvolden', 'Department of English', 'Yes');
+INSERT INTO [dbo].[instructor] ([instructorID], [firstName], [lastName], [deptName], [departmentHead]) VALUES (1012, 'Kathleen', 'Miller', 'Department of Health Systems and Sustainability', 'Yes');
+INSERT INTO [dbo].[instructor] ([instructorID], [firstName], [lastName], [deptName], [departmentHead]) VALUES (1013, 'Randi Ziorio', 'Dunlop', 'Department of Human Health and Science', 'Yes');
+INSERT INTO [dbo].[instructor] ([instructorID], [firstName], [lastName], [deptName], [departmentHead]) VALUES (1014, 'Natalia', 'Rohatyn-Martin', 'Department of Human Services and Early Learning', 'Yes');
+INSERT INTO [dbo].[instructor] ([instructorID], [firstName], [lastName], [deptName], [departmentHead]) VALUES (1015, 'Dr. Michael', 'Carroll', 'Department of Humanities', 'Yes');
+INSERT INTO [dbo].[instructor] ([instructorID], [firstName], [lastName], [deptName], [departmentHead]) VALUES (1016, 'Dr. Etayankara', 'Muralidharan', 'Department of International Business, Marketing, Strategy and Law', 'Yes');
+INSERT INTO [dbo].[instructor] ([instructorID], [firstName], [lastName], [deptName], [departmentHead]) VALUES (1017, 'Dr. Theresa', 'Chika-James', 'Department of Management and Organizations', 'Yes');
+INSERT INTO [dbo].[instructor] ([instructorID], [firstName], [lastName], [deptName], [departmentHead]) VALUES (1018, 'Dr. Adi', 'Tcaciuc', 'Department of Mathematics and Statistics', 'Yes');
+INSERT INTO [dbo].[instructor] ([instructorID], [firstName], [lastName], [deptName], [departmentHead]) VALUES (1019, 'Raymond', 'Baril', 'Department of Music', 'Yes');
+INSERT INTO [dbo].[instructor] ([instructorID], [firstName], [lastName], [deptName], [departmentHead]) VALUES (1020, 'Emily', 'Khalema', 'Department of Nursing Foundations', 'Yes');
+INSERT INTO [dbo].[instructor] ([instructorID], [firstName], [lastName], [deptName], [departmentHead]) VALUES (1021, 'Kathleen', 'Miller', 'Department of Nursing Practice', 'Yes');
+INSERT INTO [dbo].[instructor] ([instructorID], [firstName], [lastName], [deptName], [departmentHead]) VALUES (1022, 'Dr. Vahid', 'Rezania', 'Department of Physical Sciences', 'Yes');
+INSERT INTO [dbo].[instructor] ([instructorID], [firstName], [lastName], [deptName], [departmentHead]) VALUES (1023, 'Gabriel Barrington', 'Moss', 'Department of Professional Nursing and Allied Health', 'Yes');
+INSERT INTO [dbo].[instructor] ([instructorID], [firstName], [lastName], [deptName], [departmentHead]) VALUES (1024, 'Dr. Aimee', 'Skye', 'Department of Psychology', 'Yes');
+INSERT INTO [dbo].[instructor] ([instructorID], [firstName], [lastName], [deptName], [departmentHead]) VALUES (1025, 'Tim', 'Williams', 'Department of Public Safety and Justice Studies', 'Yes');
+INSERT INTO [dbo].[instructor] ([instructorID], [firstName], [lastName], [deptName], [departmentHead]) VALUES (1026, 'Dr. Michael', 'Gulayets', 'Department of Sociology', 'Yes');
+INSERT INTO [dbo].[instructor] ([instructorID], [firstName], [lastName], [deptName], [departmentHead]) VALUES (1027, 'Elisabeth', 'Belliveau', 'Department of Studio Arts', 'Yes');
+INSERT INTO [dbo].[instructor] ([instructorID], [firstName], [lastName], [deptName], [departmentHead]) VALUES (1028, 'Dawn', 'Sadoway', 'Department of Theatre', 'Yes');
+INSERT INTO [dbo].[instructor] ([instructorID], [firstName], [lastName], [deptName], [departmentHead]) VALUES (1029, 'Dr. Baiju Pallicka', 'Vareed', 'School of Social Work', 'Yes');
+GO
+
+
+/*Adding data to time slot table works*/
+GO
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (1, 'Monday', '8:00', '3:00');
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (2, 'Monday', '8:00', '3:00');
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (3, 'Monday', '8:00', '3:00');
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (4, 'Monday', '8:00', '3:00');
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (5, 'Monday', '8:00', '3:00');
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (6, 'Monday', '8:00', '3:00');
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (7, 'Monday', '8:00', '3:00');
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (8, 'Monday', '8:00', '3:00');
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (9, 'Monday', '8:00', '3:00');
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (10, 'Monday', '8:00', '3:00');
+GO
+
+
+/*Adding data to courses table works*/
+GO
+INSERT INTO [dbo].[course] ([courseID], [courseName], [deptName]) VALUES ('CMPT 101', 'Introduction to Computing I', 'Department of Computer Science');
+INSERT INTO [dbo].[course] ([courseID], [courseName], [deptName]) VALUES ('CMPT 103', 'Introduction to Computing II', 'Department of Computer Science');
+INSERT INTO [dbo].[course] ([courseID], [courseName], [deptName]) VALUES ('CMPT 104', 'Fluency with Information Technology', 'Department of Computer Science');
+INSERT INTO [dbo].[course] ([courseID], [courseName], [deptName]) VALUES ('CMPT 200', 'Data Structures and Algorithms', 'Department of Computer Science');
+INSERT INTO [dbo].[course] ([courseID], [courseName], [deptName]) VALUES ('CMPT 201', 'Practical Programming Methodology', 'Department of Computer Science');
+INSERT INTO [dbo].[course] ([courseID], [courseName], [deptName]) VALUES ('CMPT 204', 'Algorithms I', 'Department of Computer Science');
+INSERT INTO [dbo].[course] ([courseID], [courseName], [deptName]) VALUES ('CMPT 220', 'Unix, Scripting, and Other Tools', 'Department of Computer Science');
+INSERT INTO [dbo].[course] ([courseID], [courseName], [deptName]) VALUES ('CMPT 229', 'Computer Organization and Architecture', 'Department of Computer Science');
+INSERT INTO [dbo].[course] ([courseID], [courseName], [deptName]) VALUES ('CMPT 230', 'Introduction to Computer Games', 'Department of Computer Science');
+INSERT INTO [dbo].[course] ([courseID], [courseName], [deptName]) VALUES ('CMPT 250', 'Introduction to Human Computer Interaction', 'Department of Computer Science');
+INSERT INTO [dbo].[course] ([courseID], [courseName], [deptName]) VALUES ('CMPT 272', 'Formal Systems and Logic in Computing Science', 'Department of Computer Science');
+INSERT INTO [dbo].[course] ([courseID], [courseName], [deptName]) VALUES ('CMPT 280', 'Introduction to Computer Security', 'Department of Computer Science');
+INSERT INTO [dbo].[course] ([courseID], [courseName], [deptName]) VALUES ('CMPT 291', 'Introduction to File and Database Management', 'Department of Computer Science');
+INSERT INTO [dbo].[course] ([courseID], [courseName], [deptName]) VALUES ('CMPT 391', 'Database Management Systems', 'Department of Computer Science');
+INSERT INTO [dbo].[course] ([courseID], [courseName], [deptName]) VALUES ('CMPT 395', 'Introduction to Software Engineering', 'Department of Computer Science');
+INSERT INTO [dbo].[course] ([courseID], [courseName], [deptName]) VALUES ('CMPT 496', 'Final Project', 'Department of Computer Science');
+INSERT INTO [dbo].[course] ([courseID], [courseName], [deptName]) VALUES ('FNCE 301', 'Introductory Finance', 'Department of Accounting and Finance');
+INSERT INTO [dbo].[course] ([courseID], [courseName], [deptName]) VALUES ('FNCE 303', 'Personal Finance', 'Department of Accounting and Finance');
+INSERT INTO [dbo].[course] ([courseID], [courseName], [deptName]) VALUES ('FNCE 401', 'New Venture Financing', 'Department of Accounting and Finance');
+INSERT INTO [dbo].[course] ([courseID], [courseName], [deptName]) VALUES ('FNCE 404', 'International Finance', 'Department of Accounting and Finance');
+INSERT INTO [dbo].[course] ([courseID], [courseName], [deptName]) VALUES ('BIOL 101', 'Current Issues in Human Biology', 'Department of Biological Sciences');
+INSERT INTO [dbo].[course] ([courseID], [courseName], [deptName]) VALUES ('BIOL 102', 'Nutrition and the Body', 'Department of Biological Sciences');
+INSERT INTO [dbo].[course] ([courseID], [courseName], [deptName]) VALUES ('BIOL 103', 'Humans and Their Environment', 'Department of Biological Sciences');
+INSERT INTO [dbo].[course] ([courseID], [courseName], [deptName]) VALUES ('BIOL 107', 'Introduction to Cell Biology', 'Department of Biological Sciences');
+INSERT INTO [dbo].[course] ([courseID], [courseName], [deptName]) VALUES ('BIOL 108', 'Introduction to Evolution', 'Department of Biological Sciences');
+INSERT INTO [dbo].[course] ([courseID], [courseName], [deptName]) VALUES ('MATH 100', 'Calculus I', 'Department of Mathematics and Statistics');
+INSERT INTO [dbo].[course] ([courseID], [courseName], [deptName]) VALUES ('MATH 101', 'Calculus II', 'Department of Mathematics and Statistics');
+INSERT INTO [dbo].[course] ([courseID], [courseName], [deptName]) VALUES ('MATH 102', 'Applied Linear Algebra', 'Department of Mathematics and Statistics');
+INSERT INTO [dbo].[course] ([courseID], [courseName], [deptName]) VALUES ('MATH 114', 'Elementary Calculus I', 'Department of Mathematics and Statistics');
+INSERT INTO [dbo].[course] ([courseID], [courseName], [deptName]) VALUES ('MATH 115', 'Elementary Calculus II', 'Department of Mathematics and Statistics');
+INSERT INTO [dbo].[course] ([courseID], [courseName], [deptName]) VALUES ('MATH 200', 'Fundamental Concepts of Math', 'Department of Mathematics and Statistics');
+INSERT INTO [dbo].[course] ([courseID], [courseName], [deptName]) VALUES ('MATH 214', 'Intermediate Calculus I', 'Department of Mathematics and Statistics');
+INSERT INTO [dbo].[course] ([courseID], [courseName], [deptName]) VALUES ('MATH 215', 'Intermediate Calculus II', 'Department of Mathematics and Statistics');
+INSERT INTO [dbo].[course] ([courseID], [courseName], [deptName]) VALUES ('MATH 241', 'Geometry', 'Department of Mathematics and Statistics');
+INSERT INTO [dbo].[course] ([courseID], [courseName], [deptName]) VALUES ('MATH 325', 'Matrix Theory and Applications', 'Department of Mathematics and Statistics');
+INSERT INTO [dbo].[course] ([courseID], [courseName], [deptName]) VALUES ('MATH 498', 'Advanced Independent Study in Mathematics', 'Department of Mathematics and Statistics');
+INSERT INTO [dbo].[course] ([courseID], [courseName], [deptName]) VALUES ('DESN 120', 'Design Software I', 'Department of Design');
+INSERT INTO [dbo].[course] ([courseID], [courseName], [deptName]) VALUES ('DESN 131', 'Typography I', 'Department of Design');
+INSERT INTO [dbo].[course] ([courseID], [courseName], [deptName]) VALUES ('DESN 150', 'Image Structure and Meaning', 'Department of Design');
+INSERT INTO [dbo].[course] ([courseID], [courseName], [deptName]) VALUES ('DESN 171', 'History of Visual Communication Design', 'Department of Design');
+INSERT INTO [dbo].[course] ([courseID], [courseName], [deptName]) VALUES ('DESN 200', 'Drawing for Illustration', 'Department of Design');
+INSERT INTO [dbo].[course] ([courseID], [courseName], [deptName]) VALUES ('MUSC 100', 'Introduction to Music', 'Department of Music');
+INSERT INTO [dbo].[course] ([courseID], [courseName], [deptName]) VALUES ('MUSC 103', 'Theory I: Introduction to Music Theory', 'Department of Music');
+INSERT INTO [dbo].[course] ([courseID], [courseName], [deptName]) VALUES ('MUSC 104', 'Theory II: Harmony, Voice Leading, and Function', 'Department of Music');
+INSERT INTO [dbo].[course] ([courseID], [courseName], [deptName]) VALUES ('MUSC 111', 'Ear Training I', 'Department of Music');
+INSERT INTO [dbo].[course] ([courseID], [courseName], [deptName]) VALUES ('MUSC 112', 'Ear Training II', 'Department of Music');
+INSERT INTO [dbo].[course] ([courseID], [courseName], [deptName]) VALUES ('MUSC 141', 'Master Class I', 'Department of Music');
+GO
+
+
+/*Adding data to section table*/
+GO
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 101', 'AS01', 'Fall', 2024, 50, 1, 1008, 1, 'Monday', '8:00');
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 103', 'AS02', 'Fall', 2024, 50, 1, 1008, 1, 'Monday', '8:00');
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 200', 'AS03', 'Winter', 2025, 50, 1, 1008, 1, 'Monday', '8:00');
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 201', 'AS04', 'Winter', 2025, 50, 1, 1008, 1, 'Monday', '8:00');
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 291', 'AS05', 'Winter', 2025, 50, 1, 1008, 1, 'Monday', '8:00');
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 391', 'AS06', 'Fall', 2024, 50, 1, 1008, 1, 'Monday', '8:00');
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 272', 'AS07', 'Summer', 2025, 50, 1, 1008, 1, 'Monday', '8:00');
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 395', 'AS08', 'Summer', 2025, 50, 1, 1008, 1, 'Monday', '8:00');
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 496', 'AS09', 'Fall', 2024, 50, 1, 1008, 1, 'Monday', '8:00');
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 280', 'AS10', 'Fall', 2024, 50, 1, 1008, 1, 'Monday', '8:00');
+GO
+
+
+/*Adding data to prereq table works*/
+GO
+INSERT INTO [dbo].[prereq] ([courseID], prereqID) VALUES ('CMPT 101', 'N/A');
+INSERT INTO [dbo].[prereq] ([courseID], prereqID) VALUES ('CMPT 103', 'CMPT 101');
+INSERT INTO [dbo].[prereq] ([courseID], prereqID) VALUES ('CMPT 104', 'N/A');
+INSERT INTO [dbo].[prereq] ([courseID], prereqID) VALUES ('CMPT 200', 'CMPT 103');
+INSERT INTO [dbo].[prereq] ([courseID], prereqID) VALUES ('CMPT 201', 'CMPT 200');
+INSERT INTO [dbo].[prereq] ([courseID], prereqID) VALUES ('CMPT 220', 'CMPT 200');
+INSERT INTO [dbo].[prereq] ([courseID], prereqID) VALUES ('CMPT 280', 'CMPT 200');
+INSERT INTO [dbo].[prereq] ([courseID], prereqID) VALUES ('CMPT 291', 'CMPT 200');
+INSERT INTO [dbo].[prereq] ([courseID], prereqID) VALUES ('CMPT 391', 'CMPT 291');
+INSERT INTO [dbo].[prereq] ([courseID], prereqID) VALUES ('CMPT 395', 'CMPT 201');
+INSERT INTO [dbo].[prereq] ([courseID], prereqID) VALUES ('CMPT 496', 'CMPT 395');
+GO
+
+
+/*Adding data to takes table*/
+GO
+INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (1, 'CMPT 101', 'AS01', 'Fall', 2024, 2, 'active');
+INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (2, 'CMPT 103', 'AS02', 'Fall', 2024, 2, 'active');
+INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (3, 'CMPT 200', 'AS03', 'Winter', 2025, 2, 'active');
+INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (4, 'CMPT 201', 'AS04', 'Winter', 2025, 2, 'active');
+INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (5, 'CMPT 291', 'AS05', 'Winter', 2025, 2, 'active');
+INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (6, 'CMPT 391', 'AS06', 'Fall', 2024, 2, 'active');
+INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (7, 'CMPT 272', 'AS07', 'Summer', 2025, 2, 'active');
+INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (8, 'CMPT 395', 'AS08', 'Summer', 2025, 2, 'active');
+INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (9, 'CMPT 496', 'AS09', 'Fall', 2024, 2, 'active');
+INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (10, 'CMPT 280', 'AS10', 'Fall', 2024, 2, 'active');
+GO
+
+
+/*Adding data to cart table*/
+GO
+INSERT INTO [dbo].[cart] ([studentID], [courseID], [sectionID], [semester], [year]) VALUES (1, 'CMPT 101', 'AS01', 'Fall', 2024);
+INSERT INTO [dbo].[cart] ([studentID], [courseID], [sectionID], [semester], [year]) VALUES (2, 'CMPT 103', 'AS02', 'Fall', 2024);
+INSERT INTO [dbo].[cart] ([studentID], [courseID], [sectionID], [semester], [year]) VALUES (3, 'CMPT 200', 'AS03', 'Winter', 2025);
+INSERT INTO [dbo].[cart] ([studentID], [courseID], [sectionID], [semester], [year]) VALUES (4, 'CMPT 201', 'AS04', 'Winter', 2025);
+INSERT INTO [dbo].[cart] ([studentID], [courseID], [sectionID], [semester], [year]) VALUES (5, 'CMPT 291', 'AS05', 'Winter', 2025);
+INSERT INTO [dbo].[cart] ([studentID], [courseID], [sectionID], [semester], [year]) VALUES (6, 'CMPT 391', 'AS06', 'Fall', 2024);
+INSERT INTO [dbo].[cart] ([studentID], [courseID], [sectionID], [semester], [year]) VALUES (7, 'CMPT 272', 'AS07', 'Summer', 2025);
+INSERT INTO [dbo].[cart] ([studentID], [courseID], [sectionID], [semester], [year]) VALUES (8, 'CMPT 395', 'AS08', 'Summer', 2025);
+INSERT INTO [dbo].[cart] ([studentID], [courseID], [sectionID], [semester], [year]) VALUES (9, 'CMPT 496', 'AS09', 'Fall', 2024);
+INSERT INTO [dbo].[cart] ([studentID], [courseID], [sectionID], [semester], [year]) VALUES (10, 'CMPT 280', 'AS10', 'Fall', 2024);
+GO
