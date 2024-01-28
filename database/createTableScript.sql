@@ -1,7 +1,8 @@
 USE [master]
 GO
 /****** Object:  Database [391project1]    Script Date: 2024-01-24 2:29:32 PM ******/
-/**
+
+/** Database Creation **/	
 CREATE DATABASE [391project1]
  CONTAINMENT = NONE
  ON  PRIMARY 
@@ -83,38 +84,62 @@ ALTER DATABASE [391project1] SET QUERY_STORE = ON
 GO
 ALTER DATABASE [391project1] SET QUERY_STORE (OPERATION_MODE = READ_WRITE, CLEANUP_POLICY = (STALE_QUERY_THRESHOLD_DAYS = 30), DATA_FLUSH_INTERVAL_SECONDS = 900, INTERVAL_LENGTH_MINUTES = 60, MAX_STORAGE_SIZE_MB = 1000, QUERY_CAPTURE_MODE = AUTO, SIZE_BASED_CLEANUP_MODE = AUTO, MAX_PLANS_PER_QUERY = 200, WAIT_STATS_CAPTURE_MODE = ON)
 GO**/
+
+
+
+/** Table Creation **/	
 USE [391project1]
 GO
-/****** Object:  Table [dbo].[course]    Script Date: 2024-01-24 2:29:32 PM ******/
+/****** Object:  Table [dbo].[cart]    Script Date: 2024-01-26 7:02:24 PM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[cart](
+	[studentID] [nchar](10) NOT NULL,
+	[courseID] [nchar](10) NOT NULL,
+	[sectionID] [nchar](10) NOT NULL,
+	[semester] [nchar](10) NOT NULL,
+	[year] [nchar](10) NOT NULL,
+ CONSTRAINT [PK_cart] PRIMARY KEY CLUSTERED 
+(
+	[studentID] ASC,
+	[courseID] ASC,
+	[sectionID] ASC,
+	[semester] ASC,
+	[year] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[course]    Script Date: 2024-01-26 7:02:24 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
 GO
 CREATE TABLE [dbo].[course](
 	[courseID] [nchar](10) NOT NULL,
-	[courseName] [nvarchar](50) NOT NULL,
-	[deptName] [nvarchar](50) NOT NULL,
+	[courseName] [nvarchar](50) NULL,
+	[deptName] [nvarchar](50) NULL,
  CONSTRAINT [PK_course] PRIMARY KEY CLUSTERED 
 (
 	[courseID] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[department]    Script Date: 2024-01-24 2:29:32 PM ******/
+/****** Object:  Table [dbo].[department]    Script Date: 2024-01-26 7:02:24 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
 GO
 CREATE TABLE [dbo].[department](
 	[deptName] [nvarchar](50) NOT NULL,
-	[deptHeadID] [nchar](10) NOT NULL,
  CONSTRAINT [PK_department] PRIMARY KEY CLUSTERED 
 (
 	[deptName] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[instructor]    Script Date: 2024-01-24 2:29:32 PM ******/
+/****** Object:  Table [dbo].[instructor]    Script Date: 2024-01-26 7:02:24 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -124,13 +149,14 @@ CREATE TABLE [dbo].[instructor](
 	[firstName] [nvarchar](50) NOT NULL,
 	[lastName] [nvarchar](50) NOT NULL,
 	[deptName] [nvarchar](50) NOT NULL,
+	[departmentHead] [nchar](10) NOT NULL,
  CONSTRAINT [PK_instructor] PRIMARY KEY CLUSTERED 
 (
 	[instructorID] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[prereq]    Script Date: 2024-01-24 2:29:32 PM ******/
+/****** Object:  Table [dbo].[prereq]    Script Date: 2024-01-26 7:02:24 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -145,7 +171,7 @@ CREATE TABLE [dbo].[prereq](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[section]    Script Date: 2024-01-24 2:29:32 PM ******/
+/****** Object:  Table [dbo].[section]    Script Date: 2024-01-26 7:02:24 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -157,10 +183,10 @@ CREATE TABLE [dbo].[section](
 	[year] [nchar](10) NOT NULL,
 	[capacity] [nchar](10) NOT NULL,
 	[enrolledCount] [nchar](10) NOT NULL,
-	[instructorID] [nchar](10) NOT NULL,
-	[timeSlotID] [nchar](10) NOT NULL,
-	[day] [nchar](10) NOT NULL,
-	[startTime] [time](7) NOT NULL,
+	[instructorID] [nchar](10) NULL,
+	[timeSlotID] [nchar](10) NULL,
+	[day] [nchar](10) NULL,
+	[startTime] [time](7) NULL,
  CONSTRAINT [PK_section] PRIMARY KEY CLUSTERED 
 (
 	[courseID] ASC,
@@ -170,7 +196,7 @@ CREATE TABLE [dbo].[section](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[student]    Script Date: 2024-01-24 2:29:32 PM ******/
+/****** Object:  Table [dbo].[student]    Script Date: 2024-01-26 7:02:24 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -191,7 +217,7 @@ CREATE TABLE [dbo].[student](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[takes]    Script Date: 2024-01-24 2:29:32 PM ******/
+/****** Object:  Table [dbo].[takes]    Script Date: 2024-01-26 7:02:24 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -214,7 +240,7 @@ CREATE TABLE [dbo].[takes](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[timeSlot]    Script Date: 2024-01-24 2:29:32 PM ******/
+/****** Object:  Table [dbo].[timeSlot]    Script Date: 2024-01-26 7:02:24 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -232,15 +258,20 @@ CREATE TABLE [dbo].[timeSlot](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
+ALTER TABLE [dbo].[cart]  WITH CHECK ADD  CONSTRAINT [FK_cart_section] FOREIGN KEY([courseID], [sectionID], [semester], [year])
+REFERENCES [dbo].[section] ([courseID], [sectionID], [semester], [year])
+GO
+ALTER TABLE [dbo].[cart] CHECK CONSTRAINT [FK_cart_section]
+GO
+ALTER TABLE [dbo].[cart]  WITH CHECK ADD  CONSTRAINT [FK_cart_student] FOREIGN KEY([studentID])
+REFERENCES [dbo].[student] ([studentID])
+GO
+ALTER TABLE [dbo].[cart] CHECK CONSTRAINT [FK_cart_student]
+GO
 ALTER TABLE [dbo].[course]  WITH CHECK ADD  CONSTRAINT [FK_course_course] FOREIGN KEY([deptName])
 REFERENCES [dbo].[department] ([deptName])
 GO
 ALTER TABLE [dbo].[course] CHECK CONSTRAINT [FK_course_course]
-GO
-ALTER TABLE [dbo].[department]  WITH CHECK ADD  CONSTRAINT [FK_department_instructor] FOREIGN KEY([deptHeadID])
-REFERENCES [dbo].[instructor] ([instructorID])
-GO
-ALTER TABLE [dbo].[department] CHECK CONSTRAINT [FK_department_instructor]
 GO
 ALTER TABLE [dbo].[instructor]  WITH CHECK ADD  CONSTRAINT [FK_instructor_department] FOREIGN KEY([deptName])
 REFERENCES [dbo].[department] ([deptName])
@@ -272,7 +303,6 @@ REFERENCES [dbo].[student] ([studentID])
 GO
 ALTER TABLE [dbo].[takes] CHECK CONSTRAINT [FK_takes_student]
 GO
-USE [master]
-GO
+
 ALTER DATABASE [391project1] SET  READ_WRITE 
 GO
