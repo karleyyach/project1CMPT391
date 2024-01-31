@@ -92,21 +92,248 @@ INSERT INTO [dbo].[instructor] ([instructorID], [firstName], [lastName], [deptNa
 INSERT INTO [dbo].[instructor] ([instructorID], [firstName], [lastName], [deptName], [departmentHead]) VALUES (1027, 'Elisabeth', 'Belliveau', 'Department of Studio Arts', 'Yes');
 INSERT INTO [dbo].[instructor] ([instructorID], [firstName], [lastName], [deptName], [departmentHead]) VALUES (1028, 'Dawn', 'Sadoway', 'Department of Theatre', 'Yes');
 INSERT INTO [dbo].[instructor] ([instructorID], [firstName], [lastName], [deptName], [departmentHead]) VALUES (1029, 'Dr. Baiju Pallicka', 'Vareed', 'School of Social Work', 'Yes');
+INSERT INTO [dbo].[instructor] ([instructorID], [firstName], [lastName], [deptName], [departmentHead]) VALUES (1030, 'Charles', 'Wilson', 'School of Social Work', ‘No’);
+INSERT INTO [dbo].[instructor] ([instructorID], [firstName], [lastName], [deptName], [departmentHead]) VALUES (1031, ‘Dr. Susan', 'Anderson', 'School of Social Work', 'No');
+INSERT INTO [dbo].[instructor] ([instructorID], [firstName], [lastName], [deptName], [departmentHead]) VALUES (1032, 'William', 'Wilson', 'Department of Music', 'No');
+INSERT INTO [dbo].[instructor] ([instructorID], [firstName], [lastName], [deptName], [departmentHead]) VALUES (1033, 'Thomas', 'Lopez', 'Department of Music', 'No');
+INSERT INTO [dbo].[instructor] ([instructorID], [firstName], [lastName], [deptName], [departmentHead]) VALUES (1034, ‘Dr. Jessica', 'Davis', 'Department of Professional Nursing and Allied Health', 'No');
+INSERT INTO [dbo].[instructor] ([instructorID], [firstName], [lastName], [deptName], [departmentHead]) VALUES (1035, 'Joseph', 'Moore', 'Department of Mathematics and Statistics', 'No');
+INSERT INTO [dbo].[instructor] ([instructorID], [firstName], [lastName], [deptName], [departmentHead]) VALUES (1036, 'Linda', 'Brown', 'Department of Sociology', 'No');
+INSERT INTO [dbo].[instructor] ([instructorID], [firstName], [lastName], [deptName], [departmentHead]) VALUES (1037, ‘Dr. Karen', 'Wilson', 'Department of Design', 'No');
+INSERT INTO [dbo].[instructor] ([instructorID], [firstName], [lastName], [deptName], [departmentHead]) VALUES (1038, 'Jessica', 'Lopez', 'Department of Nursing Foundations', 'No');
+INSERT INTO [dbo].[instructor] ([instructorID], [firstName], [lastName], [deptName], [departmentHead]) VALUES (1039, 'William', 'Brown', 'Department of Accounting and Finance', 'No');
+INSERT INTO [dbo].[instructor] ([instructorID], [firstName], [lastName], [deptName], [departmentHead]) VALUES (1040, 'Sarah', 'Gonzalez', 'Department of Design', 'No');
+INSERT INTO [dbo].[instructor] ([instructorID], [firstName], [lastName], [deptName], [departmentHead]) VALUES (1041, 'Karen', 'Anderson', 'Department of Decision Sciences', 'No');
+INSERT INTO [dbo].[instructor] ([instructorID], [firstName], [lastName], [deptName], [departmentHead]) VALUES (1042, ‘Dr. Barbara', 'Martinez', 'Department of Computer Science', 'No');
+INSERT INTO [dbo].[instructor] ([instructorID], [firstName], [lastName], [deptName], [departmentHead]) VALUES (1043, 'Joseph', 'Anderson', 'Department of Decision Sciences', 'No');
+INSERT INTO [dbo].[instructor] ([instructorID], [firstName], [lastName], [deptName], [departmentHead]) VALUES (1044, 'Linda', 'Smith', ''Department of Child and Youth Care, 'No');
+INSERT INTO [dbo].[instructor] ([instructorID], [firstName], [lastName], [deptName], [departmentHead]) VALUES (1045, 'Thomas', 'Brown', 'Department of Child and Youth Care', 'No');
+INSERT INTO [dbo].[instructor] ([instructorID], [firstName], [lastName], [deptName], [departmentHead]) VALUES (1046, 'Linda', 'Taylor', 'Department of Computer Science', 'No');
+INSERT INTO [dbo].[instructor] ([instructorID], [firstName], [lastName], [deptName], [departmentHead]) VALUES (1047, 'Sarah', 'Martinez', 'Department of Computer Science', 'No');
+INSERT INTO [dbo].[instructor] ([instructorID], [firstName], [lastName], [deptName], [departmentHead]) VALUES (1048, 'Karen', 'Jackson', 'Department of Accounting and Finance', 'No');
+INSERT INTO [dbo].[instructor] ([instructorID], [firstName], [lastName], [deptName], [departmentHead]) VALUES (1049, 'Jessica', 'Gonzalez', 'Department of Nursing Foundations', 'No');
+INSERT INTO [dbo].[instructor] ([instructorID], [firstName], [lastName], [deptName], [departmentHead]) VALUES (1050, 'Charles', ‘Taylor’, 'Department of Mathematics and Statistics', 'No');
 GO
 
 
 /*Adding data to time slot table works*/
 GO
-INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (1, 'Monday', '8:00', '3:00');
-INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (2, 'Monday', '8:00', '3:00');
-INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (3, 'Monday', '8:00', '3:00');
-INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (4, 'Monday', '8:00', '3:00');
-INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (5, 'Monday', '8:00', '3:00');
-INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (6, 'Monday', '8:00', '3:00');
-INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (7, 'Monday', '8:00', '3:00');
-INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (8, 'Monday', '8:00', '3:00');
-INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (9, 'Monday', '8:00', '3:00');
-INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (10, 'Monday', '8:00', '3:00');
+/*Monday*/
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (1, 'Monday', ’08:00:00’, 08:50:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (2, 'Monday', ’08:00:00’, ’09:20:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (3, 'Monday', ’10:00:00’, ’10:50:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (4, 'Monday', ’10:00:00’, ’11:20:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (5, 'Monday', ’12:00:00’, ’12:50:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (5, 'Monday', ’12:00:00’, ’13:20:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (6, 'Monday', ’13:00:00’, ’13:50:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (7, 'Monday', ’13:00:00’, ’14:20:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (8, 'Monday', ’14:00:00’, ’14:50:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (9, 'Monday', ’14:00:00’, ’15:20:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (10, 'Monday', ’15:00:00’, ’15:50:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (11, 'Monday', ’15:00:00’, ’16:20:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (12, 'Monday', ’16:00:00’, ’16:50:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (13, 'Monday', ’16:00:00’, ’17:20:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (14, 'Monday', ’17:00:00’, ’17:50:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (15, 'Monday', ’17:00:00’, ’18:20:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (16, 'Monday', ’19:00:00’, ’19:50:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (17, 'Monday', ’19:00:00’, ’20:20:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (18, 'Monday', ’20:00:00’, ’20:50:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (19, 'Monday', ’20:00:00’, ’21:20:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (20, 'Monday', ’21:00:00’, ’21:50:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (21, 'Monday', ’21:00:00’, ’22:20:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (22, 'Monday', ’21:00:00’, ’22:20:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (23, 'Monday', ’08:00:00’, ’10:50:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (24, 'Monday', ’11:00:00’, ’13:50:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (25, 'Monday', ’14:00:00’, ’16:50:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (26, 'Monday', ’17:00:00’, ’19:50:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (27, 'Monday', ’20:00:00’, ’02:50:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (28, 'Monday', ’08:00:00’, ’18:00:00’)
+
+/*Tuesday*/
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (29, ‘Tuesday’, ’08:00:00’, 08:50:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (30, 'Tuesday', ’08:00:00’, ’09:20:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (31, 'Tuesday', ’10:00:00’, ’10:50:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (32, 'Tuesday', ’10:00:00’, ’11:20:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (33, 'Tuesday', ’12:00:00’, ’12:50:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (34, 'Tuesday', ’12:00:00’, ’13:20:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (35, 'Tuesday', ’13:00:00’, ’13:50:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (36, 'Tuesday', ’13:00:00’, ’14:20:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (37, 'Tuesday', ’14:00:00’, ’14:50:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (38, 'Tuesday', ’14:00:00’, ’15:20:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (39, 'Tuesday', ’15:00:00’, ’15:50:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (40, 'Tuesday', ’15:00:00’, ’16:20:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (41, 'Tuesday', ’16:00:00’, ’16:50:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (42, 'Tuesday', ’16:00:00’, ’17:20:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (43, 'Tuesday', ’17:00:00’, ’17:50:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (44, 'Tuesday', ’17:00:00’, ’18:20:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (45, 'Tuesday', ’19:00:00’, ’19:50:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (46, 'Tuesday', ’19:00:00’, ’20:20:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (47, 'Tuesday', ’20:00:00’, ’20:50:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (48, 'Tuesday', ’20:00:00’, ’21:20:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (49, 'Tuesday', ’21:00:00’, ’21:50:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (50, 'Tuesday', ’21:00:00’, ’22:20:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (51, 'Tuesday', ’21:00:00’, ’22:20:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (52, 'Tuesday', ’08:00:00’, ’10:50:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (53, 'Tuesday', ’11:00:00’, ’13:50:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (54, 'Tuesday', ’14:00:00’, ’16:50:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (55, 'Tuesday', ’17:00:00’, ’19:50:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (56, 'Tuesday', ’20:00:00’, ’02:50:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (57, 'Tuesday', ’08:00:00’, ’18:00:00’);
+
+/*Wednesday*/
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (58, ‘Wednesday’, ’08:00:00’, 08:50:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (59, 'Wednesday', ’08:00:00’, ’09:20:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (60, 'Wednesday', ’10:00:00’, ’10:50:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (61, 'Wednesday', ’10:00:00’, ’11:20:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (62, 'Wednesday', ’12:00:00’, ’12:50:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (63, 'Wednesday', ’12:00:00’, ’13:20:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (64, 'Wednesday', ’13:00:00’, ’13:50:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (65, 'Wednesday', ’13:00:00’, ’14:20:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (66, 'Wednesday', ’14:00:00’, ’14:50:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (67, 'Wednesday', ’14:00:00’, ’15:20:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (68, 'Wednesday', ’15:00:00’, ’15:50:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (69, 'Wednesday', ’15:00:00’, ’16:20:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (70, 'Wednesday', ’16:00:00’, ’16:50:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (71, 'Wednesday', ’16:00:00’, ’17:20:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (72, 'Wednesday', ’17:00:00’, ’17:50:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (73, 'Wednesday', ’17:00:00’, ’18:20:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (74, 'Wednesday', ’19:00:00’, ’19:50:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (75, 'Wednesday', ’19:00:00’, ’20:20:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (76, 'Wednesday', ’20:00:00’, ’20:50:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (77, 'Wednesday', ’20:00:00’, ’21:20:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (78, 'Wednesday', ’21:00:00’, ’21:50:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (79, 'Wednesday', ’21:00:00’, ’22:20:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (80, 'Wednesday', ’21:00:00’, ’22:20:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (81, 'Wednesday', ’08:00:00’, ’10:50:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (82, 'Wednesday', ’11:00:00’, ’13:50:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (83, 'Wednesday', ’14:00:00’, ’16:50:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (84, 'Wednesday', ’17:00:00’, ’19:50:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (85, 'Wednesday', ’20:00:00’, ’02:50:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (86, 'Wednesday', ’08:00:00’, ’18:00:00’);
+
+/*Thursday*/
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (87, ‘Thursday’, ’08:00:00’, 08:50:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (88, 'Thursday', ’08:00:00’, ’09:20:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (89, 'Thursday', ’10:00:00’, ’10:50:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (90, 'Thursday', ’10:00:00’, ’11:20:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (91, 'Thursday', ’12:00:00’, ’12:50:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (92, 'Thursday', ’12:00:00’, ’13:20:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (93, 'Thursday', ’13:00:00’, ’13:50:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (94, 'Thursday', ’13:00:00’, ’14:20:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (95, 'Thursday', ’14:00:00’, ’14:50:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (96, 'Thursday', ’14:00:00’, ’15:20:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (97, 'Thursday', ’15:00:00’, ’15:50:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (98, 'Thursday', ’15:00:00’, ’16:20:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (99, 'Thursday', ’16:00:00’, ’16:50:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (100, 'Thursday', ’16:00:00’, ’17:20:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (101, 'Thursday', ’17:00:00’, ’17:50:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (102, 'Thursday', ’17:00:00’, ’18:20:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (103, 'Thursday', ’19:00:00’, ’19:50:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (104, 'Thursday', ’19:00:00’, ’20:20:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (105, 'Thursday', ’20:00:00’, ’20:50:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (106, 'Thursday', ’20:00:00’, ’21:20:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (107, 'Thursday', ’21:00:00’, ’21:50:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (108, 'Thursday', ’21:00:00’, ’22:20:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (109, 'Thursday', ’21:00:00’, ’22:20:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (110, 'Thursday', ’08:00:00’, ’10:50:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (111, 'Thursday', ’11:00:00’, ’13:50:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (112, 'Thursday', ’14:00:00’, ’16:50:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (113, 'Thursday', ’17:00:00’, ’19:50:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (114, 'Thursday', ’20:00:00’, ’02:50:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (115, 'Thursday', ’08:00:00’, ’18:00:00’);
+
+ /*Friday*/
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (116, ‘Friday’, ’08:00:00’, 08:50:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (117, 'Friday', ’08:00:00’, ’09:20:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (118, 'Friday', ’10:00:00’, ’10:50:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (119, 'Friday', ’10:00:00’, ’11:20:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (120, 'Friday', ’12:00:00’, ’12:50:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (121, 'Friday', ’12:00:00’, ’13:20:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (122, 'Friday', ’13:00:00’, ’13:50:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (123, 'Friday', ’13:00:00’, ’14:20:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (124, 'Friday', ’14:00:00’, ’14:50:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (125, 'Friday', ’14:00:00’, ’15:20:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (126, 'Friday', ’15:00:00’, ’15:50:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (127, 'Friday', ’15:00:00’, ’16:20:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (128, 'Friday', ’16:00:00’, ’16:50:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (129, 'Friday', ’16:00:00’, ’17:20:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (130, 'Friday', ’17:00:00’, ’17:50:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (131, 'Friday', ’17:00:00’, ’18:20:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (132, 'Friday', ’19:00:00’, ’19:50:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (133, 'Friday', ’19:00:00’, ’20:20:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (134, 'Friday', ’20:00:00’, ’20:50:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (135, 'Friday', ’20:00:00’, ’21:20:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (136, 'Friday', ’21:00:00’, ’21:50:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (137, 'Friday', ’21:00:00’, ’22:20:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (138, 'Friday', ’21:00:00’, ’22:20:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (139, 'Friday', ’08:00:00’, ’10:50:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (140, 'Friday', ’11:00:00’, ’13:50:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (141, 'Friday', ’14:00:00’, ’16:50:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (142, 'Friday', ’17:00:00’, ’19:50:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (143, 'Friday', ’20:00:00’, ’02:50:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (144, 'Friday', ’08:00:00’, ’18:00:00’);
+
+/*Saturday*/
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (145, ‘Saturday’, ’08:00:00’, 08:50:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (146, 'Saturday', ’08:00:00’, ’09:20:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (147, 'Saturday', ’10:00:00’, ’10:50:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (148, 'Saturday', ’10:00:00’, ’11:20:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (149, 'Saturday', ’12:00:00’, ’12:50:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (150, 'Saturday', ’12:00:00’, ’13:20:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (151, 'Saturday', ’13:00:00’, ’13:50:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (152, 'Saturday', ’13:00:00’, ’14:20:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (153, 'Saturday', ’14:00:00’, ’14:50:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (154, 'Saturday', ’14:00:00’, ’15:20:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (155, 'Saturday', ’15:00:00’, ’15:50:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (156, 'Saturday', ’15:00:00’, ’16:20:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (157, 'Saturday', ’16:00:00’, ’16:50:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (158, 'Saturday', ’16:00:00’, ’17:20:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (159, 'Saturday', ’17:00:00’, ’17:50:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (160, 'Saturday', ’17:00:00’, ’18:20:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (161, 'Saturday', ’19:00:00’, ’19:50:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (162, 'Saturday', ’19:00:00’, ’20:20:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (163, 'Saturday', ’20:00:00’, ’20:50:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (164, 'Saturday', ’20:00:00’, ’21:20:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (165, 'Saturday', ’21:00:00’, ’21:50:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (166, 'Saturday', ’21:00:00’, ’22:20:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (167, 'Saturday', ’21:00:00’, ’22:20:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (168, 'Saturday', ’08:00:00’, ’10:50:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (169, 'Saturday', ’11:00:00’, ’13:50:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (170, 'Saturday', ’14:00:00’, ’16:50:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (171, 'Saturday', ’17:00:00’, ’19:50:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (172, 'Saturday', ’20:00:00’, ’02:50:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (173, 'Saturday', ’08:00:00’, ’18:00:00’);
+
+/*Sunday*/
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (174, ‘Sunday’, ’08:00:00’, 08:50:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (175, 'Sunday', ’08:00:00’, ’09:20:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (176, 'Sunday', ’10:00:00’, ’10:50:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (177, 'Sunday', ’10:00:00’, ’11:20:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (178, 'Sunday', ’12:00:00’, ’12:50:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (179, 'Sunday', ’12:00:00’, ’13:20:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (180, 'Sunday', ’13:00:00’, ’13:50:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (181, 'Sunday', ’13:00:00’, ’14:20:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (182, 'Sunday', ’14:00:00’, ’14:50:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (183, 'Sunday', ’14:00:00’, ’15:20:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (184, 'Sunday', ’15:00:00’, ’15:50:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (185, 'Sunday', ’15:00:00’, ’16:20:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (186, 'Sunday', ’16:00:00’, ’16:50:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (187, 'Sunday', ’16:00:00’, ’17:20:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (188, 'Sunday', ’17:00:00’, ’17:50:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (189, 'Sunday', ’17:00:00’, ’18:20:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (190, 'Sunday', ’19:00:00’, ’19:50:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (191, 'Sunday', ’19:00:00’, ’20:20:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (192, 'Sunday', ’20:00:00’, ’20:50:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (193, 'Sunday', ’20:00:00’, ’21:20:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (194, 'Sunday', ’21:00:00’, ’21:50:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (195, 'Sunday', ’21:00:00’, ’22:20:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (196, 'Sunday', ’21:00:00’, ’22:20:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (197, 'Sunday', ’08:00:00’, ’10:50:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (198, 'Sunday', ’11:00:00’, ’13:50:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (199, 'Sunday', ’14:00:00’, ’16:50:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (200, 'Sunday', ’17:00:00’, ’19:50:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (201, 'Sunday', ’20:00:00’, ’02:50:00’);
+INSERT INTO [dbo].[timeSlot] ([timeSlotID], [day], [startTime], [endTime]) VALUES (202, 'Sunday', ’08:00:00’, ’18:00:00’);
 GO
 
 
@@ -2189,7 +2416,6 @@ INSERT INTO [dbo].[course] ([courseID], [courseName], [deptName]) VALUES ('ZOOL�
 INSERT INTO [dbo].[course] ([courseID], [courseName], [deptName]) VALUES ('ZOOL 400', 'Aquatic Vertebrates', 'Department of Biological Sciences');
 INSERT INTO [dbo].[course] ([courseID], [courseName], [deptName]) VALUES ('ZOOL 401', 'Terrestrial Vertebrates', 'Department of Biological Sciences');
 INSERT INTO [dbo].[course] ([courseID], [courseName], [deptName]) VALUES ('ZOOL 452', 'Principles of Parasitism', 'Department of Biological Sciences');
-
 GO
 
 
