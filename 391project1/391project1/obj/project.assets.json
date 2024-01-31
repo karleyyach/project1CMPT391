@@ -8,19 +8,19 @@
     "net6.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\dayna\\.nuget\\packages\\": {}
+    "C:\\Users\\karle\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\dayna\\Source\\Repos\\scratch-passive\\project1CMPT391\\391project1\\391project1\\391project1.csproj",
+      "projectUniqueName": "C:\\Users\\karle\\OneDrive\\Winter 2024\\CMPT391\\P1\\391project1\\391project1\\391project1.csproj",
       "projectName": "391project1",
-      "projectPath": "C:\\Users\\dayna\\Source\\Repos\\scratch-passive\\project1CMPT391\\391project1\\391project1\\391project1.csproj",
-      "packagesPath": "C:\\Users\\dayna\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\dayna\\Source\\Repos\\scratch-passive\\project1CMPT391\\391project1\\391project1\\obj\\",
+      "projectPath": "C:\\Users\\karle\\OneDrive\\Winter 2024\\CMPT391\\P1\\391project1\\391project1\\391project1.csproj",
+      "packagesPath": "C:\\Users\\karle\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\karle\\OneDrive\\Winter 2024\\CMPT391\\P1\\391project1\\391project1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\dayna\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\karle\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -64,7 +64,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
       }
     }
   }

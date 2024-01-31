@@ -12,21 +12,6 @@ namespace _391project1
 
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tabPage2_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void label1_Click(object sender, EventArgs e)
         {
 
@@ -37,9 +22,26 @@ namespace _391project1
 
         }
 
-        private void label2_Click(object sender, EventArgs e)
-        {
 
+        private void myCoursesBtn_Click(object sender, EventArgs e)
+        {
+            // swaps view in tab page. functions the same as on click for tab control
+        }
+
+        private void changeBtn_Click(object sender, EventArgs e)
+        {
+            // swap between terms
+        }
+
+        private void searchBtn_Click(object sender, EventArgs e)
+        {
+            // swaps view in tab page. functions the same as on click for tab control
+
+        }
+
+        private void cartBtn_Click(object sender, EventArgs e)
+        {
+            // swaps view in tab page. functions the same as on click for tab control
         }
     }
 }
