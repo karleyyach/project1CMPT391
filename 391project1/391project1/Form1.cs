@@ -1,3 +1,12 @@
+using Microsoft.VisualBasic;
+using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
+using System.Diagnostics;
+using System.Windows.Forms;
+using static System.Net.Mime.MediaTypeNames;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+
 namespace _391project1
 {
     public partial class Form1 : Form
