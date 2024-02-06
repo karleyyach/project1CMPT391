@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "9uXbjUKMUPpuayzY486Wyd5yZjyKkcyeV+dJx99FcGyqgUdsAoJwrb25zUCt9Q+XfYP4umdntlc34aeXvrwzdg==",
+  "dgSpecHash": "gzUmH5laoMsZY/7XmIM8XStY5WRjI3kklLNWufgbVTWTaQc5J8ak7FlgpX4/uiL2TL0gUlT9qYUpNMbj0oCreQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\karle\\OneDrive\\Winter 2024\\CMPT391\\P1\\391project1\\391project1\\391project1.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\abmar\\Documents\\School\\Winter_2024\\cmpt391\\Project\\project1CMPT391\\391project1\\391project1\\391project1.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\abmar\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.26\\microsoft.windowsdesktop.app.ref.6.0.26.nupkg.sha512",
+    "C:\\Users\\abmar\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.26\\microsoft.netcore.app.ref.6.0.26.nupkg.sha512",
+    "C:\\Users\\abmar\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.26\\microsoft.aspnetcore.app.ref.6.0.26.nupkg.sha512",
+    "C:\\Users\\abmar\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.26\\microsoft.netcore.app.host.win-x64.6.0.26.nupkg.sha512"
+  ],
   "logs": []
 }
