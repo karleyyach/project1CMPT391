@@ -10,7 +10,7 @@
         <!-- Top Bar -->
         <Border Background="#FF9C253B" VerticalAlignment="Top" HorizontalAlignment="Left" Width="1280" Height="50">
             <StackPanel HorizontalAlignment="Left" Orientation="Horizontal" Height="48">
-                <Image Source="https://picsum.photos/66/51" Width="66" Height="51" Margin="6,0,0,0" >
+                <Image Source="https://imgur.com/vsP7oLu" Width="66" Height="51" Margin="6,0,0,0" >
                     <Image.OpacityMask>
                         <ImageBrush ImageSource="/images.png"/>
                     </Image.OpacityMask>
@@ -22,44 +22,101 @@
         <!-- Sidebar -->
         <StackPanel Background="LightGray" VerticalAlignment="Top" HorizontalAlignment="Left" Width="280" Height="670" Margin="0,50,0,0">
             <!-- Buttons in the sidebar -->
-            <Border CornerRadius="8" Margin="4" Background="White">
-                <Button Content="View My Classes" Height="40" Background="Transparent" BorderBrush="Transparent"/>
+            <Border CornerRadius="8" Margin="4">
+                <Border.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF9A9A9A"/>
+                        <GradientStop Color="White" Offset="1"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+                <Button Content="View My Classes" Height="40" BorderBrush="Transparent" Background="{x:Null}" Click="Button_Click" Width="272"/>
+            </Border>
+            <Border
+            Margin="4" CornerRadius="8">
+                <Border.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF9A9A9A"/>
+                        <GradientStop Color="White" Offset="1"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+                <Button
+            Height="40" Content="Search" BorderBrush="Transparent" Background="{x:Null}" Width="272"/>
             </Border>
             <Border CornerRadius="8" Margin="4" Background="White">
-                <Button Content="Search" Height="40" Background="Transparent" BorderBrush="Transparent"/>
+                <Button Content="Search" Height="40" BorderBrush="Transparent">
+                    <Button.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FF9A9A9A"/>
+                            <GradientStop Color="White" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
             </Border>
-            <Border CornerRadius="8" Margin="4" Background="White">
-                <Button Content="Shopping Cart" Height="40" Background="Transparent" BorderBrush="Transparent"/>
+            <Border CornerRadius="8" Margin="4">
+                <Border.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF9A9A9A" Offset="0.01"/>
+                        <GradientStop Color="White" Offset="1"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+                <Button Content="Shopping Cart" Height="40" BorderBrush="Transparent" Background="{x:Null}"/>
             </Border>
-            <Border CornerRadius="8" Margin="4" Background="White">
-                <Button Content="Drop Classes" Height="40" Background="Transparent" BorderBrush="Transparent"/>
+            <Border CornerRadius="8" Margin="4">
+                <Border.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF9A9A9A"/>
+                        <GradientStop Color="White" Offset="1"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+                <Button Content="Drop Classes" Height="40" BorderBrush="Transparent" Width="273" Background="{x:Null}"/>
             </Border>
-            <Border CornerRadius="8" Margin="4" Background="White">
-                <Button Content="Browse" Height="40" Background="Transparent" BorderBrush="Transparent"/>
+            <Border CornerRadius="8" Margin="4">
+                <Border.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF9A9A9A"/>
+                        <GradientStop Color="White" Offset="1"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+                <Button Content="Browse" Height="40" BorderBrush="Transparent" Background="{x:Null}" Width="272"/>
             </Border>
         </StackPanel>
 
         <!-- Main Content Area -->
-        <Border Background="White" Margin="299,70,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="961" Height="630">
+        <Border Margin="299,70,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="961" Height="630" CornerRadius="10,10,10,10">
+            <Border.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFCBCBCB"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </Border.Background>
             <!-- Header for the main content area -->
             <Grid>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="49"/>
-                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="30*"/>
+                    <RowDefinition Height="551*"/>
                 </Grid.RowDefinitions>
 
-                <Border Background="DarkGray" CornerRadius="8">
-                    <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="10">
-                        <TextBlock Text="Term:" VerticalAlignment="Center" Foreground="White" FontSize="16" />
-                        <TextBlock Text="Winter 2024" VerticalAlignment="Center" Margin="10,0,0,0" Foreground="White" FontSize="16" />
-                        <Button Content="Change Term" Background="Gray" BorderBrush="Transparent" Width="139" Height="33" Margin="658,0,0,0" />
+                <Border Background="White" CornerRadius="8" Width="937" Height="41" Margin="12,10,12,28" Grid.RowSpan="2">
+                    <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="10,0,10,0" Height="29">
+                        <TextBlock Text="Term:" VerticalAlignment="Center" Foreground="Black" FontSize="16" />
+                        <TextBlock Text="Winter 2024" VerticalAlignment="Center" Margin="10,0,0,0" Foreground="Black" FontSize="16" FontWeight="Bold" />
+                        <Button Content="Change Term" BorderBrush="Transparent" Width="116" Height="23" Margin="658,0,0,0" Click="Button_Click_1" HorizontalContentAlignment="Center" >
+                            <Button.Background>
+                                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                    <GradientStop Color="#FF9A9A9A"/>
+                                    <GradientStop Color="#FFD9D7D7" Offset="1"/>
+                                    <GradientStop Color="#FFB7B7B7" Offset="0.023"/>
+                                </LinearGradientBrush>
+                            </Button.Background>
+                        </Button>
                     </StackPanel>
                 </Border>
 
                 <!-- Content under the header -->
-                <StackPanel Background="LightGray" Grid.Row="1" Margin="10">
+                <StackPanel Grid.Row="1" Margin="0,10,0,10" Grid.RowSpan="2">
                     <!-- Sample course entry -->
-                    <Border Background="White" CornerRadius="8" Padding="16" Margin="4,12,4,4" Width="920">
+                    <Border Background="White" CornerRadius="8" Padding="16" Margin="4,12,4,4" Width="941">
                         <StackPanel>
                             <TextBlock Text="CMPT 391" FontWeight="Bold" FontSize="18" />
                             <TextBlock Text="Database Management Systems" FontWeight="Bold" FontSize="14" />

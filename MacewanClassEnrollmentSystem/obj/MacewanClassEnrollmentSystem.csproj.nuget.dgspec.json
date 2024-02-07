@@ -1,37 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\abmar\\Documents\\School\\Winter_2024\\cmpt391\\MacewanClassEnrollmentSystem\\MacewanClassEnrollmentSystem.csproj": {}
+    "C:\\Users\\AKIMBO-MSI\\Documents\\School\\Winter 2024\\cmpt391\\project1CMPT391\\MacewanClassEnrollmentSystem\\MacewanClassEnrollmentSystem.csproj": {}
   },
   "projects": {
-    "C:\\Users\\abmar\\Documents\\School\\Winter_2024\\cmpt391\\MacewanClassEnrollmentSystem\\MacewanClassEnrollmentSystem.csproj": {
+    "C:\\Users\\AKIMBO-MSI\\Documents\\School\\Winter 2024\\cmpt391\\project1CMPT391\\MacewanClassEnrollmentSystem\\MacewanClassEnrollmentSystem.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\abmar\\Documents\\School\\Winter_2024\\cmpt391\\MacewanClassEnrollmentSystem\\MacewanClassEnrollmentSystem.csproj",
+        "projectUniqueName": "C:\\Users\\AKIMBO-MSI\\Documents\\School\\Winter 2024\\cmpt391\\project1CMPT391\\MacewanClassEnrollmentSystem\\MacewanClassEnrollmentSystem.csproj",
         "projectName": "MacewanClassEnrollmentSystem",
-        "projectPath": "C:\\Users\\abmar\\Documents\\School\\Winter_2024\\cmpt391\\MacewanClassEnrollmentSystem\\MacewanClassEnrollmentSystem.csproj",
-        "packagesPath": "C:\\Users\\abmar\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\abmar\\Documents\\School\\Winter_2024\\cmpt391\\MacewanClassEnrollmentSystem\\obj\\",
+        "projectPath": "C:\\Users\\AKIMBO-MSI\\Documents\\School\\Winter 2024\\cmpt391\\project1CMPT391\\MacewanClassEnrollmentSystem\\MacewanClassEnrollmentSystem.csproj",
+        "packagesPath": "C:\\Users\\AKIMBO-MSI\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\AKIMBO-MSI\\Documents\\School\\Winter 2024\\cmpt391\\project1CMPT391\\MacewanClassEnrollmentSystem\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\abmar\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\AKIMBO-MSI\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net8.0-windows"
+          "net8.0-windows7.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0-windows7.0": {
-            "targetAlias": "net8.0-windows",
+            "targetAlias": "net8.0-windows7.0",
             "projectReferences": {}
           }
         },
@@ -43,7 +38,17 @@
       },
       "frameworks": {
         "net8.0-windows7.0": {
-          "targetAlias": "net8.0-windows",
+          "targetAlias": "net8.0-windows7.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
