@@ -28,73 +28,67 @@
         /// </summary>
         private void InitializeComponent()
         {
-            button1 = new Button();
-            button2 = new Button();
-            button3 = new Button();
-            label1 = new Label();
-            button4 = new Button();
+            buttonMyCourses = new Button();
+            buttonSearchCourses = new Button();
+            buttonShoppingCart = new Button();
+            labelCurrentTerm = new Label();
             tabControl1 = new TabControl();
-            tabPage1 = new TabPage();
+            tabPageMyCourses = new TabPage();
             listBox1 = new ListBox();
-            tabPage2 = new TabPage();
-            tabPage3 = new TabPage();
+            tabPageSearch = new TabPage();
+            tabPageCart = new TabPage();
+            comboBoxSemester = new ComboBox();
+            comboBoxYear = new ComboBox();
             tabControl1.SuspendLayout();
-            tabPage1.SuspendLayout();
+            tabPageMyCourses.SuspendLayout();
             SuspendLayout();
             // 
-            // button1
+            // buttonMyCourses
             // 
-            button1.Location = new Point(22, 46);
-            button1.Name = "button1";
-            button1.Size = new Size(201, 57);
-            button1.TabIndex = 0;
-            button1.Text = "My Courses";
-            button1.UseVisualStyleBackColor = true;
+            buttonMyCourses.Location = new Point(22, 46);
+            buttonMyCourses.Name = "buttonMyCourses";
+            buttonMyCourses.Size = new Size(201, 57);
+            buttonMyCourses.TabIndex = 0;
+            buttonMyCourses.Text = "My Courses";
+            buttonMyCourses.UseVisualStyleBackColor = true;
+            buttonMyCourses.Click += myCoursesBtn_Click;
             // 
-            // button2
+            // buttonSearchCourses
             // 
-            button2.Location = new Point(22, 109);
-            button2.Name = "button2";
-            button2.Size = new Size(201, 57);
-            button2.TabIndex = 1;
-            button2.Text = "Search Courses";
-            button2.UseVisualStyleBackColor = true;
-            button2.Click += button2_Click;
+            buttonSearchCourses.Location = new Point(22, 109);
+            buttonSearchCourses.Name = "buttonSearchCourses";
+            buttonSearchCourses.Size = new Size(201, 57);
+            buttonSearchCourses.TabIndex = 1;
+            buttonSearchCourses.Text = "Search Courses";
+            buttonSearchCourses.UseVisualStyleBackColor = true;
+            buttonSearchCourses.Click += searchBtn_Click;
             // 
-            // button3
+            // buttonShoppingCart
             // 
-            button3.Location = new Point(22, 172);
-            button3.Name = "button3";
-            button3.Size = new Size(201, 57);
-            button3.TabIndex = 2;
-            button3.Text = "Shopping Cart";
-            button3.UseVisualStyleBackColor = true;
+            buttonShoppingCart.Location = new Point(22, 172);
+            buttonShoppingCart.Name = "buttonShoppingCart";
+            buttonShoppingCart.Size = new Size(201, 57);
+            buttonShoppingCart.TabIndex = 2;
+            buttonShoppingCart.Text = "Shopping Cart";
+            buttonShoppingCart.UseVisualStyleBackColor = true;
+            buttonShoppingCart.Click += cartBtn_Click;
             // 
-            // label1
+            // labelCurrentTerm
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(266, 46);
-            label1.Name = "label1";
-            label1.Size = new Size(145, 20);
-            label1.TabIndex = 4;
-            label1.Text = "Current Term: -- -- --";
-            label1.Click += label1_Click;
-            // 
-            // button4
-            // 
-            button4.Location = new Point(271, 71);
-            button4.Name = "button4";
-            button4.Size = new Size(83, 37);
-            button4.TabIndex = 5;
-            button4.Text = "Change";
-            button4.UseVisualStyleBackColor = true;
+            labelCurrentTerm.AutoSize = true;
+            labelCurrentTerm.Location = new Point(266, 46);
+            labelCurrentTerm.Name = "labelCurrentTerm";
+            labelCurrentTerm.Size = new Size(101, 20);
+            labelCurrentTerm.TabIndex = 4;
+            labelCurrentTerm.Text = "Current Term: ";
+            labelCurrentTerm.Click += label1_Click;
             // 
             // tabControl1
             // 
             tabControl1.Alignment = TabAlignment.Left;
-            tabControl1.Controls.Add(tabPage1);
-            tabControl1.Controls.Add(tabPage2);
-            tabControl1.Controls.Add(tabPage3);
+            tabControl1.Controls.Add(tabPageMyCourses);
+            tabControl1.Controls.Add(tabPageSearch);
+            tabControl1.Controls.Add(tabPageCart);
             tabControl1.Location = new Point(266, 109);
             tabControl1.Multiline = true;
             tabControl1.Name = "tabControl1";
@@ -102,15 +96,15 @@
             tabControl1.Size = new Size(654, 625);
             tabControl1.TabIndex = 6;
             // 
-            // tabPage1
+            // tabPageMyCourses
             // 
-            tabPage1.Controls.Add(listBox1);
-            tabPage1.Location = new Point(30, 4);
-            tabPage1.Name = "tabPage1";
-            tabPage1.Size = new Size(620, 617);
-            tabPage1.TabIndex = 0;
-            tabPage1.Text = "My Courses";
-            tabPage1.UseVisualStyleBackColor = true;
+            tabPageMyCourses.Controls.Add(listBox1);
+            tabPageMyCourses.Location = new Point(30, 4);
+            tabPageMyCourses.Name = "tabPageMyCourses";
+            tabPageMyCourses.Size = new Size(620, 617);
+            tabPageMyCourses.TabIndex = 0;
+            tabPageMyCourses.Text = "My Courses";
+            tabPageMyCourses.UseVisualStyleBackColor = true;
             // 
             // listBox1
             // 
@@ -122,55 +116,75 @@
             listBox1.Size = new Size(616, 564);
             listBox1.TabIndex = 0;
             // 
-            // tabPage2
+            // tabPageSearch
             // 
-            tabPage2.Location = new Point(30, 4);
-            tabPage2.Name = "tabPage2";
-            tabPage2.Size = new Size(620, 617);
-            tabPage2.TabIndex = 1;
-            tabPage2.Text = "Search Courses";
-            tabPage2.UseVisualStyleBackColor = true;
+            tabPageSearch.Location = new Point(30, 4);
+            tabPageSearch.Name = "tabPageSearch";
+            tabPageSearch.Size = new Size(620, 617);
+            tabPageSearch.TabIndex = 1;
+            tabPageSearch.Text = "Search Courses";
+            tabPageSearch.UseVisualStyleBackColor = true;
             // 
-            // tabPage3
+            // tabPageCart
             // 
-            tabPage3.Location = new Point(30, 4);
-            tabPage3.Name = "tabPage3";
-            tabPage3.Size = new Size(620, 617);
-            tabPage3.TabIndex = 2;
-            tabPage3.Text = "Shopping Cart";
-            tabPage3.UseVisualStyleBackColor = true;
+            tabPageCart.Location = new Point(30, 4);
+            tabPageCart.Name = "tabPageCart";
+            tabPageCart.Size = new Size(620, 617);
+            tabPageCart.TabIndex = 2;
+            tabPageCart.Text = "Shopping Cart";
+            tabPageCart.UseVisualStyleBackColor = true;
+            // 
+            // comboBoxSemester
+            // 
+            comboBoxSemester.FormattingEnabled = true;
+            comboBoxSemester.Location = new Point(373, 43);
+            comboBoxSemester.Name = "comboBoxSemester";
+            comboBoxSemester.Size = new Size(151, 28);
+            comboBoxSemester.TabIndex = 7;
+            comboBoxSemester.Text = "Semester";
+            // 
+            // comboBoxYear
+            // 
+            comboBoxYear.FormattingEnabled = true;
+            comboBoxYear.Location = new Point(530, 43);
+            comboBoxYear.Name = "comboBoxYear";
+            comboBoxYear.Size = new Size(151, 28);
+            comboBoxYear.TabIndex = 8;
+            comboBoxYear.Text = "Year";
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(932, 746);
+            Controls.Add(comboBoxYear);
+            Controls.Add(comboBoxSemester);
             Controls.Add(tabControl1);
-            Controls.Add(button4);
-            Controls.Add(label1);
-            Controls.Add(button3);
-            Controls.Add(button2);
-            Controls.Add(button1);
+            Controls.Add(labelCurrentTerm);
+            Controls.Add(buttonShoppingCart);
+            Controls.Add(buttonSearchCourses);
+            Controls.Add(buttonMyCourses);
             Name = "Form1";
             Text = "Form1";
             Load += Form1_Load;
             tabControl1.ResumeLayout(false);
-            tabPage1.ResumeLayout(false);
+            tabPageMyCourses.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private Button button1;
-        private Button button2;
-        private Button button3;
-        private Label label1;
-        private Button button4;
+        private Button buttonMyCourses;
+        private Button buttonSearchCourses;
+        private Button buttonShoppingCart;
+        private Label labelCurrentTerm;
         private TabControl tabControl1;
-        private TabPage tabPage1;
+        private TabPage tabPageMyCourses;
         private ListBox listBox1;
-        private TabPage tabPage2;
-        private TabPage tabPage3;
+        private TabPage tabPageSearch;
+        private TabPage tabPageCart;
+        private ComboBox comboBoxSemester;
+        private ComboBox comboBoxYear;
     }
 }
