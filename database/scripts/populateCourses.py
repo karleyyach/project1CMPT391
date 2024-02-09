@@ -3,7 +3,7 @@ import os
 import re
 
 # Map courses to departments. thnx chat gpt :)
-department_mapping = {
+departmentMapping = {
     "ACCT": "Department of Accounting and Finance",
     "ACUP": "Department of Allied Health and Human Performance",
     "AEPS": "Department of Anthropology, Economics and Political Science",
@@ -123,31 +123,31 @@ department_mapping = {
     "ZOOL": "Department of Biological Sciences",
 }
 
-credit_pattern = re.compile(r'\s+\d+(\.\d+)?\s+Credits?\s+.*$', re.IGNORECASE)
+creditPattern = re.compile(r'\s+\d+(\.\d+)?\s+Credits?\s+.*$', re.IGNORECASE)
 
-def clean_course_title(title):
-    clean_title = credit_pattern.sub('', title)
-    return clean_title
+def cleanCourseTitle(title):
+    cleanTitle = creditPattern.sub('', title)
+    return cleanTitle
 
 # Read the JSON
-file_path = os.path.join(os.getcwd(), 'all_courses.json')
-with open(file_path, 'r', encoding='utf-8') as file:
-    all_courses = json.load(file)
+filePath = os.path.join(os.getcwd(), 'all_courses.json')
+with open(filePath, 'r', encoding='utf-8') as file:
+    allCourses = json.load(file)
 
 # Write the SQL query
-output_sql_path = os.path.join(os.getcwd(), 'insert_statements.sql')
-with open(output_sql_path, 'w', encoding='utf-8') as sql_file:
+outputSqlPath = os.path.join(os.getcwd(), 'courses_data.sql')
+with open(outputSqlPath, 'w', encoding='utf-8') as sqlFile:
     # Iterate over all courses
-    for subject, courses in all_courses.items():
-        department_name = department_mapping.get(subject, "Unknown Department")
+    for subject, courses in allCourses.items():
+        departmentName = departmentMapping.get(subject, "Unknown Department")
         for course in courses:
-            course_id = course['courseID'].replace("'", "''")
+            courseId = course['courseID'].replace("'", "''")
             
             # Cleanup
-            course_title = clean_course_title(course['courseTitle'].replace("'", "''"))
+            courseTitle = cleanCourseTitle(course['courseTitle'].replace("'", "''"))
             
-            sql_statement = f"INSERT INTO [dbo].[course] ([courseID], [courseName], [deptName]) " \
-                            f"VALUES ('{course_id}', '{course_title}', '{department_name}');\n"
-            sql_file.write(sql_statement)
+            sqlStatement = f"INSERT INTO [dbo].[course] ([courseID], [courseName], [deptName]) " \
+                            f"VALUES ('{courseId}', '{courseTitle}', '{departmentName}');\n"
+            sqlFile.write(sqlStatement)
 
-print(f"Lets see how we did --> '{output_sql_path}'.")
+print(f"Lets see how we did --> '{outputSqlPath}'.")

@@ -25,21 +25,21 @@ allCourses = {}
 
 creditPattern = re.compile(r'\s+\d+(\.\d+)?\s+Credits?\s+.*$', re.IGNORECASE)
 
-def clean_course_title(title):
-    clean_title = creditPattern.sub('', title)
-    return clean_title
+def cleanCourseTitle(title):
+    cleanTitle = creditPattern.sub('', title)
+    return cleanTitle
 
-# Format prereqs with reeeeeeeee
-def formatPrereqs(prereqsText):
-    prereqsText = re.sub(r'\s+', ' ', prereqsText).strip()
-    prereqsText = re.sub(r'[^\w\s,]', '', prereqsText)
+# Format prerequisites
+def formatPrerequisites(prerequisitesText):
+    prerequisitesText = re.sub(r'\s+', ' ', prerequisitesText).strip()
+    prerequisitesText = re.sub(r'[^\w\s,]', '', prerequisitesText)
 
     # Convert 'consent' to 'DEPT_CONSENT'
-    prereqsText = re.sub(r'\bconsent\b', 'DEPT_CONSENT', prereqsText, flags=re.IGNORECASE)
+    prerequisitesText = re.sub(r'\bconsent\b', 'DEPT_CONSENT', prerequisitesText, flags=re.IGNORECASE)
 
     codeAndNumberRegex = r'\b([A-Z]{4})(?:\s+(\d{3}))?\b'
 
-    parts = re.split(r'\s+or\s+', prereqsText, flags=re.IGNORECASE)
+    parts = re.split(r'\s+or\s+', prerequisitesText, flags=re.IGNORECASE)
 
     newParts = []
     for part in parts:
@@ -49,43 +49,42 @@ def formatPrereqs(prereqsText):
             reconstructedPart = re.sub(r'\b(and|&)\b', '&&', reconstructedPart, flags=re.IGNORECASE)
             reconstructedPart = reconstructedPart.replace(',', '&&')
             newParts.append(reconstructedPart)
-    prereqsText = ' || '.join(newParts)
+    prerequisitesText = ' || '.join(newParts)
 
-    prereqsText = re.sub(r'\s*&&\s*', ' && ', prereqsText)
-    prereqsText = re.sub(r'\s*\|\|\s*', ' || ', prereqsText)
+    prerequisitesText = re.sub(r'\s*&&\s*', ' && ', prerequisitesText)
+    prerequisitesText = re.sub(r'\s*\|\|\s*', ' || ', prerequisitesText)
 
-    prereqsText = '' if not prereqsText.strip() else prereqsText
+    prerequisitesText = '' if not prerequisitesText.strip() else prerequisitesText
 
-    return prereqsText
-
+    return prerequisitesText
 
 # Scraping criteria
-def scrapeCourseInfo(html_content):
-    soup = BeautifulSoup(html_content, 'html.parser')
-    course_blocks = soup.find_all('div', class_='courseblock')
+def scrapeCourseInfo(htmlContent):
+    soup = BeautifulSoup(htmlContent, 'html.parser')
+    courseBlocks = soup.find_all('div', class_='courseblock')
     courses = []
 
-    for block in course_blocks:
-        title_block = block.find('p', class_='courseblocktitle')
-        desc_block = block.find('p', class_='courseblockdesc')
-        prereq_block = block.find('p', class_='courseblockextra')  # prereqs
+    for block in courseBlocks:
+        titleBlock = block.find('p', class_='courseblocktitle')
+        descBlock = block.find('p', class_='courseblockdesc')
+        prereqBlock = block.find('p', class_='courseblockextra')  # prerequisites
 
-        if title_block and desc_block:
-            title_text = title_block.get_text(" ", strip=True)
-            desc_text = desc_block.get_text(" ", strip=True)
-            parts = title_text.split(' ', 1)
+        if titleBlock and descBlock:
+            titleText = titleBlock.get_text(" ", strip=True)
+            descText = descBlock.get_text(" ", strip=True)
+            parts = titleText.split(' ', 1)
             if len(parts) >= 2:
-                course_id = parts[0].strip()
+                courseId = parts[0].strip()
                 if len(parts) > 1:
-                    course_title = clean_course_title(parts[1])
+                    courseTitle = cleanCourseTitle(parts[1])
                 else:
-                    course_title = "ERROR_UNKNOWN" # hope to god this doesnt happen
-                prereq_text = formatPrereqs(prereq_block.get_text(" ", strip=True)) if prereq_block else ''
+                    courseTitle = "ERROR_UNKNOWN" # hope to god this doesnt happen
+                prereqText = formatPrerequisites(prereqBlock.get_text(" ", strip=True)) if prereqBlock else ''
                 courses.append({
-                    'courseID': course_id,
-                    'courseTitle': course_title,
-                    'courseDesc': desc_text,
-                    'coursePrereq': prereq_text
+                    'courseID': courseId,
+                    'courseTitle': courseTitle,
+                    'courseDesc': descText,
+                    'coursePrereq': prereqText
                 })
     return courses
 
@@ -126,5 +125,3 @@ if __name__ == "__main__":
         print(f"Scraping complete! How'd it go? --> '{outputPath}'")
     except Exception as e:
         print(f"An error occurred while saving the file: {e}")
-
-    
