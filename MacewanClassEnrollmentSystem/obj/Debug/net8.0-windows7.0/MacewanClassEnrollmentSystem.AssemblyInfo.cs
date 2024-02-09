@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MacewanClassEnrollmentSystem")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+addd874c4d2b9229259f8c8bdba45e8c3b20152c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3b81ffe9dbf10286be1b93a44fd6c881ae1ebb76")]
 [assembly: System.Reflection.AssemblyProductAttribute("MacewanClassEnrollmentSystem")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MacewanClassEnrollmentSystem")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
