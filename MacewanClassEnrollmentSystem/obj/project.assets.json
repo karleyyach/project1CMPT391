@@ -2661,19 +2661,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\AKIMBO-MSI\\.nuget\\packages\\": {}
+    "C:\\Users\\Jacks\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\AKIMBO-MSI\\Documents\\School\\Winter 2024\\cmpt391\\project1CMPT391\\MacewanClassEnrollmentSystem\\MacewanClassEnrollmentSystem.csproj",
+      "projectUniqueName": "C:\\Users\\Jacks\\source\\repos\\jacksonsteed\\project1CMPT391\\MacewanClassEnrollmentSystem\\MacewanClassEnrollmentSystem.csproj",
       "projectName": "MacewanClassEnrollmentSystem",
-      "projectPath": "C:\\Users\\AKIMBO-MSI\\Documents\\School\\Winter 2024\\cmpt391\\project1CMPT391\\MacewanClassEnrollmentSystem\\MacewanClassEnrollmentSystem.csproj",
-      "packagesPath": "C:\\Users\\AKIMBO-MSI\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\AKIMBO-MSI\\Documents\\School\\Winter 2024\\cmpt391\\project1CMPT391\\MacewanClassEnrollmentSystem\\obj\\",
+      "projectPath": "C:\\Users\\Jacks\\source\\repos\\jacksonsteed\\project1CMPT391\\MacewanClassEnrollmentSystem\\MacewanClassEnrollmentSystem.csproj",
+      "packagesPath": "C:\\Users\\Jacks\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Jacks\\source\\repos\\jacksonsteed\\project1CMPT391\\MacewanClassEnrollmentSystem\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\AKIMBO-MSI\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Jacks\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
