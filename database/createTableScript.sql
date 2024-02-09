@@ -183,8 +183,6 @@ CREATE TABLE [dbo].[section](
 	[enrolledCount] [nchar](10) NOT NULL,
 	[instructorID] [nchar](10) NULL,
 	[timeSlotID] [nchar](10) NULL,
-	[day] [nchar](10) NULL,
-	[startTime] [time](7) NULL,
  CONSTRAINT [PK_section] PRIMARY KEY CLUSTERED 
 (
 	[courseID] ASC,
