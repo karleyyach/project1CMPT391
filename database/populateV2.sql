@@ -2451,54 +2451,150 @@ GO
 
 /*Adding data to section table*/
 GO
-INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('0', '0', 'Fall', 2024, 50, 1, 1000, 1, 'Null', 'Null');
-INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('0', '0', 'Winter', 2024, 50, 1, 1001, 2, 'Null', 'Null');
-INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('0', '0', 'Spring', 2024, 50, 1, 1002, 3, 'Null', 'Null');
-INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('0', '0', 'Summer', 2024, 50, 1, 1003, 4, 'Null', 'Null');
-INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('0', '0', 'Fall', 2024, 50, 1, 1004, 5, 'Null', 'Null');
-INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('0', '0', 'Winter', 2024, 50, 1, 1005, 6, 'Null', 'Null');
-INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('0', '0', 'Spring', 2024, 50, 1, 1006, 7, 'Null', 'Null');
-INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('0', '0', 'Summer', 2024, 50, 1, 1007, 8, 'Null', 'Null');
-INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('0', '0', 'Fall', 2024, 50, 1, 1008, 9, 'Null', 'Null');
-INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('0', '0', 'Winter', 2024, 50, 1, 1009, 10, 'Null', 'Null');
-INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('0', '0', 'Spring', 2024, 50, 1, 1010, 11, 'Null', 'Null');
-INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('0', '0', 'Summer', 2024, 50, 1, 1011, 12, 'Null', 'Null');
-INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('0', '0', 'Fall', 2024, 50, 1, 1012, 13, 'Null', 'Null');
-INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('0', '0', 'Winter', 2024, 50, 1, 1013, 14, 'Null', 'Null');
-INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('0', '0', 'Spring', 2024, 50, 1, 1014, 15, 'Null', 'Null');
-INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('0', '0', 'Summer', 2024, 50, 1, 1015, 16, 'Null', 'Null');
-INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('0', '0', 'Fall', 2024, 50, 1, 1016, 17, 'Null', 'Null');
-INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('0', '0', 'Winter', 2024, 50, 1, 1017, 18, 'Null', 'Null');
-INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('0', '0', 'Spring', 2024, 50, 1, 1018, 19, 'Null', 'Null');
-INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('0', '0', 'Summer', 2024, 50, 1, 1019, 20, 'Null', 'Null');
-INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('0', '0', 'Fall', 2024, 50, 1, 1020, 21, 'Null', 'Null');
-INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('0', '0', 'Winter', 2024, 50, 1, 1021, 22, 'Null', 'Null');
-INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('0', '0', 'Spring', 2024, 50, 1, 1022, 23, 'Null', 'Null');
-INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('0', '0', 'Summer', 2024, 50, 1, 1023, 24, 'Null', 'Null');
-INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('0', '0', 'Fall', 2024, 50, 1, 1024, 25, 'Null', 'Null');
-INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('0', '0', 'Winter', 2024, 50, 1, 1025, 26, 'Null', 'Null');
-INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('0', '0', 'Spring', 2024, 50, 1, 1026, 27, 'Null', 'Null');
-INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('0', '0', 'Summer', 2024, 50, 1, 1027, 28, 'Null', 'Null');
-INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('0', '0', 'Fall', 2024, 50, 1, 1028, 29, 'Null', 'Null');
-INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('0', '0', 'Winter', 2024, 50, 1, 1029, 30, 'Null', 'Null');
-INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('0', '0', 'Spring', 2024, 50, 1, 1030, 31, 'Null', 'Null');
-INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('0', '0', 'Summer', 2024, 50, 1, 1031, 32, 'Null', 'Null');
-INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('0', '0', 'Fall', 2024, 50, 1, 1032, 33, 'Null', 'Null');
-INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('0', '0', 'Winter', 2024, 50, 1, 1033, 34, 'Null', 'Null');
-INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('0', '0', 'Spring', 2024, 50, 1, 1034, 35, 'Null', 'Null');
-INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('0', '0', 'Summer', 2024, 50, 1, 1035, 36, 'Null', 'Null');
-INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('0', '0', 'Fall', 2024, 50, 1, 1036, 37, 'Null', 'Null');
-INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('0', '0', 'Winter', 2024, 50, 1, 1037, 38, 'Null', 'Null');
-INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('0', '0', 'Spring', 2024, 50, 1, 1038, 39, 'Null', 'Null');
-INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('0', '0', 'Summer', 2024, 50, 1, 1039, 40, 'Null', 'Null');
-INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('0', '0', 'Fall', 2024, 50, 1, 1040, 41, 'Null', 'Null');
-INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('0', '0', 'Winter', 2024, 50, 1, 1041, 42, 'Null', 'Null');
-INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('0', '0', 'Spring', 2024, 50, 1, 1042, 43, 'Null', 'Null');
-INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('0', '0', 'Summer', 2024, 50, 1, 1043, 44, 'Null', 'Null');
-INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('0', '0', 'Fall', 2024, 50, 1, 1044, 45, 'Null', 'Null');
-INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('0', '0', 'Winter', 2024, 50, 1, 1045, 46, 'Null', 'Null');
-INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('0', '0', 'Spring', 2024, 50, 1, 1046, 47, 'Null', 'Null');
-INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('0', '0', 'Summer', 2024, 50, 1, 1047, 48, 'Null', 'Null');
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 101  ', 'KD00', 'Fall', 2024, 45, 5, 1000, 3, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 101  ', 'VC27', 'Winter', 2024, 50, 0, 1001, 2, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 101  ', 'RJ47', 'Spring', 2024, 50, 0, 1002, 2, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 101  ', 'GO61', 'Summer', 2024, 50, 0, 1003, 1, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 101  ', 'UQ63', 'Fall', 2024, 47, 3, 1004, 1, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 101  ', 'OF75', 'Winter', 2024, 50, 0, 1005, 2, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 101  ', 'TI66', 'Spring', 2024, 50, 0, 1006, 3, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 101  ', 'OT28', 'Summer', 2024, 50, 0, 1007, 1, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 101  ', 'XN30', 'Fall', 2024, 49, 1, 1008, 1, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 101  ', 'LX08', 'Winter', 2024, 50, 0, 1009, 3, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 101  ', 'QQ38', 'Spring', 2024, 50, 0, 1010, 3, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 101  ', 'NS88', 'Summer', 2024, 50, 0, 1011, 1, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 101  ', 'SR19', 'Fall', 2024, 49, 1, 1012, 3, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 101  ', 'VG35', 'Winter', 2024, 50, 0, 1013, 3, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 101  ', 'OS46', 'Spring', 2024, 50, 0, 1014, 1, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 101  ', 'SX68', 'Summer', 2024, 50, 0, 1015, 1, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 103  ', 'MB31', 'Fall', 2024, 50, 0, 1015, 4, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 103  ', 'LD70', 'Winter', 2024, 50, 0, 1016, 2, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 103  ', 'KQ60', 'Spring', 2024, 50, 0, 1017, 4, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 103  ', 'PL84', 'Summer', 2024, 50, 0, 1018, 2, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 103  ', 'KV30', 'Fall', 2024, 50, 0, 1019, 3, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 103  ', 'WN61', 'Winter', 2024, 50, 0, 1020, 1, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 103  ', 'OF15', 'Spring', 2024, 50, 0, 1021, 2, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 103  ', 'IN74', 'Summer', 2024, 50, 0, 1022, 4, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 103  ', 'HI51', 'Fall', 2024, 50, 0, 1023, 3, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 103  ', 'BE69', 'Winter', 2024, 50, 0, 1024, 1, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 103  ', 'BP42', 'Spring', 2024, 50, 0, 1025, 1, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 103  ', 'OU03', 'Summer', 2024, 50, 0, 1026, 1, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 103  ', 'RX82', 'Fall', 2024, 50, 0, 1027, 2, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 103  ', 'KP15', 'Winter', 2024, 50, 0, 1028, 1, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 103  ', 'YL30', 'Spring', 2024, 50, 0, 1029, 2, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 103  ', 'ZJ11', 'Summer', 2024, 50, 0, 1030, 3, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 200  ', 'UC89', 'Fall', 2024, 50, 0, 1031, 5, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 200  ', 'KZ71', 'Winter', 2024, 50, 0, 1032, 4, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 200  ', 'YF53', 'Spring', 2024, 50, 0, 1033, 4, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 200  ', 'ZK93', 'Summer', 2024, 50, 0, 1034, 4, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 200  ', 'BJ88', 'Fall', 2024, 50, 0, 1035, 3, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 200  ', 'JO68', 'Winter', 2024, 50, 0, 1036, 4, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 200  ', 'JD58', 'Spring', 2024, 50, 0, 1037, 3, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 200  ', 'TS79', 'Summer', 2024, 50, 0, 1038, 3, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 200  ', 'UJ68', 'Fall', 2024, 50, 0, 1039, 3, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 200  ', 'YX59', 'Winter', 2024, 50, 0, 1040, 3, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 200  ', 'XG42', 'Spring', 2024, 50, 0, 1041, 3, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 200  ', 'SG28', 'Summer', 2024, 50, 0, 1042, 3, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 200  ', 'VW09', 'Fall', 2024, 50, 0, 1043, 5, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 200  ', 'TF24', 'Winter', 2024, 50, 0, 1044, 3, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 200  ', 'SA03', 'Spring', 2024, 50, 0, 1045, 3, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 200  ', 'MJ35', 'Summer', 2024, 50, 0, 1046, 4, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 201  ', 'QM95', 'Fall', 2024, 50, 0, 1047, 2, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 201  ', 'OG70', 'Winter', 2024, 50, 0, 1048, 4, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 201  ', 'HJ33', 'Spring', 2024, 50, 0, 1049, 3, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 201  ', 'EJ05', 'Summer', 2024, 50, 0, 1050, 5, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 201  ', 'PZ03', 'Fall', 2024, 50, 0, 1051, 5, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 201  ', 'CV28', 'Winter', 2024, 50, 0, 1052, 3, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 201  ', 'IW72', 'Spring', 2024, 50, 0, 1053, 5, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 201  ', 'TD16', 'Summer', 2024, 50, 0, 1054, 2, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 201  ', 'HN60', 'Fall', 2024, 50, 0, 1055, 2, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 201  ', 'VF53', 'Winter', 2024, 50, 0, 1056, 3, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 201  ', 'EV36', 'Spring', 2024, 50, 0, 1057, 5, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 201  ', 'XX01', 'Summer', 2024, 50, 0, 1058, 4, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 201  ', 'YY02', 'Fall', 2024, 50, 0, 1059, 5, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 201  ', 'ZZ03', 'Winter', 2024, 50, 0, 1060, 2, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 201  ', 'AA04', 'Spring', 2024, 50, 0, 1061, 3, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 201  ', 'BB05', 'Summer', 2024, 50, 0, 1062, 2, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 220  ', 'CC06', 'Fall', 2024, 50, 0, 1063, 1, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 220  ', 'DD07', 'Winter', 2024, 50, 0, 1064, 2, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 220  ', 'EE08', 'Spring', 2024, 50, 0, 1065, 1, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 220  ', 'FF09', 'Summer', 2024, 50, 0, 1066, 3, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 220  ', 'GG10', 'Fall', 2024, 50, 0, 1067, 1, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 220  ', 'HH11', 'Winter', 2024, 50, 0, 1068, 2, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 220  ', 'II12', 'Spring', 2024, 50, 0, 1069, 2, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 220  ', 'JJ13', 'Summer', 2024, 50, 0, 1070, 1, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 220  ', 'KK14', 'Fall', 2024, 50, 0, 1071, 1, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 220  ', 'LL15', 'Winter', 2024, 50, 0, 1072, 2, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 220  ', 'MM16', 'Spring', 2024, 50, 0, 1073, 3, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 220  ', 'NN17', 'Summer', 2024, 50, 0, 1074, 1, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 220  ', 'OO18', 'Fall', 2024, 50, 0, 1075, 2, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 220  ', 'PP19', 'Winter', 2024, 50, 0, 1076, 3, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 220  ', 'QQ20', 'Spring', 2024, 50, 0, 1077, 2, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 220  ', 'RR21', 'Summer', 2024, 50, 0, 1078, 2, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 280  ', 'SS22', 'Fall', 2024, 50, 0, 1079, 2, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 280  ', 'TT23', 'Winter', 2024, 50, 0, 1080, 2, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 280  ', 'UU24', 'Spring', 2024, 50, 0, 1081, 3, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 280  ', 'VV25', 'Summer', 2024, 50, 0, 1082, 1, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 280  ', 'WW26', 'Fall', 2024, 50, 0, 1083, 1, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 280  ', 'XX27', 'Winter', 2024, 50, 0, 1084, 2, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 280  ', 'YY28', 'Spring', 2024, 50, 0, 1085, 1, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 280  ', 'ZZ29', 'Summer', 2024, 50, 0, 1086, 2, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 280  ', 'AA30', 'Fall', 2024, 50, 0, 1087, 2, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 280  ', 'BB31', 'Winter', 2024, 50, 0, 1088, 1, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 280  ', 'CC32', 'Spring', 2024, 50, 0, 1089, 3, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 280  ', 'DD33', 'Summer', 2024, 50, 0, 1090, 1, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 280  ', 'EE34', 'Fall', 2024, 50, 0, 1091, 3, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 280  ', 'FF35', 'Winter', 2024, 50, 0, 1092, 1, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 280  ', 'GG36', 'Spring', 2024, 50, 0, 1093, 3, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 280  ', 'HH37', 'Summer', 2024, 50, 0, 1094, 1, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 291  ', 'II38', 'Fall', 2024, 50, 0, 1095, 4, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 291  ', 'JJ39', 'Winter', 2024, 50, 0, 1096, 6, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 291  ', 'KK40', 'Spring', 2024, 50, 0, 1097, 6, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 291  ', 'LL41', 'Summer', 2024, 50, 0, 1098, 5, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 291  ', 'MM42', 'Fall', 2024, 50, 0, 1099, 6, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 291  ', 'NN43', 'Winter', 2024, 50, 0, 1100, 4, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 291  ', 'OO44', 'Spring', 2024, 50, 0, 1101, 7, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 291  ', 'PP45', 'Summer', 2024, 50, 0, 1102, 4, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 291  ', 'QQ46', 'Fall', 2024, 50, 0, 1103, 5, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 291  ', 'RR47', 'Winter', 2024, 50, 0, 1104, 8, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 291  ', 'SS48', 'Spring', 2024, 50, 0, 1105, 4, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 291  ', 'TT49', 'Summer', 2024, 50, 0, 1106, 4, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 291  ', 'UU50', 'Fall', 2024, 50, 0, 1107, 7, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 291  ', 'VV51', 'Winter', 2024, 50, 0, 1108, 4, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 291  ', 'WW52', 'Spring', 2024, 50, 0, 1109, 7, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 291  ', 'XX53', 'Summer', 2024, 50, 0, 1110, 4, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 391  ', 'YY54', 'Fall', 2024, 50, 0, 1111, 8, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 391  ', 'ZZ55', 'Winter', 2024, 50, 0, 1112, 8, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 391  ', 'AA56', 'Spring', 2024, 50, 0, 1113, 8, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 391  ', 'BB57', 'Summer', 2024, 50, 0, 1114, 7, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 391  ', 'CC58', 'Fall', 2024, 50, 0, 1115, 4, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 391  ', 'DD59', 'Winter', 2024, 50, 0, 1116, 8, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 391  ', 'EE60', 'Spring', 2024, 50, 0, 1117, 8, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 391  ', 'FF61', 'Summer', 2024, 50, 0, 1118, 5, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 391  ', 'GG62', 'Fall', 2024, 50, 0, 1119, 7, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 391  ', 'HH63', 'Winter', 2024, 50, 0, 1120, 8, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 391  ', 'II64', 'Spring', 2024, 50, 0, 1121, 5, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 391  ', 'JJ65', 'Summer', 2024, 50, 0, 1122, 5, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 391  ', 'KK66', 'Fall', 2024, 50, 0, 1123, 6, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 391  ', 'LL67', 'Winter', 2024, 50, 0, 1124, 7, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 391  ', 'MM68', 'Spring', 2024, 50, 0, 1125, 4, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 391  ', 'NN69', 'Summer', 2024, 50, 0, 1126, 7, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 395  ', 'OO70', 'Fall', 2024, 50, 0, 1127, 3, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 395  ', 'PP71', 'Winter', 2024, 50, 0, 1128, 1, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 395  ', 'QQ72', 'Spring', 2024, 50, 0, 1129, 3, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 395  ', 'RR73', 'Summer', 2024, 50, 0, 1130, 3, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 395  ', 'SS74', 'Fall', 2024, 50, 0, 1131, 3, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 395  ', 'TT75', 'Winter', 2024, 50, 0, 1132, 2, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 395  ', 'UU76', 'Spring', 2024, 50, 0, 1133, 3, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 395  ', 'VV77', 'Summer', 2024, 50, 0, 1134, 2, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 395  ', 'WW78', 'Fall', 2024, 50, 0, 1135, 2, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 395  ', 'XX79', 'Winter', 2024, 50, 0, 1136, 1, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 395  ', 'YY80', 'Spring', 2024, 50, 0, 1137, 3, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 395  ', 'ZZ81', 'Summer', 2024, 50, 0, 1138, 2, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 395  ', 'AA82', 'Fall', 2024, 50, 0, 1139, 3, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 395  ', 'BB83', 'Winter', 2024, 50, 0, 1140, 1, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 395  ', 'CC84', 'Spring', 2024, 50, 0, 1141, 1, Null, Null);
+INSERT INTO [dbo].[section] ([courseID], [sectionID], [semester], [year], [capacity], [enrolledCount], [instructorID], [timeSlotID], [day], [startTime]) VALUES ('CMPT 395  ', 'DD85', 'Summer', 2024, 50, 0, 1142, 3, Null, Null);
 GO
 
 
@@ -2520,868 +2616,69 @@ GO
 
 /*Adding data to takes table*/
 GO
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (1, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (1, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (1, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (1, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (1, '0', '0', 'Fall', 2023, Null, 'No');
-
+INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (1, 'CMPT 101  ', 'KD00      ', 'Fall', 2023, Null, 'No');
 INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (1, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (1, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (1, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (1, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (1, '0', '0', 'Winter', 2024, Null, 'Yes');
-
 INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (1, '0', '0', 'Spring', 2024, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (1, '0', '0', 'Spring', 2024, Null, 'No');
-
 INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (1, '0', '0', 'Summer', 2024, Null, 'No');
 
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (2, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (2, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (2, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (2, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (2, '0', '0', 'Fall', 2023, Null, 'No');
-
+INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (2, 'CMPT 101  ', 'KD00      ', 'Fall', 2023, Null, 'No');
 INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (2, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (2, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (2, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (2, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (2, '0', '0', 'Winter', 2024, Null, 'Yes');
-
 INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (2, '0', '0', 'Spring', 2024, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (2, '0', '0', 'Spring', 2024, Null, 'No');
-
 INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (2, '0', '0', 'Summer', 2024, Null, 'No');
 
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (3, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (3, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (3, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (3, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (3, '0', '0', 'Fall', 2023, Null, 'No');
-
+INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (3, 'CMPT 101  ', 'KD00      ', 'Fall', 2023, Null, 'No');
 INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (3, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (3, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (3, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (3, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (3, '0', '0', 'Winter', 2024, Null, 'Yes');
-
 INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (3, '0', '0', 'Spring', 2024, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (3, '0', '0', 'Spring', 2024, Null, 'No');
-
 INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (3, '0', '0', 'Summer', 2024, Null, 'No');
 
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (4, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (4, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (4, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (4, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (4, '0', '0', 'Fall', 2023, Null, 'No');
-
+INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (4, 'CMPT 101  ', 'KD00      ', 'Fall', 2023, Null, 'No');
 INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (4, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (4, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (4, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (4, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (4, '0', '0', 'Winter', 2024, Null, 'Yes');
-
 INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (4, '0', '0', 'Spring', 2024, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (4, '0', '0', 'Spring', 2024, Null, 'No');
-
 INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (4, '0', '0', 'Summer', 2024, Null, 'No');
 
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (5, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (5, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (5, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (5, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (5, '0', '0', 'Fall', 2023, Null, 'No');
-
+INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (5, 'CMPT 101  ', 'KD00      ', 'Fall', 2023, Null, 'No');
 INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (5, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (5, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (5, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (5, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (5, '0', '0', 'Winter', 2024, Null, 'Yes');
-
 INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (5, '0', '0', 'Spring', 2024, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (5, '0', '0', 'Spring', 2024, Null, 'No');
-
 INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (5, '0', '0', 'Summer', 2024, Null, 'No');
 
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (6, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (6, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (6, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (6, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (6, '0', '0', 'Fall', 2023, Null, 'No');
-
+INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (6, 'CMPT 101  ', 'UQ63      ', 'Fall', 2023, Null, 'No');
 INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (6, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (6, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (6, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (6, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (6, '0', '0', 'Winter', 2024, Null, 'Yes');
-
 INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (6, '0', '0', 'Spring', 2024, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (6, '0', '0', 'Spring', 2024, Null, 'No');
-
 INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (6, '0', '0', 'Summer', 2024, Null, 'No');
 
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (7, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (7, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (7, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (7, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (7, '0', '0', 'Fall', 2023, Null, 'No');
-
+INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (7, 'CMPT 101  ', 'UQ63      ', 'Fall', 2023, Null, 'No');
 INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (7, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (7, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (7, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (7, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (7, '0', '0', 'Winter', 2024, Null, 'Yes');
-
 INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (7, '0', '0', 'Spring', 2024, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (7, '0', '0', 'Spring', 2024, Null, 'No');
-
 INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (7, '0', '0', 'Summer', 2024, Null, 'No');
 
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (8, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (8, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (8, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (8, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (8, '0', '0', 'Fall', 2023, Null, 'No');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (8, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (8, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (8, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (8, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (8, '0', '0', 'Winter', 2024, Null, 'Yes');
-
+INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (8, 'CMPT 101  ', 'UQ63      ', 'Fall', 2023, Null, 'No');
+INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (8, '0', '0', 'Winter', 2023, Null, 'No');
 INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (8, '0', '0', 'Spring', 2024, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (8, '0', '0', 'Spring', 2024, Null, 'No');
-
 INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (8, '0', '0', 'Summer', 2024, Null, 'No');
 
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (9, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (9, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (9, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (9, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (9, '0', '0', 'Fall', 2023, Null, 'No');
-
+INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (9, 'CMPT 101  ', 'XN30      ', 'Fall', 2023, Null, 'No');
 INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (9, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (9, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (9, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (9, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (9, '0', '0', 'Winter', 2024, Null, 'Yes');
-
 INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (9, '0', '0', 'Spring', 2024, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (9, '0', '0', 'Spring', 2024, Null, 'No');
-
 INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (9, '0', '0', 'Summer', 2024, Null, 'No');
 
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (10, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (10, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (10, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (10, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (10, '0', '0', 'Fall', 2023, Null, 'No');
-
+INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (10, 'CMPT 101  ', 'SR19      ', 'Fall', 2023, Null, 'No');
 INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (10, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (10, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (10, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (10, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (10, '0', '0', 'Winter', 2024, Null, 'Yes');
-
 INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (10, '0', '0', 'Spring', 2024, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (10, '0', '0', 'Spring', 2024, Null, 'No');
-
 INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (10, '0', '0', 'Summer', 2024, Null, 'No');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (11, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (11, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (11, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (11, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (11, '0', '0', 'Fall', 2023, Null, 'No');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (11, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (11, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (11, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (11, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (11, '0', '0', 'Winter', 2024, Null, 'Yes');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (11, '0', '0', 'Spring', 2024, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (11, '0', '0', 'Spring', 2024, Null, 'No');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (11, '0', '0', 'Summer', 2024, Null, 'No');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (12, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (12, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (12, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (12, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (12, '0', '0', 'Fall', 2023, Null, 'No');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (12, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (12, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (12, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (12, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (12, '0', '0', 'Winter', 2024, Null, 'Yes');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (12, '0', '0', 'Spring', 2024, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (12, '0', '0', 'Spring', 2024, Null, 'No');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (12, '0', '0', 'Summer', 2024, Null, 'No');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (13, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (13, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (13, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (13, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (13, '0', '0', 'Fall', 2023, Null, 'No');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (13, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (13, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (13, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (13, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (13, '0', '0', 'Winter', 2024, Null, 'Yes');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (13, '0', '0', 'Spring', 2024, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (13, '0', '0', 'Spring', 2024, Null, 'No');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (13, '0', '0', 'Summer', 2024, Null, 'No');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (14, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (14, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (14, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (14, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (14, '0', '0', 'Fall', 2023, Null, 'No');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (14, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (14, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (14, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (14, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (14, '0', '0', 'Winter', 2024, Null, 'Yes');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (14, '0', '0', 'Spring', 2024, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (14, '0', '0', 'Spring', 2024, Null, 'No');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (14, '0', '0', 'Summer', 2024, Null, 'No');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (15, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (15, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (15, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (15, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (15, '0', '0', 'Fall', 2023, Null, 'No');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (15, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (15, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (15, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (15, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (15, '0', '0', 'Winter', 2024, Null, 'Yes');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (15, '0', '0', 'Spring', 2024, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (15, '0', '0', 'Spring', 2024, Null, 'No');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (15, '0', '0', 'Summer', 2024, Null, 'No');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (16, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (16, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (16, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (16, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (16, '0', '0', 'Fall', 2023, Null, 'No');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (16, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (16, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (16, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (16, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (16, '0', '0', 'Winter', 2024, Null, 'Yes');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (16, '0', '0', 'Spring', 2024, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (16, '0', '0', 'Spring', 2024, Null, 'No');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (16, '0', '0', 'Summer', 2024, Null, 'No');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (17, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (17, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (17, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (17, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (17, '0', '0', 'Fall', 2023, Null, 'No');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (17, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (17, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (17, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (17, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (17, '0', '0', 'Winter', 2024, Null, 'Yes');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (17, '0', '0', 'Spring', 2024, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (17, '0', '0', 'Spring', 2024, Null, 'No');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (17, '0', '0', 'Summer', 2024, Null, 'No');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (18, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (18, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (18, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (18, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (18, '0', '0', 'Fall', 2023, Null, 'No');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (18, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (18, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (18, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (18, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (18, '0', '0', 'Winter', 2024, Null, 'Yes');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (18, '0', '0', 'Spring', 2024, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (18, '0', '0', 'Spring', 2024, Null, 'No');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (18, '0', '0', 'Summer', 2024, Null, 'No');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (19, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (19, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (19, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (19, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (19, '0', '0', 'Fall', 2023, Null, 'No');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (19, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (19, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (19, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (19, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (19, '0', '0', 'Winter', 2024, Null, 'Yes');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (19, '0', '0', 'Spring', 2024, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (19, '0', '0', 'Spring', 2024, Null, 'No');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (19, '0', '0', 'Summer', 2024, Null, 'No');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (20, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (20, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (20, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (20, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (20, '0', '0', 'Fall', 2023, Null, 'No');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (20, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (20, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (20, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (20, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (20, '0', '0', 'Winter', 2024, Null, 'Yes');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (20, '0', '0', 'Spring', 2024, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (20, '0', '0', 'Spring', 2024, Null, 'No');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (20, '0', '0', 'Summer', 2024, Null, 'No');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (21, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (21, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (21, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (21, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (21, '0', '0', 'Fall', 2023, Null, 'No');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (21, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (21, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (21, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (21, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (21, '0', '0', 'Winter', 2024, Null, 'Yes');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (21, '0', '0', 'Spring', 2024, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (21, '0', '0', 'Spring', 2024, Null, 'No');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (21, '0', '0', 'Summer', 2024, Null, 'No');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (22, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (22, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (22, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (22, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (22, '0', '0', 'Fall', 2023, Null, 'No');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (22, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (22, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (22, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (22, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (22, '0', '0', 'Winter', 2024, Null, 'Yes');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (22, '0', '0', 'Spring', 2024, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (22, '0', '0', 'Spring', 2024, Null, 'No');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (22, '0', '0', 'Summer', 2024, Null, 'No');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (23, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (23, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (23, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (23, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (23, '0', '0', 'Fall', 2023, Null, 'No');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (23, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (23, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (23, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (23, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (23, '0', '0', 'Winter', 2024, Null, 'Yes');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (23, '0', '0', 'Spring', 2024, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (23, '0', '0', 'Spring', 2024, Null, 'No');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (23, '0', '0', 'Summer', 2024, Null, 'No');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (24, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (24, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (24, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (24, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (24, '0', '0', 'Fall', 2023, Null, 'No');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (24, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (24, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (24, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (24, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (24, '0', '0', 'Winter', 2024, Null, 'Yes');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (24, '0', '0', 'Spring', 2024, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (24, '0', '0', 'Spring', 2024, Null, 'No');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (24, '0', '0', 'Summer', 2024, Null, 'No');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (25, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (25, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (25, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (25, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (25, '0', '0', 'Fall', 2023, Null, 'No');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (25, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (25, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (25, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (25, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (25, '0', '0', 'Winter', 2024, Null, 'Yes');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (25, '0', '0', 'Spring', 2024, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (25, '0', '0', 'Spring', 2024, Null, 'No');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (25, '0', '0', 'Summer', 2024, Null, 'No');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (26, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (26, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (26, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (26, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (26, '0', '0', 'Fall', 2023, Null, 'No');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (26, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (26, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (26, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (26, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (26, '0', '0', 'Winter', 2024, Null, 'Yes');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (26, '0', '0', 'Spring', 2024, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (26, '0', '0', 'Spring', 2024, Null, 'No');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (26, '0', '0', 'Summer', 2024, Null, 'No');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (27, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (27, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (27, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (27, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (27, '0', '0', 'Fall', 2023, Null, 'No');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (27, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (27, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (27, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (27, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (27, '0', '0', 'Winter', 2024, Null, 'Yes');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (27, '0', '0', 'Spring', 2024, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (27, '0', '0', 'Spring', 2024, Null, 'No');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (27, '0', '0', 'Summer', 2024, Null, 'No');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (28, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (28, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (28, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (28, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (28, '0', '0', 'Fall', 2023, Null, 'No');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (28, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (28, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (28, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (28, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (28, '0', '0', 'Winter', 2024, Null, 'Yes');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (28, '0', '0', 'Spring', 2024, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (28, '0', '0', 'Spring', 2024, Null, 'No');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (28, '0', '0', 'Summer', 2024, Null, 'No');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (29, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (29, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (29, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (29, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (29, '0', '0', 'Fall', 2023, Null, 'No');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (29, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (29, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (29, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (29, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (29, '0', '0', 'Winter', 2024, Null, 'Yes');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (29, '0', '0', 'Spring', 2024, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (29, '0', '0', 'Spring', 2024, Null, 'No');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (29, '0', '0', 'Summer', 2024, Null, 'No');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (30, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (30, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (30, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (30, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (30, '0', '0', 'Fall', 2023, Null, 'No');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (30, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (30, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (30, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (30, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (30, '0', '0', 'Winter', 2024, Null, 'Yes');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (30, '0', '0', 'Spring', 2024, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (30, '0', '0', 'Spring', 2024, Null, 'No');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (30, '0', '0', 'Summer', 2024, Null, 'No');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (31, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (31, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (31, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (31, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (31, '0', '0', 'Fall', 2023, Null, 'No');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (31, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (31, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (31, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (31, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (31, '0', '0', 'Winter', 2024, Null, 'Yes');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (31, '0', '0', 'Spring', 2024, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (31, '0', '0', 'Spring', 2024, Null, 'No');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (31, '0', '0', 'Summer', 2024, Null, 'No');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (32, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (32, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (32, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (32, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (32, '0', '0', 'Fall', 2023, Null, 'No');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (32, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (32, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (32, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (32, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (32, '0', '0', 'Winter', 2024, Null, 'Yes');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (32, '0', '0', 'Spring', 2024, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (32, '0', '0', 'Spring', 2024, Null, 'No');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (32, '0', '0', 'Summer', 2024, Null, 'No');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (33, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (33, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (33, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (33, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (33, '0', '0', 'Fall', 2023, Null, 'No');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (33, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (33, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (33, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (33, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (33, '0', '0', 'Winter', 2024, Null, 'Yes');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (33, '0', '0', 'Spring', 2024, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (33, '0', '0', 'Spring', 2024, Null, 'No');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (33, '0', '0', 'Summer', 2024, Null, 'No');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (34, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (34, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (34, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (34, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (34, '0', '0', 'Fall', 2023, Null, 'No');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (34, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (34, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (34, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (34, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (34, '0', '0', 'Winter', 2024, Null, 'Yes');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (34, '0', '0', 'Spring', 2024, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (34, '0', '0', 'Spring', 2024, Null, 'No');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (34, '0', '0', 'Summer', 2024, Null, 'No');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (35, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (35, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (35, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (35, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (35, '0', '0', 'Fall', 2023, Null, 'No');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (35, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (35, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (35, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (35, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (35, '0', '0', 'Winter', 2024, Null, 'Yes');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (35, '0', '0', 'Spring', 2024, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (35, '0', '0', 'Spring', 2024, Null, 'No');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (35, '0', '0', 'Summer', 2024, Null, 'No');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (36, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (36, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (36, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (36, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (36, '0', '0', 'Fall', 2023, Null, 'No');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (36, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (36, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (36, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (36, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (36, '0', '0', 'Winter', 2024, Null, 'Yes');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (36, '0', '0', 'Spring', 2024, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (36, '0', '0', 'Spring', 2024, Null, 'No');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (36, '0', '0', 'Summer', 2024, Null, 'No');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (37, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (37, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (37, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (37, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (37, '0', '0', 'Fall', 2023, Null, 'No');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (37, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (37, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (37, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (37, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (37, '0', '0', 'Winter', 2024, Null, 'Yes');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (37, '0', '0', 'Spring', 2024, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (37, '0', '0', 'Spring', 2024, Null, 'No');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (37, '0', '0', 'Summer', 2024, Null, 'No');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (38, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (38, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (38, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (38, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (38, '0', '0', 'Fall', 2023, Null, 'No');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (38, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (38, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (38, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (38, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (38, '0', '0', 'Winter', 2024, Null, 'Yes');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (38, '0', '0', 'Spring', 2024, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (38, '0', '0', 'Spring', 2024, Null, 'No');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (38, '0', '0', 'Summer', 2024, Null, 'No');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (39, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (39, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (39, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (39, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (39, '0', '0', 'Fall', 2023, Null, 'No');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (39, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (39, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (39, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (39, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (39, '0', '0', 'Winter', 2024, Null, 'Yes');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (39, '0', '0', 'Spring', 2024, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (39, '0', '0', 'Spring', 2024, Null, 'No');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (39, '0', '0', 'Summer', 2024, Null, 'No');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (40, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (40, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (40, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (40, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (40, '0', '0', 'Fall', 2023, Null, 'No');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (40, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (40, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (40, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (40, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (40, '0', '0', 'Winter', 2024, Null, 'Yes');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (40, '0', '0', 'Spring', 2024, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (40, '0', '0', 'Spring', 2024, Null, 'No');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (40, '0', '0', 'Summer', 2024, Null, 'No');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (41, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (41, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (41, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (41, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (41, '0', '0', 'Fall', 2023, Null, 'No');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (41, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (41, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (41, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (41, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (41, '0', '0', 'Winter', 2024, Null, 'Yes');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (41, '0', '0', 'Spring', 2024, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (41, '0', '0', 'Spring', 2024, Null, 'No');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (41, '0', '0', 'Summer', 2024, Null, 'No');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (42, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (42, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (42, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (42, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (42, '0', '0', 'Fall', 2023, Null, 'No');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (42, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (42, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (42, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (42, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (42, '0', '0', 'Winter', 2024, Null, 'Yes');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (42, '0', '0', 'Spring', 2024, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (42, '0', '0', 'Spring', 2024, Null, 'No');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (42, '0', '0', 'Summer', 2024, Null, 'No');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (43, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (43, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (43, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (43, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (43, '0', '0', 'Fall', 2023, Null, 'No');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (43, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (43, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (43, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (43, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (43, '0', '0', 'Winter', 2024, Null, 'Yes');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (43, '0', '0', 'Spring', 2024, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (43, '0', '0', 'Spring', 2024, Null, 'No');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (43, '0', '0', 'Summer', 2024, Null, 'No');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (44, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (44, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (44, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (44, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (44, '0', '0', 'Fall', 2023, Null, 'No');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (44, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (44, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (44, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (44, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (44, '0', '0', 'Winter', 2024, Null, 'Yes');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (44, '0', '0', 'Spring', 2024, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (44, '0', '0', 'Spring', 2024, Null, 'No');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (44, '0', '0', 'Summer', 2024, Null, 'No');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (45, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (45, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (45, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (45, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (45, '0', '0', 'Fall', 2023, Null, 'No');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (45, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (45, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (45, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (45, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (45, '0', '0', 'Winter', 2024, Null, 'Yes');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (45, '0', '0', 'Spring', 2024, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (45, '0', '0', 'Spring', 2024, Null, 'No');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (45, '0', '0', 'Summer', 2024, Null, 'No');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (46, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (46, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (46, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (46, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (46, '0', '0', 'Fall', 2023, Null, 'No');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (46, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (46, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (46, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (46, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (46, '0', '0', 'Winter', 2024, Null, 'Yes');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (46, '0', '0', 'Spring', 2024, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (46, '0', '0', 'Spring', 2024, Null, 'No');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (46, '0', '0', 'Summer', 2024, Null, 'No');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (47, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (47, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (47, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (47, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (47, '0', '0', 'Fall', 2023, Null, 'No');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (47, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (47, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (47, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (47, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (47, '0', '0', 'Winter', 2024, Null, 'Yes');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (47, '0', '0', 'Spring', 2024, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (47, '0', '0', 'Spring', 2024, Null, 'No');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (47, '0', '0', 'Summer', 2024, Null, 'No');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (48, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (48, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (48, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (48, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (48, '0', '0', 'Fall', 2023, Null, 'No');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (48, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (48, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (48, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (48, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (48, '0', '0', 'Winter', 2024, Null, 'Yes');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (48, '0', '0', 'Spring', 2024, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (48, '0', '0', 'Spring', 2024, Null, 'No');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (48, '0', '0', 'Summer', 2024, Null, 'No');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (49, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (49, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (49, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (49, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (49, '0', '0', 'Fall', 2023, Null, 'No');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (49, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (49, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (49, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (49, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (49, '0', '0', 'Winter', 2024, Null, 'Yes');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (49, '0', '0', 'Spring', 2024, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (49, '0', '0', 'Spring', 2024, Null, 'No');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (49, '0', '0', 'Summer', 2024, Null, 'No');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (50, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (50, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (50, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (50, '0', '0', 'Fall', 2023, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (50, '0', '0', 'Fall', 2023, Null, 'No');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (50, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (50, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (50, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (50, '0', '0', 'Winter', 2024, Null, 'Yes');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (50, '0', '0', 'Winter', 2024, Null, 'Yes');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (50, '0', '0', 'Spring', 2024, Null, 'No');
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (50, '0', '0', 'Spring', 2024, Null, 'No');
-
-INSERT INTO [dbo].[takes] ([studentID], [courseID], [sectionID], [semester], [year], [grade], [active]) VALUES (50, '0', '0', 'Summer', 2024, Null, 'No');
 GO
 
 
 /*Adding data to cart table*/
 GO
-INSERT INTO [dbo].[cart] ([studentID], [courseID], [sectionID], [semester], [year]) VALUES (1, 'CMPT 101', 'AS01', 'Fall', 2024);
-INSERT INTO [dbo].[cart] ([studentID], [courseID], [sectionID], [semester], [year]) VALUES (2, 'CMPT 103', 'AS02', 'Fall', 2024);
-INSERT INTO [dbo].[cart] ([studentID], [courseID], [sectionID], [semester], [year]) VALUES (3, 'CMPT 200', 'AS03', 'Winter', 2025);
-INSERT INTO [dbo].[cart] ([studentID], [courseID], [sectionID], [semester], [year]) VALUES (4, 'CMPT 201', 'AS04', 'Winter', 2025);
-INSERT INTO [dbo].[cart] ([studentID], [courseID], [sectionID], [semester], [year]) VALUES (5, 'CMPT 291', 'AS05', 'Winter', 2025);
-INSERT INTO [dbo].[cart] ([studentID], [courseID], [sectionID], [semester], [year]) VALUES (6, 'CMPT 391', 'AS06', 'Fall', 2024);
-INSERT INTO [dbo].[cart] ([studentID], [courseID], [sectionID], [semester], [year]) VALUES (7, 'CMPT 272', 'AS07', 'Summer', 2025);
-INSERT INTO [dbo].[cart] ([studentID], [courseID], [sectionID], [semester], [year]) VALUES (8, 'CMPT 395', 'AS08', 'Summer', 2025);
-INSERT INTO [dbo].[cart] ([studentID], [courseID], [sectionID], [semester], [year]) VALUES (9, 'CMPT 496', 'AS09', 'Fall', 2024);
-INSERT INTO [dbo].[cart] ([studentID], [courseID], [sectionID], [semester], [year]) VALUES (10, 'CMPT 280', 'AS10', 'Fall', 2024);
+INSERT INTO [dbo].[cart] ([studentID], [courseID], [sectionID], [semester], [year]) VALUES (1, 'CMPT 101', 'KD00', 'Fall', 2024);
+INSERT INTO [dbo].[cart] ([studentID], [courseID], [sectionID], [semester], [year]) VALUES (2, 'CMPT 103', 'MB31', 'Fall', 2024);
+INSERT INTO [dbo].[cart] ([studentID], [courseID], [sectionID], [semester], [year]) VALUES (3, 'CMPT 200', 'UC89', 'Fall', 2024);
+INSERT INTO [dbo].[cart] ([studentID], [courseID], [sectionID], [semester], [year]) VALUES (4, 'CMPT 201', 'QM95', 'Fall', 2024);
+INSERT INTO [dbo].[cart] ([studentID], [courseID], [sectionID], [semester], [year]) VALUES (5, 'CMPT 220', 'CC06', 'Fall', 2024);
+INSERT INTO [dbo].[cart] ([studentID], [courseID], [sectionID], [semester], [year]) VALUES (6, 'CMPT 291', 'II38', 'Fall', 2024);
+INSERT INTO [dbo].[cart] ([studentID], [courseID], [sectionID], [semester], [year]) VALUES (7, 'CMPT 391', 'YY54', 'Fall', 2024);
+INSERT INTO [dbo].[cart] ([studentID], [courseID], [sectionID], [semester], [year]) VALUES (8, 'CMPT 272', 'OT28', 'Fall', 2024);
+INSERT INTO [dbo].[cart] ([studentID], [courseID], [sectionID], [semester], [year]) VALUES (9, 'CMPT 395', 'OO70', 'Fall', 2024);
+INSERT INTO [dbo].[cart] ([studentID], [courseID], [sectionID], [semester], [year]) VALUES (10, 'CMPT 496', 'LX08', 'Fall', 2024);
+INSERT INTO [dbo].[cart] ([studentID], [courseID], [sectionID], [semester], [year]) VALUES (11, 'CMPT 280', 'QQ38', 'Fall', 2024);
 GO
