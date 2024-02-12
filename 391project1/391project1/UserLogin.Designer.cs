@@ -35,16 +35,18 @@
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(270, 269);
+            textBox1.Location = new Point(324, 323);
+            textBox1.Margin = new Padding(4, 4, 4, 4);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(300, 31);
+            textBox1.Size = new Size(359, 35);
             textBox1.TabIndex = 0;
             // 
             // loginBtn
             // 
-            loginBtn.Location = new Point(308, 327);
+            loginBtn.Location = new Point(370, 392);
+            loginBtn.Margin = new Padding(4, 4, 4, 4);
             loginBtn.Name = "loginBtn";
-            loginBtn.Size = new Size(112, 34);
+            loginBtn.Size = new Size(134, 41);
             loginBtn.TabIndex = 2;
             loginBtn.Text = "Login";
             loginBtn.UseVisualStyleBackColor = true;
@@ -53,22 +55,25 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(171, 272);
+            label1.Location = new Point(205, 326);
+            label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(74, 25);
+            label1.Size = new Size(86, 30);
             label1.TabIndex = 3;
             label1.Text = "User ID:";
             // 
             // UserLogin
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(12F, 30F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(778, 644);
+            ClientSize = new Size(934, 773);
             Controls.Add(label1);
             Controls.Add(loginBtn);
             Controls.Add(textBox1);
+            Margin = new Padding(4, 4, 4, 4);
             Name = "UserLogin";
             Text = "UserLogin";
+            Load += UserLogin_Load;
             ResumeLayout(false);
             PerformLayout();
         }
