@@ -41,9 +41,10 @@
             comboBoxYear = new ComboBox();
             addToCart = new Button();
             applyFilter = new Button();
-            cartListBox = new ListBox();
+            shoppingCartList = new ListBox();
             tabControl1.SuspendLayout();
             tabPageMyCourses.SuspendLayout();
+            tabPageSearch.SuspendLayout();
             tabPageCart.SuspendLayout();
             SuspendLayout();
             // 
@@ -60,10 +61,10 @@
             // 
             // buttonSearchCourses
             // 
-            buttonSearchCourses.Location = new Point(33, 164);
-            buttonSearchCourses.Margin = new Padding(4);
+            buttonSearchCourses.Location = new Point(19, 82);
+            buttonSearchCourses.Margin = new Padding(2);
             buttonSearchCourses.Name = "buttonSearchCourses";
-            buttonSearchCourses.Size = new Size(302, 86);
+            buttonSearchCourses.Size = new Size(176, 43);
             buttonSearchCourses.TabIndex = 1;
             buttonSearchCourses.Text = "Search Courses";
             buttonSearchCourses.UseVisualStyleBackColor = true;
@@ -71,10 +72,10 @@
             // 
             // buttonShoppingCart
             // 
-            buttonShoppingCart.Location = new Point(33, 258);
-            buttonShoppingCart.Margin = new Padding(4);
+            buttonShoppingCart.Location = new Point(19, 129);
+            buttonShoppingCart.Margin = new Padding(2);
             buttonShoppingCart.Name = "buttonShoppingCart";
-            buttonShoppingCart.Size = new Size(302, 86);
+            buttonShoppingCart.Size = new Size(176, 43);
             buttonShoppingCart.TabIndex = 2;
             buttonShoppingCart.Text = "Shopping Cart";
             buttonShoppingCart.UseVisualStyleBackColor = true;
@@ -97,19 +98,19 @@
             tabControl1.Controls.Add(tabPageMyCourses);
             tabControl1.Controls.Add(tabPageSearch);
             tabControl1.Controls.Add(tabPageCart);
-            tabControl1.Location = new Point(399, 164);
-            tabControl1.Margin = new Padding(4);
+            tabControl1.Location = new Point(233, 82);
+            tabControl1.Margin = new Padding(2);
             tabControl1.Multiline = true;
             tabControl1.Name = "tabControl1";
             tabControl1.SelectedIndex = 0;
-            tabControl1.Size = new Size(981, 938);
+            tabControl1.Size = new Size(572, 469);
             tabControl1.TabIndex = 6;
             // 
             // tabPageMyCourses
             // 
             tabPageMyCourses.Controls.Add(listBox1);
-            tabPageMyCourses.Location = new Point(38, 4);
-            tabPageMyCourses.Margin = new Padding(4);
+            tabPageMyCourses.Location = new Point(27, 4);
+            tabPageMyCourses.Margin = new Padding(2);
             tabPageMyCourses.Name = "tabPageMyCourses";
             tabPageMyCourses.Size = new Size(939, 930);
             tabPageMyCourses.TabIndex = 0;
@@ -130,33 +131,35 @@
             // 
             // tabPageSearch
             // 
-            tabPageSearch.Location = new Point(38, 4);
-            tabPageSearch.Margin = new Padding(4);
+            tabPageSearch.Controls.Add(searchButton);
+            tabPageSearch.Controls.Add(searchTextBox);
+            tabPageSearch.Controls.Add(searchListBox);
+            tabPageSearch.Location = new Point(27, 4);
+            tabPageSearch.Margin = new Padding(2);
             tabPageSearch.Name = "tabPageSearch";
-            tabPageSearch.Size = new Size(939, 930);
+            tabPageSearch.Size = new Size(541, 461);
             tabPageSearch.TabIndex = 1;
             tabPageSearch.Text = "Search Courses";
             tabPageSearch.UseVisualStyleBackColor = true;
             // 
             // tabPageCart
             // 
-            tabPageCart.Controls.Add(cartListBox);
-            tabPageCart.Location = new Point(38, 4);
-            tabPageCart.Margin = new Padding(4);
+            tabPageCart.Controls.Add(shoppingCartList);
+            tabPageCart.Location = new Point(27, 4);
+            tabPageCart.Margin = new Padding(2);
             tabPageCart.Name = "tabPageCart";
             tabPageCart.Size = new Size(939, 930);
             tabPageCart.TabIndex = 2;
             tabPageCart.Text = "Shopping Cart";
             tabPageCart.UseVisualStyleBackColor = true;
-            tabPageCart.Click += tabPageCart_Click;
             // 
             // comboBoxSemester
             // 
             comboBoxSemester.FormattingEnabled = true;
-            comboBoxSemester.Location = new Point(560, 64);
-            comboBoxSemester.Margin = new Padding(4);
+            comboBoxSemester.Location = new Point(327, 32);
+            comboBoxSemester.Margin = new Padding(2);
             comboBoxSemester.Name = "comboBoxSemester";
-            comboBoxSemester.Size = new Size(224, 38);
+            comboBoxSemester.Size = new Size(132, 23);
             comboBoxSemester.TabIndex = 7;
             comboBoxSemester.Text = "Semester";
             comboBoxSemester.SelectedIndexChanged += comboBoxSemester_SelectedIndexChanged;
@@ -164,20 +167,20 @@
             // comboBoxYear
             // 
             comboBoxYear.FormattingEnabled = true;
-            comboBoxYear.Location = new Point(795, 64);
-            comboBoxYear.Margin = new Padding(4);
+            comboBoxYear.Location = new Point(464, 32);
+            comboBoxYear.Margin = new Padding(2);
             comboBoxYear.Name = "comboBoxYear";
-            comboBoxYear.Size = new Size(224, 38);
+            comboBoxYear.Size = new Size(132, 23);
             comboBoxYear.TabIndex = 8;
             comboBoxYear.Text = "Year";
             comboBoxYear.SelectedIndexChanged += comboBoxYear_SelectedIndexChanged;
             // 
             // addToCart
             // 
-            addToCart.Location = new Point(33, 658);
-            addToCart.Margin = new Padding(4);
+            addToCart.Location = new Point(19, 329);
+            addToCart.Margin = new Padding(2);
             addToCart.Name = "addToCart";
-            addToCart.Size = new Size(302, 86);
+            addToCart.Size = new Size(176, 43);
             addToCart.TabIndex = 9;
             addToCart.Text = "Add to Cart";
             addToCart.UseVisualStyleBackColor = true;
@@ -185,29 +188,29 @@
             // 
             // applyFilter
             // 
-            applyFilter.Location = new Point(1057, 62);
+            applyFilter.Location = new Point(617, 31);
+            applyFilter.Margin = new Padding(2);
             applyFilter.Name = "applyFilter";
-            applyFilter.Size = new Size(166, 40);
+            applyFilter.Size = new Size(97, 20);
             applyFilter.TabIndex = 10;
             applyFilter.Text = "Apply";
             applyFilter.UseVisualStyleBackColor = true;
             applyFilter.Click += button1_Click_1;
             // 
-            // cartListBox
+            // shoppingCartList
             // 
-            cartListBox.FormattingEnabled = true;
-            cartListBox.ItemHeight = 30;
-            cartListBox.Location = new Point(17, 12);
-            cartListBox.Name = "cartListBox";
-            cartListBox.Size = new Size(898, 904);
-            cartListBox.TabIndex = 0;
-            cartListBox.SelectedIndexChanged += cartListBox_SelectedIndexChanged;
+            shoppingCartList.FormattingEnabled = true;
+            shoppingCartList.ItemHeight = 15;
+            shoppingCartList.Location = new Point(3, 3);
+            shoppingCartList.Name = "shoppingCartList";
+            shoppingCartList.Size = new Size(535, 454);
+            shoppingCartList.TabIndex = 0;
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(12F, 30F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1398, 1119);
+            ClientSize = new Size(816, 560);
             Controls.Add(applyFilter);
             Controls.Add(addToCart);
             Controls.Add(comboBoxYear);
@@ -217,12 +220,14 @@
             Controls.Add(buttonShoppingCart);
             Controls.Add(buttonSearchCourses);
             Controls.Add(buttonMyCourses);
-            Margin = new Padding(4);
+            Margin = new Padding(2);
             Name = "Form1";
             Text = "Form1";
             Load += Form1_Load;
             tabControl1.ResumeLayout(false);
             tabPageMyCourses.ResumeLayout(false);
+            tabPageSearch.ResumeLayout(false);
+            tabPageSearch.PerformLayout();
             tabPageCart.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
@@ -243,6 +248,9 @@
         private ComboBox comboBoxYear;
         private Button addToCart;
         private Button applyFilter;
-        private ListBox cartListBox;
+        private TextBox searchTextBox;
+        private ListBox searchListBox;
+        private Button searchButton;
+        private ListBox shoppingCartList;
     }
 }
