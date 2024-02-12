@@ -228,5 +228,9 @@
         private ComboBox comboBoxYear;
         private Button addToCart;
         private Button applyFilter;
+        private TextBox searchTextBox;
+        private ListBox searchListBox;
+        private Button searchButton;
+        private ListBox shoppingCartList;
     }
 }
