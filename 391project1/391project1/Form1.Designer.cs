@@ -41,8 +41,10 @@
             comboBoxYear = new ComboBox();
             addToCart = new Button();
             applyFilter = new Button();
+            cartListBox = new ListBox();
             tabControl1.SuspendLayout();
             tabPageMyCourses.SuspendLayout();
+            tabPageCart.SuspendLayout();
             SuspendLayout();
             // 
             // buttonMyCourses
@@ -138,6 +140,7 @@
             // 
             // tabPageCart
             // 
+            tabPageCart.Controls.Add(cartListBox);
             tabPageCart.Location = new Point(38, 4);
             tabPageCart.Margin = new Padding(4);
             tabPageCart.Name = "tabPageCart";
@@ -145,6 +148,7 @@
             tabPageCart.TabIndex = 2;
             tabPageCart.Text = "Shopping Cart";
             tabPageCart.UseVisualStyleBackColor = true;
+            tabPageCart.Click += tabPageCart_Click;
             // 
             // comboBoxSemester
             // 
@@ -189,6 +193,16 @@
             applyFilter.UseVisualStyleBackColor = true;
             applyFilter.Click += button1_Click_1;
             // 
+            // cartListBox
+            // 
+            cartListBox.FormattingEnabled = true;
+            cartListBox.ItemHeight = 30;
+            cartListBox.Location = new Point(17, 12);
+            cartListBox.Name = "cartListBox";
+            cartListBox.Size = new Size(898, 904);
+            cartListBox.TabIndex = 0;
+            cartListBox.SelectedIndexChanged += cartListBox_SelectedIndexChanged;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(12F, 30F);
@@ -209,6 +223,7 @@
             Load += Form1_Load;
             tabControl1.ResumeLayout(false);
             tabPageMyCourses.ResumeLayout(false);
+            tabPageCart.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
         }
@@ -228,5 +243,6 @@
         private ComboBox comboBoxYear;
         private Button addToCart;
         private Button applyFilter;
+        private ListBox cartListBox;
     }
 }

@@ -1,4 +1,5 @@
 using Microsoft.VisualBasic;
+using Microsoft.VisualBasic.Devices;
 using System.Collections;
 using System.Collections.Generic;
 using System.Data;
@@ -7,6 +8,7 @@ using System.Diagnostics;
 using System.Windows.Forms;
 using static System.Net.Mime.MediaTypeNames;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+
 
 namespace _391project1
 {
@@ -18,6 +20,7 @@ namespace _391project1
             //fillCourses();
             fillSemBox();
             fillYearBox();
+            showCurrentCart();
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -106,37 +109,78 @@ namespace _391project1
             con.Close();
         }
 
-        private void fillCourses(string query)
+        private void showCurrentCourses()
+        {
+            try
+            {
+                string act = "active";
+                SqlConnection con = new SqlConnection("Data Source = localhost; Initial Catalog = 391project1; Integrated Security = True; MultipleActiveResultSets = true; ");
+                SqlCommand SelectCommand = new SqlCommand("showMyCourses", con);
+                SelectCommand.CommandType = CommandType.StoredProcedure;
+                SelectCommand.Parameters.AddWithValue("@studentID", UserLogin.GlobalVariables.userID.ToString());
+                SqlDataReader myreader;
+                List<string> course = new List<string>();
+
+                if (semIdx != -1 & yrIdx != -1)
+                {
+                    listBox1.Items.Clear();
+                    SelectCommand.Parameters.AddWithValue("@semester", comboBoxSemester.SelectedItem.ToString());
+                    SelectCommand.Parameters.AddWithValue("@year", comboBoxYear.SelectedItem.ToString());
+                    SelectCommand.Parameters.AddWithValue("@active", act);
+                    con.Open();
+                    myreader = SelectCommand.ExecuteReader();
+                    while (myreader.Read())
+                    {
+                        course.Add(myreader[0].ToString() + " " + myreader[1].ToString() + " " + myreader[2].ToString() + " " + myreader[3].ToString());
+                    }
+
+                    for (int i = 0; i < 4; i++)
+                    {
+                        listBox1.Items.Add(course[i]);
+                    }
+
+                    con.Close();
+
+                }
+                else
+                {
+                    MessageBox.Show("select a semester and a year");
+                }
+
+            }
+            catch (Exception ex) { }
+        }
+
+        private void showCurrentCart()
         {
             try
             {
                 SqlConnection con = new SqlConnection("Data Source = localhost; Initial Catalog = 391project1; Integrated Security = True; MultipleActiveResultSets = true; ");
-                SqlCommand SelectCommand = new SqlCommand("viewAvailableCourses", con);
+                SqlCommand SelectCommand = new SqlCommand("showMyCart", con);
                 SelectCommand.CommandType = CommandType.StoredProcedure;
-                SelectCommand.Parameters.AddWithValue("@query", query);
+                SelectCommand.Parameters.AddWithValue("@studentID", UserLogin.GlobalVariables.userID.ToString());
                 SqlDataReader myreader;
-                con.Open();
-
-                listBox1.Items.Clear();
-                myreader = SelectCommand.ExecuteReader();
                 List<string> course = new List<string>();
 
+                cartListBox.Items.Clear();
+
+                con.Open();
+                myreader = SelectCommand.ExecuteReader();
                 while (myreader.Read())
                 {
-                    course.Add(myreader[0].ToString() + " " + myreader[1].ToString() + " " + myreader[2].ToString() + " " + myreader[3].ToString() + " " + myreader[4].ToString() + " " + myreader[5].ToString() + " " + myreader[6].ToString());
+                    course.Add(myreader[0].ToString() + " " + myreader[1].ToString() + " " + myreader[2].ToString() + " " + myreader[3].ToString());
                 }
-
-                for (int i = 0; i < 7; i++)
+                for (int i = 0; i < 4; i++)
                 {
-                    listBox1.Items.Add(course[i]);
+                    cartListBox.Items.Add(course[i]);
                 }
 
                 con.Close();
             }
             catch (Exception ex) { }
         }
-
-        private void addCourseToCart(string courseToAdd)
+        /*
+        private void addCourseToCart(string courseID, string sectionID, string sem, string year)
         {
             SqlConnection con = new SqlConnection("Data Source = localhost; Initial Catalog = 391project1; Integrated Security = True; MultipleActiveResultSets = true; ");
             SqlCommand SelectCommand = new SqlCommand("", con);
@@ -144,7 +188,11 @@ namespace _391project1
             SelectCommand.Parameters.AddWithValue("@query", query);
             SqlDataReader myreader;
             con.Open();
+
+
+            con.Close();
         }
+        */
 
         private void button1_Click(object sender, EventArgs e)//add to cart button
         {
@@ -153,7 +201,7 @@ namespace _391project1
             if (course != null)
             {
                 string[] components = course.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
-                
+
             }
             else
             {
@@ -177,6 +225,9 @@ namespace _391project1
         private string fillListQuery = "SELECT courseID, sectionID, semester, year, capacity, instructorID, day from section";
         private void button1_Click_1(object sender, EventArgs e)//apply filter button
         {
+            showCurrentCourses();
+
+            /*
             Debug.WriteLine(" " + semIdx + " " + yrIdx);
             if (semIdx != -1 & yrIdx == -1)
             {
@@ -196,8 +247,19 @@ namespace _391project1
 
                 fillListQuery = "SELECT courseID, sectionID, semester, year, capacity, instructorID, day from section where semester = '" + comboBoxSemester.SelectedItem?.ToString() + "' and year = '" + comboBoxYear.SelectedItem?.ToString() + "'";
             }
+            this stuff is all really good but is not for this purpose. may need to reuse later.
+            */
 
-            fillCourses(fillListQuery);
+        }
+
+        private void tabPageCart_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cartListBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
