@@ -35,15 +35,15 @@
             tabPageMyCourses = new TabPage();
             listBox1 = new ListBox();
             tabPageSearch = new TabPage();
+            searchButton = new Button();
+            searchTextBox = new TextBox();
+            searchListBox = new ListBox();
             tabPageCart = new TabPage();
             shoppingCartList = new ListBox();
             comboBoxSemester = new ComboBox();
             comboBoxYear = new ComboBox();
             addToCart = new Button();
             applyFilter = new Button();
-            searchListBox = new ListBox();
-            searchTextBox = new TextBox();
-            searchButton = new Button();
             tabControl1.SuspendLayout();
             tabPageMyCourses.SuspendLayout();
             tabPageSearch.SuspendLayout();
@@ -133,6 +133,37 @@
             tabPageSearch.Text = "Search Courses";
             tabPageSearch.UseVisualStyleBackColor = true;
             // 
+            // searchButton
+            // 
+            searchButton.BackColor = Color.Silver;
+            searchButton.FlatAppearance.BorderColor = Color.Silver;
+            searchButton.Location = new Point(356, 13);
+            searchButton.Name = "searchButton";
+            searchButton.Size = new Size(75, 23);
+            searchButton.TabIndex = 2;
+            searchButton.Text = "Search";
+            searchButton.UseVisualStyleBackColor = false;
+            searchButton.Click += searchButton_Click;
+            // 
+            // searchTextBox
+            // 
+            searchTextBox.Location = new Point(69, 11);
+            searchTextBox.Name = "searchTextBox";
+            searchTextBox.Size = new Size(205, 23);
+            searchTextBox.TabIndex = 1;
+            searchTextBox.TextChanged += searchTextBox_TextChanged;
+            // 
+            // searchListBox
+            // 
+            searchListBox.FormattingEnabled = true;
+            searchListBox.HorizontalScrollbar = true;
+            searchListBox.ItemHeight = 15;
+            searchListBox.Location = new Point(3, 43);
+            searchListBox.Name = "searchListBox";
+            searchListBox.Size = new Size(538, 409);
+            searchListBox.TabIndex = 0;
+            searchListBox.SelectedIndexChanged += listBox2_SelectedIndexChanged;
+            // 
             // tabPageCart
             // 
             tabPageCart.Controls.Add(shoppingCartList);
@@ -196,36 +227,6 @@
             applyFilter.Text = "Apply";
             applyFilter.UseVisualStyleBackColor = true;
             applyFilter.Click += button1_Click_1;
-            // 
-            // searchListBox
-            // 
-            searchListBox.FormattingEnabled = true;
-            searchListBox.ItemHeight = 15;
-            searchListBox.Location = new Point(3, 43);
-            searchListBox.Name = "searchListBox";
-            searchListBox.Size = new Size(538, 409);
-            searchListBox.TabIndex = 0;
-            searchListBox.SelectedIndexChanged += this.listBox2_SelectedIndexChanged;
-            // 
-            // searchTextBox
-            // 
-            searchTextBox.Location = new Point(69, 11);
-            searchTextBox.Name = "searchTextBox";
-            searchTextBox.Size = new Size(205, 23);
-            searchTextBox.TabIndex = 1;
-            searchTextBox.TextChanged += searchTextBox_TextChanged;
-            // 
-            // searchButton
-            // 
-            searchButton.BackColor = Color.Silver;
-            searchButton.FlatAppearance.BorderColor = Color.Silver;
-            searchButton.Location = new Point(356, 13);
-            searchButton.Name = "searchButton";
-            searchButton.Size = new Size(75, 23);
-            searchButton.TabIndex = 2;
-            searchButton.Text = "Search";
-            searchButton.UseVisualStyleBackColor = false;
-            searchButton.Click += searchButton_Click;
             // 
             // Form1
             // 

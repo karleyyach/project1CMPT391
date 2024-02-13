@@ -470,19 +470,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Jacks\\.nuget\\packages\\": {}
+    "C:\\Users\\justi\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Jacks\\source\\repos\\jacksonsteed\\project1CMPT391\\391project1\\391project1\\391project1.csproj",
+      "projectUniqueName": "C:\\Users\\justi\\OneDrive\\Desktop\\project1CMPT391-main\\391project1\\391project1\\391project1.csproj",
       "projectName": "391project1",
-      "projectPath": "C:\\Users\\Jacks\\source\\repos\\jacksonsteed\\project1CMPT391\\391project1\\391project1\\391project1.csproj",
-      "packagesPath": "C:\\Users\\Jacks\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Jacks\\source\\repos\\jacksonsteed\\project1CMPT391\\391project1\\391project1\\obj\\",
+      "projectPath": "C:\\Users\\justi\\OneDrive\\Desktop\\project1CMPT391-main\\391project1\\391project1\\391project1.csproj",
+      "packagesPath": "C:\\Users\\justi\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\justi\\OneDrive\\Desktop\\project1CMPT391-main\\391project1\\391project1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Jacks\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\justi\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -532,7 +532,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
       }
     }
   }

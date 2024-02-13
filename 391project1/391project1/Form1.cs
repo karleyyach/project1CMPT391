@@ -187,30 +187,34 @@ namespace _391project1
         {
             try
             {
-                using (SqlConnection con = new SqlConnection("Data Source=localhost; Initial Catalog=391project1; Integrated Security=True; MultipleActiveResultSets=true;"))
-                {
-                    con.Open();
-                    SqlCommand SelectCommand = new SqlCommand(query, con);
-                    using (SqlDataReader myreader = SelectCommand.ExecuteReader())
-                    {
-                        // Clear the existing items in the ListBox
-                        searchListBox.Items.Clear();
+                SqlConnection con = new SqlConnection("Data Source = localhost; Initial Catalog = 391project1; Integrated Security = True; MultipleActiveResultSets = true; ");
+                SqlCommand SelectCommand = new SqlCommand("viewAvailableCourses", con);
+                SelectCommand.CommandType = CommandType.StoredProcedure;
+                SelectCommand.Parameters.AddWithValue("@query", query);
+                SqlDataReader myreader;
+                con.Open();
+                List<string> course = new List<string>();
 
-                        // Populate the ListBox with data from the SqlDataReader
-                        while (myreader.Read())
-                        {
-                            string item = myreader[0].ToString() + " " + myreader[1].ToString() + " " + myreader[2].ToString() + " " + myreader[3].ToString() + " " + myreader[4].ToString() + " " + myreader[5].ToString() + " " + myreader[6].ToString() + " " + myreader[7].ToString() + " " + myreader[8].ToString() + " " + myreader[9].ToString();
-                            searchListBox.Items.Add(item);
-                        }
-                    }
+                searchListBox.Items.Clear();
+                myreader = SelectCommand.ExecuteReader();
+
+                while (myreader.Read())
+                {
+                    course.Add(myreader[0].ToString() + " " + myreader[1].ToString() + " " + myreader[2].ToString() + " " + myreader[3].ToString() + " " + myreader[4].ToString() + " " + myreader[5].ToString() + " " + myreader[6].ToString() + " " + myreader[7].ToString() + " " + myreader[8].ToString() + " " + myreader[9].ToString() + " " + myreader[10].ToString() + " " + myreader[11].ToString());
                 }
+
+                int i = 0;
+                while (course[i] != null)
+                {
+                    searchListBox.Items.Add(course[i]);
+                    i++;
+                }
+                con.Close();
+
             }
-            catch (Exception ex)
-            {
-                // Handle exceptions or log errors appropriately
-                MessageBox.Show("An error occurred: " + ex.Message);
-            }
+            catch (Exception ex) { }
         }
+
         /*
         private void addCourseToCart(string courseID, string sectionID, string sem, string year)
         {
@@ -254,8 +258,6 @@ namespace _391project1
         }
 
         private string fillListQuery = "SELECT courseID, sectionID, semester, year, capacity, instructorID, day from section";
-        private string fillSearchQuery = "SELECT course.courseID, course.courseName, section.sectionID, instructor.firstName, instructor.lastName, timeSlot.[day], timeSlot.startTime, timeSlot.endTime, section.semester, section.[year] FROM course JOIN section ON course.courseID = section.courseID JOIN instructor ON section.instructorID = instructor.instructorID JOIN timeSlot ON section.timeSlotID = timeSlot.timeSlotID;";
-
         private void button1_Click_1(object sender, EventArgs e)//apply filter button
         {
             showCurrentCourses();
@@ -277,58 +279,38 @@ namespace _391project1
 
         }
 
+        private string fillSearchQuery = "SELECT * FROM courses_schedule;";
         private void searchButton_Click(object sender, EventArgs e)
         {
-            if (semIdx != -1 & yrIdx == -1) // Semester selected & nothing selected
+            if (yrIdx != -1 & semIdx != -1) // Both selected
             {
-                fillSearchQuery = "SELECT course.courseID, course.courseName, section.sectionID, instructor.firstName, instructor.lastName, timeSlot.[day], timeSlot.startTime, timeSlot.endTime, section.semester, section.[year] FROM course JOIN section ON course.courseID = section.courseID JOIN instructor ON section.instructorID = instructor.instructorID JOIN timeSlot ON section.timeSlotID = timeSlot.timeSlotID WHERE section.semester = '" + comboBoxSemester.SelectedItem?.ToString() + "'";
-                Debug.WriteLine("Semester");
+                Debug.WriteLine("Semester and year filled");
+                fillSearchQuery = "SELECT * FROM courses_schedule WHERE courses_schedule.semester = '" + comboBoxSemester.SelectedItem?.ToString() + "' AND courses_schedule.[year] = '" + comboBoxYear.SelectedItem?.ToString() + "'";
                 if (searchTextBox.Text.Length >= 1)
                 {
-                    Debug.WriteLine("Semester if statement");
-                    fillSearchQuery = "SELECT course.courseID, course.courseName, section.sectionID, instructor.firstName, instructor.lastName, timeSlot.[day], timeSlot.startTime, timeSlot.endTime, section.semester, section.[year] FROM course JOIN section ON course.courseID = section.courseID JOIN instructor ON section.instructorID = instructor.instructorID JOIN timeSlot ON section.timeSlotID = timeSlot.timeSlotID WHERE section.semester = '" + comboBoxSemester.SelectedItem?.ToString() + "' AND course.courseID LIKE '" + searchTextBox.Text + "%'";
+                    Debug.WriteLine("Text Box filled");
+                    fillSearchQuery = "SELECT * FROM courses_schedule WHERE courses_schedule.semester = '" + comboBoxSemester.SelectedItem?.ToString() + "' AND courses_schedule.[year] = '" + comboBoxYear.SelectedItem?.ToString() + "' AND courses_schedule.courseID LIKE '" + searchTextBox.Text + "%'";
                     fillSearch(fillSearchQuery);
+                    return; // exit
                 }
-            }
-
-            else if (yrIdx != -1 & semIdx == -1) // Year selected & nothing selected
-            {
-                Debug.WriteLine("Year and nothing");
-                fillSearchQuery = "SELECT course.courseID, course.courseName, section.sectionID, instructor.firstName, instructor.lastName, timeSlot.[day], timeSlot.startTime, timeSlot.endTime, section.semester, section.[year] FROM course JOIN section ON course.courseID = section.courseID JOIN instructor ON section.instructorID = instructor.instructorID JOIN timeSlot ON section.timeSlotID = timeSlot.timeSlotID WHERE section.[year] = '" + comboBoxYear.SelectedItem?.ToString() + "'";
-                if (searchTextBox.Text.Length >= 1)
-                {
-                    Debug.WriteLine("Year and nothing if");
-                    fillSearchQuery = "SELECT course.courseID, course.courseName, section.sectionID, instructor.firstName, instructor.lastName, timeSlot.[day], timeSlot.startTime, timeSlot.endTime, section.semester, section.[year] FROM course JOIN section ON course.courseID = section.courseID JOIN instructor ON section.instructorID = instructor.instructorID JOIN timeSlot ON section.timeSlotID = timeSlot.timeSlotID WHERE course.courseID LIKE '" + searchTextBox.Text + "%' AND section.[year] = '" + comboBoxYear.SelectedItem?.ToString() + "'";
-                    fillSearch(fillSearchQuery);
-                }
-
-            }
-
-            else if (yrIdx != -1 & semIdx != -1) // Both selected
-            {
-                Debug.WriteLine("Both");
-                fillSearchQuery = "SELECT course.courseID, course.courseName, section.sectionID, instructor.firstName, instructor.lastName, timeSlot.[day], timeSlot.startTime, timeSlot.endTime, section.semester, section.[year] FROM course JOIN section ON course.courseID = section.courseID JOIN instructor ON section.instructorID = instructor.instructorID JOIN timeSlot ON section.timeSlotID = timeSlot.timeSlotID WHERE section.semester = '" + comboBoxSemester.SelectedItem?.ToString() + "' AND section.[year] = '" + comboBoxYear.SelectedItem?.ToString() + "'";
-                if (searchTextBox.Text.Length >= 1)
-                {
-                    Debug.WriteLine("Both if");
-                    fillSearchQuery = "SELECT course.courseID, course.courseName, section.sectionID, instructor.firstName, instructor.lastName, timeSlot.[day], timeSlot.startTime, timeSlot.endTime, section.semester, section.[year] FROM course JOIN section ON course.courseID = section.courseID JOIN instructor ON section.instructorID = instructor.instructorID JOIN timeSlot ON section.timeSlotID = timeSlot.timeSlotID WHERE section.semester = '" + comboBoxSemester.SelectedItem?.ToString() + "' AND section.[year] = '" + comboBoxYear.SelectedItem?.ToString() + "' AND course.courseID LIKE '" + searchTextBox.Text + "%'";
-                    fillSearch(fillSearchQuery);
-                }
-            }
-
-            else if (string.IsNullOrEmpty(searchTextBox.Text))
-            {
-                Debug.WriteLine("Nothing entered");
                 fillSearch(fillSearchQuery);
+                return; // exit
+            }
+
+            else if (searchTextBox.Text.Length >= 1 & yrIdx == -1 & semIdx == -1) // Elements in search bar and semester and year are empty
+            {
+                Debug.WriteLine("Only text box");
+                fillSearchQuery = "SELECT * FROM courses_schedule WHERE courses_schedule.courseID LIKE '" + searchTextBox.Text + "%'";
+                fillSearch(fillSearchQuery);
+                return; // exit
             }
 
             else
             {
-                Debug.WriteLine("Just text box");
-                fillSearchQuery = "SELECT course.courseID, course.courseName, section.sectionID, instructor.firstName, instructor.lastName, timeSlot.[day], timeSlot.startTime, timeSlot.endTime, section.semester, section.[year] FROM course JOIN section ON course.courseID = section.courseID JOIN instructor ON section.instructorID = instructor.instructorID JOIN timeSlot ON section.timeSlotID = timeSlot.timeSlotID WHERE course.courseID LIKE '" + searchTextBox.Text + "%'";
-                fillSearch(fillSearchQuery);
+                MessageBox.Show("Select a semester and a year");
+                return; // exit
             }
-            fillSearch(fillSearchQuery);
         }
     }
 }
+
