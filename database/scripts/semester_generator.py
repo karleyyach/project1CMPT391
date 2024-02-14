@@ -176,7 +176,7 @@ scriptDirectory = os.path.dirname(os.path.realpath(__file__))
 rawDataDirectory = os.path.join(scriptDirectory, 'raw data')
 if not os.path.exists(rawDataDirectory):
     os.makedirs(rawDataDirectory)
-outputFilePath = os.path.join(rawDataDirectory, 'all_semesters.json')
+outputFilePath = os.path.join(rawDataDirectory, 'all_semesters2.json')
 
 with open(outputFilePath, 'w') as outFile:
     json.dump(allCoursesWithSections, outFile, indent=4)
