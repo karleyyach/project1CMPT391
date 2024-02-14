@@ -28,21 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
-            buttonMyCourses = new Button();
-            buttonSearchCourses = new Button();
-            buttonShoppingCart = new Button();
             tabControl1 = new TabControl();
             tabPageMyCourses = new TabPage();
+            courseInfoLabel = new Label();
+            viewCourseButton = new Button();
+            MyCoursesHeading = new Label();
             listBox1 = new ListBox();
             tabPageSearch = new TabPage();
             searchButton = new Button();
+            addToCart = new Button();
             searchTextBox = new TextBox();
             searchListBox = new ListBox();
             tabPageCart = new TabPage();
             shoppingCartList = new ListBox();
             comboBoxSemester = new ComboBox();
             comboBoxYear = new ComboBox();
-            addToCart = new Button();
             applyFilter = new Button();
             tabControl1.SuspendLayout();
             tabPageMyCourses.SuspendLayout();
@@ -50,85 +50,84 @@
             tabPageCart.SuspendLayout();
             SuspendLayout();
             // 
-            // buttonMyCourses
-            // 
-            buttonMyCourses.Location = new Point(19, 35);
-            buttonMyCourses.Margin = new Padding(4);
-            buttonMyCourses.Name = "buttonMyCourses";
-            buttonMyCourses.Size = new Size(176, 41);
-            buttonMyCourses.TabIndex = 0;
-            buttonMyCourses.Text = "My Courses";
-            buttonMyCourses.UseVisualStyleBackColor = true;
-            buttonMyCourses.Click += myCoursesBtn_Click;
-            // 
-            // buttonSearchCourses
-            // 
-            buttonSearchCourses.Location = new Point(19, 82);
-            buttonSearchCourses.Margin = new Padding(2);
-            buttonSearchCourses.Name = "buttonSearchCourses";
-            buttonSearchCourses.Size = new Size(176, 43);
-            buttonSearchCourses.TabIndex = 1;
-            buttonSearchCourses.Text = "Search Courses";
-            buttonSearchCourses.UseVisualStyleBackColor = true;
-            buttonSearchCourses.Click += searchBtn_Click;
-            // 
-            // buttonShoppingCart
-            // 
-            buttonShoppingCart.Location = new Point(19, 129);
-            buttonShoppingCart.Margin = new Padding(2);
-            buttonShoppingCart.Name = "buttonShoppingCart";
-            buttonShoppingCart.Size = new Size(176, 43);
-            buttonShoppingCart.TabIndex = 2;
-            buttonShoppingCart.Text = "Shopping Cart";
-            buttonShoppingCart.UseVisualStyleBackColor = true;
-            buttonShoppingCart.Click += cartBtn_Click;
-            // 
             // tabControl1
             // 
             tabControl1.Alignment = TabAlignment.Left;
             tabControl1.Controls.Add(tabPageMyCourses);
             tabControl1.Controls.Add(tabPageSearch);
             tabControl1.Controls.Add(tabPageCart);
-            tabControl1.Location = new Point(233, 82);
+            tabControl1.Location = new Point(11, 80);
             tabControl1.Margin = new Padding(2);
             tabControl1.Multiline = true;
             tabControl1.Name = "tabControl1";
             tabControl1.SelectedIndex = 0;
-            tabControl1.Size = new Size(572, 469);
+            tabControl1.Size = new Size(794, 469);
             tabControl1.TabIndex = 6;
             // 
             // tabPageMyCourses
             // 
+            tabPageMyCourses.Controls.Add(courseInfoLabel);
+            tabPageMyCourses.Controls.Add(viewCourseButton);
+            tabPageMyCourses.Controls.Add(MyCoursesHeading);
             tabPageMyCourses.Controls.Add(listBox1);
             tabPageMyCourses.Location = new Point(27, 4);
             tabPageMyCourses.Margin = new Padding(2);
             tabPageMyCourses.Name = "tabPageMyCourses";
-            tabPageMyCourses.Size = new Size(541, 461);
+            tabPageMyCourses.Size = new Size(763, 461);
             tabPageMyCourses.TabIndex = 0;
             tabPageMyCourses.Text = "My Courses";
             tabPageMyCourses.UseVisualStyleBackColor = true;
+            // 
+            // courseInfoLabel
+            // 
+            courseInfoLabel.AutoSize = true;
+            courseInfoLabel.Location = new Point(543, 110);
+            courseInfoLabel.Name = "courseInfoLabel";
+            courseInfoLabel.Size = new Size(38, 15);
+            courseInfoLabel.TabIndex = 3;
+            courseInfoLabel.Text = "label1";
+            // 
+            // viewCourseButton
+            // 
+            viewCourseButton.Location = new Point(543, 34);
+            viewCourseButton.Name = "viewCourseButton";
+            viewCourseButton.Size = new Size(133, 45);
+            viewCourseButton.TabIndex = 2;
+            viewCourseButton.Text = "View Course Details";
+            viewCourseButton.UseVisualStyleBackColor = true;
+            viewCourseButton.Click += viewCourseButton_Click;
+            // 
+            // MyCoursesHeading
+            // 
+            MyCoursesHeading.AutoSize = true;
+            MyCoursesHeading.Location = new Point(15, 15);
+            MyCoursesHeading.Name = "MyCoursesHeading";
+            MyCoursesHeading.Size = new Size(208, 15);
+            MyCoursesHeading.TabIndex = 1;
+            MyCoursesHeading.Text = "Course ID | Section ID | Semester | Year";
             // 
             // listBox1
             // 
             listBox1.FormattingEnabled = true;
             listBox1.ItemHeight = 15;
             listBox1.Items.AddRange(new object[] { "" });
-            listBox1.Location = new Point(24, 21);
+            listBox1.Location = new Point(4, 34);
             listBox1.Margin = new Padding(4);
             listBox1.Name = "listBox1";
-            listBox1.Size = new Size(922, 844);
+            listBox1.Size = new Size(477, 424);
             listBox1.TabIndex = 0;
             listBox1.SelectedIndexChanged += listBox1_SelectedIndexChanged;
             // 
             // tabPageSearch
             // 
             tabPageSearch.Controls.Add(searchButton);
+            tabPageSearch.Controls.Add(addToCart);
             tabPageSearch.Controls.Add(searchTextBox);
             tabPageSearch.Controls.Add(searchListBox);
             tabPageSearch.Location = new Point(27, 4);
             tabPageSearch.Margin = new Padding(2);
             tabPageSearch.Name = "tabPageSearch";
-            tabPageSearch.Size = new Size(541, 461);
+            tabPageSearch.Size = new Size(763, 461);
             tabPageSearch.TabIndex = 1;
             tabPageSearch.Text = "Search Courses";
             tabPageSearch.UseVisualStyleBackColor = true;
@@ -137,7 +136,7 @@
             // 
             searchButton.BackColor = Color.Silver;
             searchButton.FlatAppearance.BorderColor = Color.Silver;
-            searchButton.Location = new Point(356, 13);
+            searchButton.Location = new Point(289, 14);
             searchButton.Name = "searchButton";
             searchButton.Size = new Size(75, 23);
             searchButton.TabIndex = 2;
@@ -145,9 +144,20 @@
             searchButton.UseVisualStyleBackColor = false;
             searchButton.Click += searchButton_Click;
             // 
+            // addToCart
+            // 
+            addToCart.Location = new Point(432, 8);
+            addToCart.Margin = new Padding(2);
+            addToCart.Name = "addToCart";
+            addToCart.Size = new Size(106, 29);
+            addToCart.TabIndex = 9;
+            addToCart.Text = "Add to Cart";
+            addToCart.UseVisualStyleBackColor = true;
+            addToCart.Click += button1_Click;
+            // 
             // searchTextBox
             // 
-            searchTextBox.Location = new Point(69, 11);
+            searchTextBox.Location = new Point(78, 14);
             searchTextBox.Name = "searchTextBox";
             searchTextBox.Size = new Size(205, 23);
             searchTextBox.TabIndex = 1;
@@ -160,7 +170,7 @@
             searchListBox.ItemHeight = 15;
             searchListBox.Location = new Point(3, 43);
             searchListBox.Name = "searchListBox";
-            searchListBox.Size = new Size(538, 409);
+            searchListBox.Size = new Size(757, 409);
             searchListBox.TabIndex = 0;
             searchListBox.SelectedIndexChanged += listBox2_SelectedIndexChanged;
             // 
@@ -170,7 +180,7 @@
             tabPageCart.Location = new Point(27, 4);
             tabPageCart.Margin = new Padding(2);
             tabPageCart.Name = "tabPageCart";
-            tabPageCart.Size = new Size(541, 461);
+            tabPageCart.Size = new Size(763, 461);
             tabPageCart.TabIndex = 2;
             tabPageCart.Text = "Shopping Cart";
             tabPageCart.UseVisualStyleBackColor = true;
@@ -206,17 +216,6 @@
             comboBoxYear.Text = "Year";
             comboBoxYear.SelectedIndexChanged += comboBoxYear_SelectedIndexChanged;
             // 
-            // addToCart
-            // 
-            addToCart.Location = new Point(19, 329);
-            addToCart.Margin = new Padding(2);
-            addToCart.Name = "addToCart";
-            addToCart.Size = new Size(176, 43);
-            addToCart.TabIndex = 9;
-            addToCart.Text = "Add to Cart";
-            addToCart.UseVisualStyleBackColor = true;
-            addToCart.Click += button1_Click;
-            // 
             // applyFilter
             // 
             applyFilter.Location = new Point(617, 31);
@@ -234,19 +233,16 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(816, 560);
             Controls.Add(applyFilter);
-            Controls.Add(addToCart);
             Controls.Add(comboBoxYear);
             Controls.Add(comboBoxSemester);
             Controls.Add(tabControl1);
-            Controls.Add(buttonShoppingCart);
-            Controls.Add(buttonSearchCourses);
-            Controls.Add(buttonMyCourses);
             Margin = new Padding(2);
             Name = "Form1";
             Text = "Form1";
             Load += Form1_Load;
             tabControl1.ResumeLayout(false);
             tabPageMyCourses.ResumeLayout(false);
+            tabPageMyCourses.PerformLayout();
             tabPageSearch.ResumeLayout(false);
             tabPageSearch.PerformLayout();
             tabPageCart.ResumeLayout(false);
@@ -271,5 +267,8 @@
         private Button searchButton;
         private ListBox shoppingCartList;
         private ListBox searchListBox;
+        private Label MyCoursesHeading;
+        private Button viewCourseButton;
+        private Label courseInfoLabel;
     }
 }

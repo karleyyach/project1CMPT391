@@ -15,6 +15,7 @@ namespace _391project1
         public Form1()
         {
             InitializeComponent();
+            courseInfoLabel.Visible = false;
             //fillCourses();
             fillSemBox();
             fillYearBox();
@@ -59,7 +60,7 @@ namespace _391project1
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            courseInfoLabel.Visible = false;
         }
 
         private void fillSemBox()
@@ -126,11 +127,11 @@ namespace _391project1
                     listBox1.Items.Clear();
                     SelectCommand.Parameters.AddWithValue("@semester", comboBoxSemester.SelectedItem.ToString());
                     SelectCommand.Parameters.AddWithValue("@year", comboBoxYear.SelectedItem.ToString());
-                    SelectCommand.Parameters.AddWithValue("@active", act);
+
                     myreader = SelectCommand.ExecuteReader();
                     while (myreader.Read())
                     {
-                        course.Add(myreader[0].ToString() + " " + myreader[1].ToString() + " " + myreader[2].ToString() + " " + myreader[3].ToString());
+                        course.Add(myreader[0].ToString() + " | " + myreader[1].ToString() + " | " + myreader[2].ToString() + " | " + myreader[3].ToString());
                     }
 
                     int i = 0;
@@ -310,6 +311,76 @@ namespace _391project1
                 MessageBox.Show("Select a semester and a year");
                 return; // exit
             }
+        }
+
+        private void viewCourseButton_Click(object sender, EventArgs e)
+        {
+            courseInfoLabel.Visible = true;
+            showCourseInfo();
+        }
+
+        private void showCourseInfo()
+        {
+            try
+            {
+                SqlConnection con = new SqlConnection("Data Source = localhost; Initial Catalog = 391project1; Integrated Security = True; MultipleActiveResultSets = true; ");
+                SqlCommand SelectCommand = new SqlCommand("getCourseInfo", con);
+                SelectCommand.CommandType = CommandType.StoredProcedure;
+                SelectCommand.Parameters.AddWithValue("@studentID", UserLogin.GlobalVariables.userID.ToString());
+                SqlDataReader myreader;
+                con.Open();
+                List<string> course = new List<string>();
+
+                Debug.WriteLine(semIdx + "   " + yrIdx);
+
+                if (semIdx != -1 && yrIdx != -1 && listBox1.SelectedIndex != -1)
+                {
+                    courseInfoLabel.Text = "";
+                    string courseInfo = listBox1.SelectedItem.ToString();
+                    string[] courseParts = courseInfo.Split('|');
+                    if (courseParts.Length == 4)
+                    {
+                        string[] idParts = courseParts[0].Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
+                        if (idParts.Length == 2)
+                        {
+                            string courseID = idParts[0].Trim();
+                            string sectionID = idParts[1].Trim();
+                            SelectCommand.Parameters.AddWithValue("@semester", courseParts[2].Trim());
+                            SelectCommand.Parameters.AddWithValue("@year", int.Parse(courseParts[3].Trim()));
+                            SelectCommand.Parameters.AddWithValue("@courseID", courseID);
+                            SelectCommand.Parameters.AddWithValue("@sectionID", sectionID);
+
+
+                            myreader = SelectCommand.ExecuteReader();
+                            while (myreader.Read())
+                            {
+                                string courseDetails = $"{courseID} {myreader[0]} {myreader[1]}\n";
+                                courseDetails += $"{sectionID} Enrolled: {myreader[2]} Capacity: {myreader[3]}\n";
+                                courseDetails += $"Day: {myreader[4]} Start Time: {myreader[5]} End Time: {myreader[6]}\n";
+                                courseDetails += $"Instructor: {myreader[7]} {myreader[8]}";
+                                course.Add(courseDetails);
+                            }
+                            courseInfoLabel.Text = course.ToString(); // leave this here or ...?
+                        }
+                        else
+                        {
+                            MessageBox.Show("Unable to display results.");
+                            courseInfoLabel.Visible = false;
+                        }
+
+                        if (course != null)
+                        {
+                            courseInfoLabel.Text = course.ToString();
+                        }
+                        con.Close();
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Select a course to view");
+                }
+            }
+            catch (Exception ex) { }
         }
     }
 }
