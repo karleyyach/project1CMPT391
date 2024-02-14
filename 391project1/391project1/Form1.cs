@@ -211,20 +211,31 @@ namespace _391project1
                 MessageBox.Show("An error occurred: " + ex.Message);
             }
         }
-        /*
+
         private void addCourseToCart(string courseID, string sectionID, string sem, string year)
         {
-            SqlConnection con = new SqlConnection("Data Source = localhost; Initial Catalog = 391project1; Integrated Security = True; MultipleActiveResultSets = true; ");
-            SqlCommand SelectCommand = new SqlCommand("", con);
-            SelectCommand.CommandType = CommandType.StoredProcedure;
-            SelectCommand.Parameters.AddWithValue("@query", query);
-            SqlDataReader myreader;
-            con.Open();
+            try
+            {
+                SqlConnection con = new SqlConnection("Data Source = localhost; Initial Catalog = 391project1; Integrated Security = True; MultipleActiveResultSets = true; ");
+                SqlCommand SelectCommand = new SqlCommand("addToCart", con);
+                // cart contains studentID, courseID, sectionID, sem, year
+                SelectCommand.CommandType = CommandType.StoredProcedure;
+                SelectCommand.Parameters.AddWithValue("@studentID", UserLogin.GlobalVariables.userID.ToString());
+                SelectCommand.Parameters.AddWithValue("@courseID", courseID);
+                SelectCommand.Parameters.AddWithValue("@sectionID", sectionID);
+                SelectCommand.Parameters.AddWithValue("@semester", sem);
+                SelectCommand.Parameters.AddWithValue("@year", year);
+                con.Open();
+                SelectCommand.BeginExecuteNonQuery(); // think this is the right thing to run???????
 
-
-            con.Close();
+                con.Close();
+            }
+            catch (Exception ex)
+            {
+                // Handle exceptions or log errors appropriately
+                MessageBox.Show("An error occurred: " + ex.Message);
+            }
         }
-        */
 
         private void button1_Click(object sender, EventArgs e)//add to cart button
         {
@@ -329,6 +340,143 @@ namespace _391project1
                 fillSearch(fillSearchQuery);
             }
             fillSearch(fillSearchQuery);
+        }
+
+        private string getTimeSlotID(string query)
+        {
+            try
+            {
+                using (SqlConnection con = new SqlConnection("Data Source=localhost; Initial Catalog=391project1; Integrated Security=True; MultipleActiveResultSets=true;"))
+                {
+                    con.Open();
+                    SqlCommand SelectCommand = new SqlCommand(query, con);
+                    using (SqlDataReader myreader = SelectCommand.ExecuteReader())
+                    {
+                        // should have exactly one result. error check later uhhhhhh
+                        while (myreader.Read())
+                        {
+                            string item = myreader[0].ToString();
+                            if (item != null) { return item; }
+                            else return ( "-1");
+                        }
+                    }
+                    return "-1";
+                }
+            }
+            catch (Exception ex)
+            {
+                // Handle exceptions or log errors appropriately
+                MessageBox.Show("An error occurred: " + ex.Message);
+                return ("-1");
+            }
+        }
+
+        private Boolean checkCart(string query)
+        {
+            try
+            {
+                using (SqlConnection con = new SqlConnection("Data Source=localhost; Initial Catalog=391project1; Integrated Security=True; MultipleActiveResultSets=true;"))
+                {
+                    con.Open();
+                    SqlCommand SelectCommand = new SqlCommand(query, con);
+                    using (SqlDataReader myreader = SelectCommand.ExecuteReader())
+                    {
+                        if (!myreader.Read())
+                        {
+                            return true; // no results found. can add class
+                        }
+                        else return false;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                // Handle exceptions or log errors appropriately
+                MessageBox.Show("An error occurred: " + ex.Message);
+                return false;
+            }
+
+        }
+        private string[] formatSearchClick(string[] raw)
+        {
+            string[] str = new string[11];
+
+
+            int length = raw.Length;
+            Debug.WriteLine("length " + length);
+
+            str[0] = raw[0]; // courseID
+
+            str[11] = raw[raw.Length - 1]; // year
+            str[10] = raw[raw.Length - 2]; // sem
+            str[9] = raw[raw.Length - 3]; //end
+            str[8] = raw[raw.Length - 4]; //start
+            str[7] = raw[raw.Length - 5]; //last name
+            str[6] = raw[raw.Length - 6]; // first name
+            str[5] = raw[raw.Length - 7]; //day
+            str[4] = raw[raw.Length - 8]; //cap
+            str[3] = raw[raw.Length - 9]; //enrolled
+            str[2] = raw[raw.Length - 10]; //section
+            str[1] = raw[raw.Length - 11]; // course desc. will only be containing last word, as it is uneeded for my use
+            // change later if needed
+
+            return str;
+        }
+
+
+        private void searchListBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string curItem = searchListBox.SelectedItem.ToString();
+            if (curItem != null)
+            {
+                DialogResult dialogResult = MessageBox.Show("Attempt to add this course to your cart?", "", MessageBoxButtons.YesNo);
+
+                if (dialogResult == DialogResult.Yes)
+                {
+                    Debug.WriteLine(curItem);
+                    // run queries
+
+                    // first need to split retreived strings to handle each condition properly
+                    string[] rawStr = curItem.Split(' ');
+                    string[] splitStr = formatSearchClick(rawStr);
+
+                    // check if there is even space
+                    if ((Int32.Parse(splitStr[3]) + 1) > Int32.Parse(splitStr[4]))
+                    {
+                        // no space
+                        MessageBox.Show("Selected class has no available space.");
+                    }
+                    else
+                    {
+                        // find slot id to match classes in cart
+                        string query = "SELECT timeSlot.timeSlotID FROM timeSlot WHERE timeSlot.day = '" + splitStr[5] + "' AND timeSlot.startTime = '" + splitStr[8] + "' AND timeSlot.endTime = '" + splitStr[9] + "'";
+                        string timeID = getTimeSlotID(query);
+                        if (timeID == "-1")
+                        {
+                            // couldnt find slot
+                            return;
+                        }
+
+                        // run q on cart
+                        query = "SELECT * FROM cart WHERE cart.timeSlotID = '" + timeID + "' AND cart.year = '" + splitStr[11] + "' AND cart.semester = '" + splitStr[10] + "' AND cart.studentID = '" + UserLogin.GlobalVariables.userID.ToString() + "'";
+                        
+                        // if not zero results, run stored proc to add this class to cart
+                        if (!checkCart(query))
+                        {
+                            // cant add to cart, display message
+                            MessageBox.Show("Class could not be added to cart.");
+                        }
+                        else
+                        {
+                            // add checking prereqs????? 
+
+                            addCourseToCart(splitStr[0], splitStr[2], splitStr[10], splitStr[11]);
+                        }
+                    }
+                }
+                else if (dialogResult == DialogResult.No) return;
+            }
+            else return;
         }
     }
 }

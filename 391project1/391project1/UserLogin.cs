@@ -29,7 +29,8 @@ namespace _391project1
 
         public static class GlobalVariables
         {
-            public static string userID { get; set; }
+            //public static string userID { get; set; }
+            public static string userID = "1";
         }
 
         private void loginBtn_Click(object sender, EventArgs e)
@@ -37,7 +38,10 @@ namespace _391project1
             var userID = textBox1.Text;
             if (!string.IsNullOrEmpty(userID))
             {
-                int check = checkUserId(userID);
+                Form1 form1 = new Form1();
+                form1.Show();
+                this.Hide();
+                /*int check = checkUserId(userID);
                 if (check == 1)
                 {
                     GlobalVariables.userID = userID;
@@ -48,11 +52,11 @@ namespace _391project1
                 else
                 {
                     MessageBox.Show("User ID not recognized");
-                }
+                }*/
             }
         }
 
-        private int checkUserId(string userID)
+        /*private int checkUserId(string userID)
         {
             int result = -1;
             SqlConnection con = new SqlConnection("Data Source = localhost; Initial Catalog = 391project1; Integrated Security = True; MultipleActiveResultSets = true; ");
@@ -70,6 +74,6 @@ namespace _391project1
                 }
             }
             return result;
-        }
+        }*/
     }
 }
