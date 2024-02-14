@@ -315,7 +315,7 @@ namespace _391project1
 
         private void viewCourseButton_Click(object sender, EventArgs e)
         {
-            courseInfoLabel.Visible = true;
+            
             showCourseInfo();
         }
 
@@ -336,43 +336,56 @@ namespace _391project1
                 if (semIdx != -1 && yrIdx != -1 && listBox1.SelectedIndex != -1)
                 {
                     courseInfoLabel.Text = "";
+                    courseInfoLabel.Visible = true;
                     string courseInfo = listBox1.SelectedItem.ToString();
                     string[] courseParts = courseInfo.Split('|');
+
                     if (courseParts.Length == 4)
                     {
-                        string[] idParts = courseParts[0].Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
-                        if (idParts.Length == 2)
+                        string courseID = courseParts[0].Trim();
+                        string sectionID = courseParts[1].Trim();
+                        string semester = courseParts[2].Trim();
+                        string year = courseParts[3].Trim();
+                        SelectCommand.Parameters.AddWithValue("@semester", semester);
+                        SelectCommand.Parameters.AddWithValue("@year", year);
+                        SelectCommand.Parameters.AddWithValue("@courseID", courseID);
+                        SelectCommand.Parameters.AddWithValue("@sectionID", sectionID);
+
+                        courseInfoLabel.Text = "Working...";
+                        myreader = SelectCommand.ExecuteReader();
+                        
+                        while (myreader.Read())
                         {
-                            string courseID = idParts[0].Trim();
-                            string sectionID = idParts[1].Trim();
-                            SelectCommand.Parameters.AddWithValue("@semester", courseParts[2].Trim());
-                            SelectCommand.Parameters.AddWithValue("@year", int.Parse(courseParts[3].Trim()));
-                            SelectCommand.Parameters.AddWithValue("@courseID", courseID);
-                            SelectCommand.Parameters.AddWithValue("@sectionID", sectionID);
-
-
-                            myreader = SelectCommand.ExecuteReader();
-                            while (myreader.Read())
-                            {
-                                string courseDetails = $"{courseID} {myreader[0]} {myreader[1]}\n";
-                                courseDetails += $"{sectionID} Enrolled: {myreader[2]} Capacity: {myreader[3]}\n";
-                                courseDetails += $"Day: {myreader[4]} Start Time: {myreader[5]} End Time: {myreader[6]}\n";
-                                courseDetails += $"Instructor: {myreader[7]} {myreader[8]}";
-                                course.Add(courseDetails);
-                            }
-                            courseInfoLabel.Text = course.ToString(); // leave this here or ...?
+                            string courseDetails = $"{courseID} {myreader[0]} {myreader[1]}\n";
+                            courseDetails += $"{sectionID} Enrolled: {myreader[2]} Capacity: {myreader[3]}\n";
+                            courseDetails += $"Day: {myreader[4]} Start Time: {myreader[5]} End Time: {myreader[6]}\n";
+                            courseDetails += $"Instructor: {myreader[7]} {myreader[8]}";
+                            course.Add(courseDetails);
+                            
                         }
+                        //courseInfoLabel.Text = course.ToString(); // leave this here or ...?
+
+                        /*
                         else
                         {
                             MessageBox.Show("Unable to display results.");
                             courseInfoLabel.Visible = false;
                         }
-
+                        */
+                        
                         if (course != null)
                         {
                             courseInfoLabel.Text = course.ToString();
                         }
+                        else
+                        {
+                            MessageBox.Show("Unable to retrieve data from database.");
+                        }
                         con.Close();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Unable to retrieve index.");
                     }
                 }
                 else
