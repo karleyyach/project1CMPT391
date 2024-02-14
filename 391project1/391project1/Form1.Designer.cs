@@ -42,6 +42,7 @@
             searchTextBox = new TextBox();
             searchListBox = new ListBox();
             tabPageCart = new TabPage();
+            enrollButton = new Button();
             shoppingCartList = new ListBox();
             comboBoxSemester = new ComboBox();
             comboBoxYear = new ComboBox();
@@ -213,6 +214,7 @@
             // 
             // tabPageCart
             // 
+            tabPageCart.Controls.Add(enrollButton);
             tabPageCart.Controls.Add(shoppingCartList);
             tabPageCart.Location = new Point(43, 4);
             tabPageCart.Margin = new Padding(4);
@@ -221,6 +223,17 @@
             tabPageCart.TabIndex = 2;
             tabPageCart.Text = "Shopping Cart";
             tabPageCart.UseVisualStyleBackColor = true;
+            // 
+            // enrollButton
+            // 
+            enrollButton.Location = new Point(1083, 418);
+            enrollButton.Margin = new Padding(6);
+            enrollButton.Name = "enrollButton";
+            enrollButton.Size = new Size(247, 96);
+            enrollButton.TabIndex = 3;
+            enrollButton.Text = "Enroll";
+            enrollButton.UseVisualStyleBackColor = true;
+            enrollButton.Click += enrollButton_Click_1;
             // 
             // shoppingCartList
             // 
@@ -310,5 +323,7 @@
         private ListBox courseInfoListBox;
         private Button closeButton;
         private Label courseInfoLabel;
+        private Button enrolButton;
+        private Button enrollButton;
     }
 }
