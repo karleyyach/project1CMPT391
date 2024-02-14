@@ -29,21 +29,14 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(login));
-            this.username = new System.Windows.Forms.TextBox();
-            this.password = new System.Windows.Forms.TextBox();
+            this.studentID = new System.Windows.Forms.TextBox();
             this.loginButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // username
+            // studentID
             // 
-            resources.ApplyResources(this.username, "username");
-            this.username.Name = "username";
-            // 
-            // password
-            // 
-            resources.ApplyResources(this.password, "password");
-            this.password.Name = "password";
-            this.password.TextChanged += new System.EventHandler(this.password_TextChanged);
+            resources.ApplyResources(this.studentID, "studentID");
+            this.studentID.Name = "studentID";
             // 
             // loginButton
             // 
@@ -57,8 +50,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.Controls.Add(this.loginButton);
-            this.Controls.Add(this.password);
-            this.Controls.Add(this.username);
+            this.Controls.Add(this.studentID);
             this.Name = "login";
             this.Load += new System.EventHandler(this.Form2_Load);
             this.ResumeLayout(false);
@@ -68,8 +60,7 @@
 
         #endregion
 
-        private TextBox username;
-        private TextBox password;
+        private TextBox studentID;
         private Button loginButton;
     }
 }
