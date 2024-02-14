@@ -6,8 +6,8 @@
 3. Run the 391project1 program
 
 ## Group Members
-Jackson Steed
-Aidan Mark
-Karley Yachimec
-Justin Thai
-McKenzy Ison
+* Jackson Steed
+* Aidan Mark
+* Karley Yachimec
+* Justin Thai
+* McKenzy Ison
