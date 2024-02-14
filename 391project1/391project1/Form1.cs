@@ -19,6 +19,8 @@ namespace _391project1
             //fillCourses();
             fillSemBox();
             fillYearBox();
+            courseInfoLabel.AutoSize = true;
+            courseInfoLabel.MaximumSize = new Size(475, 775);
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -62,7 +64,8 @@ namespace _391project1
         {
             courseInfoLabel.Visible = false;
         }
-
+        private int semIdx = -1;
+        private int yrIdx = -1;
         private void fillSemBox()
         {
             SqlConnection con = new SqlConnection("Data Source = localhost; Initial Catalog = 391project1; Integrated Security = True; MultipleActiveResultSets = true; ");
@@ -203,7 +206,6 @@ namespace _391project1
                 {
                     course.Add(myreader[0].ToString() + " " + myreader[1].ToString() + " " + myreader[2].ToString() + " " + myreader[3].ToString() + " " + myreader[4].ToString() + " " + myreader[5].ToString() + " " + myreader[6].ToString() + " " + myreader[7].ToString() + " " + myreader[8].ToString() + " " + myreader[9].ToString() + " " + myreader[10].ToString() + " " + myreader[11].ToString());
                 }
-
                 int i = 0;
                 while (course[i] != null)
                 {
@@ -244,8 +246,7 @@ namespace _391project1
                 MessageBox.Show("Select a course to add");
             }
         }
-        private int semIdx = -1;
-        private int yrIdx = -1;
+        
         private void comboBoxSemester_SelectedIndexChanged(object sender, EventArgs e)
         {
             //selectedindex
@@ -315,8 +316,15 @@ namespace _391project1
 
         private void viewCourseButton_Click(object sender, EventArgs e)
         {
-            courseInfoLabel.Visible = true;
-            showCourseInfo();
+            if (yrIdx != -1 & semIdx != -1)
+            {
+                courseInfoLabel.Visible = true;
+                courseInfoListBox.Visible = true;
+                closeButton.Visible = true;
+                closeButton.BringToFront();
+                showCourseInfo();
+            }
+            
         }
 
         private void showCourseInfo()
@@ -326,12 +334,12 @@ namespace _391project1
                 SqlConnection con = new SqlConnection("Data Source = localhost; Initial Catalog = 391project1; Integrated Security = True; MultipleActiveResultSets = true; ");
                 SqlCommand SelectCommand = new SqlCommand("getCourseInfo", con);
                 SelectCommand.CommandType = CommandType.StoredProcedure;
-                SelectCommand.Parameters.AddWithValue("@studentID", UserLogin.GlobalVariables.userID.ToString());
                 SqlDataReader myreader;
                 con.Open();
-                List<string> course = new List<string>();
+                List<string> course1 = new List<string>();
+                List<string> course2 = new List<string>();
+                List<string> course3 = new List<string>();
 
-                Debug.WriteLine(semIdx + "   " + yrIdx);
 
                 if (semIdx != -1 && yrIdx != -1 && listBox1.SelectedIndex != -1)
                 {
@@ -341,26 +349,34 @@ namespace _391project1
                     if (courseParts.Length == 4)
                     {
                         string[] idParts = courseParts[0].Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
+
                         if (idParts.Length == 2)
                         {
                             string courseID = idParts[0].Trim();
                             string sectionID = idParts[1].Trim();
                             SelectCommand.Parameters.AddWithValue("@semester", courseParts[2].Trim());
-                            SelectCommand.Parameters.AddWithValue("@year", int.Parse(courseParts[3].Trim()));
-                            SelectCommand.Parameters.AddWithValue("@courseID", courseID);
-                            SelectCommand.Parameters.AddWithValue("@sectionID", sectionID);
-
-
+                            SelectCommand.Parameters.AddWithValue("@year", courseParts[3].Trim());
+                            SelectCommand.Parameters.AddWithValue("@courseID", courseParts[0].Trim());
+                            SelectCommand.Parameters.AddWithValue("@sectionID", courseParts[1].Trim());
+                            
                             myreader = SelectCommand.ExecuteReader();
                             while (myreader.Read())
                             {
-                                string courseDetails = $"{courseID} {myreader[0]} {myreader[1]}\n";
-                                courseDetails += $"{sectionID} Enrolled: {myreader[2]} Capacity: {myreader[3]}\n";
-                                courseDetails += $"Day: {myreader[4]} Start Time: {myreader[5]} End Time: {myreader[6]}\n";
-                                courseDetails += $"Instructor: {myreader[7]} {myreader[8]}";
-                                course.Add(courseDetails);
+                                course1.Add(myreader[0].ToString() + "     " + myreader[1].ToString() + "     Enrolled: " + myreader[2].ToString() + " Capacity:     " + myreader[3].ToString());
+                                course2.Add("Day: " + myreader[4].ToString() + "     Start Time: " + myreader[5].ToString() + "     End Time: " + myreader[6].ToString());
+                                course3.Add("Instructor Name: " + myreader[7].ToString() + " " + myreader[8].ToString());
                             }
-                            courseInfoLabel.Text = course.ToString(); // leave this here or ...?
+
+                            int i = 0;
+                            //while (course1[i] != null)
+                            //{
+                                //Debug.WriteLine(course1[i]);
+                            courseInfoListBox.Items.Add(course1[i]);
+                            courseInfoListBox.Items.Add(course2[i]);
+                            courseInfoListBox.Items.Add(course3[i]);
+                            //i++;
+                            //}
+                            //courseInfoLabel.Text = course.ToString(); // leave this here or ...?
                         }
                         else
                         {
@@ -368,10 +384,10 @@ namespace _391project1
                             courseInfoLabel.Visible = false;
                         }
 
-                        if (course != null)
-                        {
-                            courseInfoLabel.Text = course.ToString();
-                        }
+                        //if (course1 != null)
+                        //{
+                        //    courseInfoLabel.Text = course1.ToString();
+                        //}
                         con.Close();
                     }
                 }
@@ -381,6 +397,18 @@ namespace _391project1
                 }
             }
             catch (Exception ex) { }
+        }
+
+        private void courseInfoListBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void closeButton_Click(object sender, EventArgs e)
+        {
+            courseInfoListBox.Visible = false;
+            closeButton.Visible = false;
+            courseInfoListBox.Items.Clear();
         }
     }
 }
