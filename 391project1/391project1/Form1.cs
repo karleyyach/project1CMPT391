@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 using System.Diagnostics;
+using System.Text.RegularExpressions;
 using System.Windows.Forms;
 using static System.Net.Mime.MediaTypeNames;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
@@ -203,8 +204,8 @@ namespace _391project1
                 myreader = SelectCommand.ExecuteReader();
 
                 while (myreader.Read())
-                {
-                    course.Add(myreader[0].ToString() + " " + myreader[1].ToString() + " " + myreader[2].ToString() + " " + myreader[3].ToString() + " " + myreader[4].ToString() + " " + myreader[5].ToString() + " " + myreader[6].ToString() + " " + myreader[7].ToString() + " " + myreader[8].ToString() + " " + myreader[9].ToString() + " " + myreader[10].ToString() + " " + myreader[11].ToString());
+                { 
+                    course.Add(myreader[0].ToString() + "   " + myreader[1].ToString() + "  " + myreader[2].ToString() + "  " + myreader[3].ToString() + " " + myreader[4].ToString() + " " + myreader[5].ToString() + "   " + myreader[6].ToString() + "   " + myreader[7].ToString() + "    " + myreader[8].ToString() + "   " + myreader[9].ToString() + "   " + myreader[10].ToString() + " " + myreader[11].ToString());
                 }
                 int i = 0;
                 while (course[i] != null)
@@ -218,33 +219,45 @@ namespace _391project1
             catch (Exception ex) { }
         }
 
-        /*
-        private void addCourseToCart(string courseID, string sectionID, string sem, string year)
+        //string courseID, string sectionID, string sem, string year
+        private void addCourseToCart()
         {
             SqlConnection con = new SqlConnection("Data Source = localhost; Initial Catalog = 391project1; Integrated Security = True; MultipleActiveResultSets = true; ");
-            SqlCommand SelectCommand = new SqlCommand("", con);
+            SqlCommand SelectCommand = new SqlCommand("addToCart", con);
             SelectCommand.CommandType = CommandType.StoredProcedure;
-            SelectCommand.Parameters.AddWithValue("@query", query);
+            SelectCommand.Parameters.AddWithValue("@studentID", UserLogin.GlobalVariables.userID);
             SqlDataReader myreader;
             con.Open();
 
+            if(searchListBox.SelectedItem != null)
+            {
+                string selectedCourse = searchListBox.SelectedItem.ToString();
+                string[] courseParts = Regex.Split(selectedCourse, @"\s{2,}");
+                Debug.WriteLine(courseParts[0]);
+                Debug.WriteLine(courseParts[2]);
+                Debug.WriteLine(courseParts[10]);
+                Debug.WriteLine(courseParts[11]);
 
-            con.Close();
+                SelectCommand.Parameters.AddWithValue("@courseID", courseParts[0]);
+                SelectCommand.Parameters.AddWithValue("@sectionID", courseParts[2]);
+                SelectCommand.Parameters.AddWithValue("@semester", courseParts[10]);
+                SelectCommand.Parameters.AddWithValue("@year", courseParts[11]);
+
+                SelectCommand.ExecuteReader();
+
+                con.Close();
+            }
+            
         }
-        */
+        
 
         private void button1_Click(object sender, EventArgs e)//add to cart button
         {
             string course = listBox1.SelectedItem?.ToString();
             //Debug.WriteLine(course);
-            if (course != null)
-            {
-                string[] components = course.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
-            }
-            else
-            {
-                MessageBox.Show("Select a course to add");
-            }
+            addCourseToCart();
+            shoppingCartList.Items.Clear();
+            showCurrentCart();
         }
         
         private void comboBoxSemester_SelectedIndexChanged(object sender, EventArgs e)
