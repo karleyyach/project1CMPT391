@@ -11,3 +11,6 @@
 * Karley Yachimec
 * Justin Thai
 * McKenzy Ison
+
+# Database Tables
+![image](https://github.com/karleyyach/project1CMPT391/assets/97803049/83d179f6-e486-4368-999a-1116994265b3)
