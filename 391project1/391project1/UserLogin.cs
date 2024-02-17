@@ -21,6 +21,7 @@ namespace _391project1
         {
             InitializeComponent();
         }
+
         void UserLogin_Load(object sender, EventArgs e)
         {
 
@@ -41,8 +42,8 @@ namespace _391project1
                 if (check == 1)
                 {
                     GlobalVariables.userID = userID;
-                    Form1 form1 = new Form1();
-                    form1.Show();
+                    MacEwanEnrollmentSystem macEwanEnrollmentSystem = new MacEwanEnrollmentSystem();
+                    macEwanEnrollmentSystem.Show();
                     this.Hide();
                 }
                 else
@@ -55,21 +56,31 @@ namespace _391project1
         private int checkUserId(string userID)
         {
             int result = -1;
-            SqlConnection con = new SqlConnection("Data Source = localhost; Initial Catalog = 391project1; Integrated Security = True; MultipleActiveResultSets = true; ");
-            SqlCommand SelectCommand = new SqlCommand("checkStudentID", con);
-            SelectCommand.CommandType = CommandType.StoredProcedure;
-            SelectCommand.Parameters.AddWithValue("@studentID", userID);
-            SqlDataReader myreader;
-            con.Open();
-            myreader = SelectCommand.ExecuteReader();
-            if (myreader.Read())
-               {
-                if (myreader[0].ToString() == "1")
+            string connectionString =
+                "Data Source=localhost; Initial Catalog=MacewanDatabase; Integrated Security=True;";
+            using (SqlConnection con = new SqlConnection(connectionString))
+            {
+                using (SqlCommand cmd = new SqlCommand("checkStudentID", con))
                 {
-                    result = 1;
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.Parameters.AddWithValue("@studentID", userID);
+                    con.Open();
+                    using (SqlDataReader myreader = cmd.ExecuteReader())
+                    {
+                        if (myreader.Read())
+                        {
+                            result = int.Parse(myreader["Result"]
+                                .ToString());
+                        }
+                    }
                 }
             }
             return result;
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
