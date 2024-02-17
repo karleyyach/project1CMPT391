@@ -5,6 +5,9 @@
 2. Open the 391project1.sln in Visual Studio
 3. Run the 391project1 program
 
+## Required Dependency
+System.Data.SqlClient by Microsoft version 4.8.6
+
 ## Group Members
 * Jackson Steed
 * Aidan Mark
